@@ -1,0 +1,1432 @@
+Delivered-To: katejrobinson94@gmail.com
+Received: by 2002:a05:6a10:4a9a:0:0:0:0 with SMTP id mf26csp5233690pxb;
+        Tue, 28 Sep 2021 06:57:52 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJw6sNrS958F+Jh5N8NiJ2NjiY6qxbGQBcN8XKzptm9DOxMmVdcSgsT0OcEjBFffBnsJaWBW
+X-Received: by 2002:a67:cd83:: with SMTP id r3mr5060632vsl.52.1632837472277;
+        Tue, 28 Sep 2021 06:57:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1632837472; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ocRW09bEXL40JW+dyxu1AlNX5GYvmW8mPBLAZPkIdkQBu/XEHZ09o1DvKkPOo8HJvC
+         1zpu0csMGKvn8hH9Mn2okyL0LqisaudB/iRKV2K9/OaKJAsqv8UeiCgDNR9qs1JUXuLv
+         lXzuUvHOk287VdeXuFfi8iYEV5i5BX30+tosizblNE9Nvm5/DCh5GmS0IOLUzFkshV9m
+         9IeePFSzLAkmNd5HRkcXOMGEuP8xBx0yngaf+uqDThvg3eQppazeU8liOQMfi08Q7/kX
+         Y7pxKB4QgD4veaJpEGP0ZcaKt7p1P32CS0YWCd9D65sEXX29dQPXzAMRbN9ejh6lvEz6
+         n4Bg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:reply-to:subject:message-id:mime-version:from:date
+         :dkim-signature:dkim-signature;
+        bh=xZaCaigpUSlrPy9KiTGrZ58v1D6gVYPPqT5goHb1ias=;
+        b=CNWq0nRT68dco8YQ1/NX9XWuI8cBTD3dZumKoYgEygZ0xWN07CN7tXtemgSgK7l4Tb
+         bEzTjZqDeqB4VEZasq+BwyexU+jSZrUHL6WN34eDeDtlYzFK9mqdbhZ1b2d5FwtvPP1Q
+         VOGosQnAfVaxgYOvGRdak9sNS0viiImSMbBfvVSQpkBwvsjjuThnRrVcpPRi44+Ob4hD
+         gY3Q2mDLOHx6wwmWscnmd3eQiD22FhRTwasy+e7XmWCP9fciweTC6CX9GBJZsD/ohq3o
+         iNClkw6VVVnSkZtzKeKO+8EENUIlSHbt2udoS3dpKJmucM/fw71cFxUU6r31Z0Z+3PK1
+         mvAg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ohhey.depop.com header.s=s1 header.b="azjQxz/z";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=RRbeoALs;
+       spf=pass (google.com: domain of bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) smtp.mailfrom="bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ohhey.depop.com
+Return-Path: <bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com>
+Received: from o212.mail.ohhey.depop.com (o212.mail.ohhey.depop.com. [167.89.53.235])
+        by mx.google.com with ESMTPS id i5si3311551vso.159.2021.09.28.06.57.51
+        for <katejrobinson94@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 28 Sep 2021 06:57:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) client-ip=167.89.53.235;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ohhey.depop.com header.s=s1 header.b="azjQxz/z";
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=RRbeoALs;
+       spf=pass (google.com: domain of bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) smtp.mailfrom="bounces+2847417-5c63-katejrobinson94=gmail.com@mail.ohhey.depop.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ohhey.depop.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ohhey.depop.com;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to;
+	s=s1; bh=xZaCaigpUSlrPy9KiTGrZ58v1D6gVYPPqT5goHb1ias=;
+	b=azjQxz/zKmk1nOnMHBhDELCCu0888RlzYIYeOXtoulmKsZQh0nm4lbfvpwo3zbYxGM12
+	LlLPA0Vje+Ab+BrGHcKV8MYITblCH3V6JKvvIlp1IHGO4tLFidxj7w2GTJxK1bME0YbOwj
+	iriqBF+o1VMCRYXWVhz89DTFNQ61e78xP6mheOLhFlAyC2UBmOpnqb2Q8+rAmp84uxRgkR
+	d6OALhTEP/NsaaSR2CEhQMx4PLYo9a27NFDrC1pW44kymUgGUW2mIQ8uFSu7pjwuUdrymw
+	DppQSzH2uxjwCdNhU+peOHCXBi5/z+wVcduPOmJSFP50fZVlFKbd51aezDZdE1uw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to;
+	s=smtpapi; bh=xZaCaigpUSlrPy9KiTGrZ58v1D6gVYPPqT5goHb1ias=;
+	b=RRbeoALsGkbesmgST7KIJfUueVAfj2bgK5dxfYTTzfLmke05dVaqEceHk+vgMvi2IIro
+	YOWw5dzFcZ8/171U3VlGgeI7h2vsVAlQ/a3ExWU5SxlxLl6TFP2N2Yz80We0zvh+4qe9uW
+	dLcoeuRDFvLCbFYN3NtfCiO/lkxblPpHM=
+Received: by filterdrecv-canary-5bbfd76d4d-xvb7l with SMTP id filterdrecv-canary-5bbfd76d4d-xvb7l-1-61531F5E-AB
+        2021-09-28 13:57:51.01082142 +0000 UTC m=+2324663.674311448
+Received: from Mjg0NzQxNw (unknown)
+	by ismtpd0199p1mdw1.sendgrid.net (SG)
+	with HTTP
+	id EaKKCYnITTimr2LvOQB1tQ
+	Tue, 28 Sep 2021 13:57:50.943 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=b3719f440677552eb2c966601140d2379041b05fbd62aa1c12b539857283
+Date: Tue, 28 Sep 2021 13:57:51 +0000 (UTC)
+From: Depop <team@ohhey.depop.com>
+Mime-Version: 1.0
+Message-ID: <EaKKCYnITTimr2LvOQB1tQ@ismtpd0199p1mdw1.sendgrid.net>
+Subject: [TEST] Outerwear that makes the grade
+Reply-To: team@depop.com
+X-Feedback-ID: 2847417:SG
+X-SG-EID: 
+ =?us-ascii?Q?RdiCwKUBEHs9YpR=2FuCubuLXhTsj9Exs396C9llsjFg2O4vGJNzjBvBG+8zBP1e?=
+ =?us-ascii?Q?8piTMvV0NyQ3N9I0lbPzbydwj9Pm+KkYp1vhOXz?=
+ =?us-ascii?Q?96011iT0KsWD=2F5YxiCekhZsx1=2FddymkIGTSZRcp?=
+ =?us-ascii?Q?aEy0PrwRtTHgKMlvXdfEIHs5MfnviEjPyOQWk4v?=
+ =?us-ascii?Q?5dsO5EiWvdxDYHrWWw6CXQth6yeI8=2FAOhYeuuk3?=
+ =?us-ascii?Q?QKjPycT60US=2Fw5VXQgZey5DbILe0KucyBIn7Jg?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FKvUYPFb2vwyNNeBc9bJi?=
+ =?us-ascii?Q?ChQ6MfPpC0rjI9nSFOQW496Hok9n4=2FTg9Nhgm3+?=
+ =?us-ascii?Q?iSm=2Fu9ZFD3vjocoov9sTRIzxzcWifGokv5vjksw?=
+ =?us-ascii?Q?CEgYvDCM77g+VDKdGX41mVhypJJprjskmjkxx+v?=
+ =?us-ascii?Q?pucrUtqRpuMIMWvtgUfxM0S0u6WndiFNfkJ5NFR?=
+ =?us-ascii?Q?LAEMaty6MYO9vmRPYDxs2thcgN69wp8=2F2teBXLY?=
+ =?us-ascii?Q?R8tkODmh8GUgJmfOLUMRH9QiPMwRV2jvLZxr2eY?=
+ =?us-ascii?Q?Hsh6MKKw9hb3gPFs+gfZtqkv7S=2FbA8AS0D+tj06?=
+ =?us-ascii?Q?dn10K1VX9ghC25Ie3f0ZMMdrZimrSz1bzpsbHZ0?=
+ =?us-ascii?Q?lcODTxu=2F4mfluf8q=2FBkrHlJKn0ihSoIxK3=2FUcTd?=
+ =?us-ascii?Q?olYV1BrODVfW03Fi92hh0Ujz2H=2F4YjeY5D1XO11?=
+ =?us-ascii?Q?q=2FZYGTxE5AZyeqgEO+hqZ67WdYIlknnHkZZu8Kv?=
+ =?us-ascii?Q?R1Yxa6KOH9DYRRjA6VhLuWvGn0pwkGsds2gy4pZ?=
+ =?us-ascii?Q?YRDw=3D=3D?=
+To: katejrobinson94@gmail.com
+X-Entity-ID: +NJyOEpzJOxSxQutoJShNQ==
+
+--b3719f440677552eb2c966601140d2379041b05fbd62aa1c12b539857283
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+More layers =3D more ways to style.
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C
+( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty4FuYlDrMeHi0aezPQ=
+BDx5EFfjlUR7YAfGm_Cff7v3x3/3fp/1HFFARKDSzKnL1WBdbAfhg/t0/2GTvHD6-M7-PEsx-JJ=
+6CQLLDvyByqoxISYhsEcIXBVE )
+New term style is all about staying cool =E2=80=93 no matter how brisk it
+is outside. Nail your campus look with jackets and coats from our
+Depop class of 2021 edit. More layers that make the grade =3D more
+ways to style.
+
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZu8xlG1woSDWIB3OLGE4xziM8nvhAtwQjDy5XjCgOv0BQ/3fp/1HFFARKDSzKnL1WBdbAfhg=
+/t1/C_PL0sp_7M6nVvakb7BxWVEt1EleyCk-ZM7AgIVPuXI )
+
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZtDfiW5iVBf9l8Re9WqH1syR8wo2OFYJi4KYiY33YDrEdZ_dcd4pOxdwlU89weLMT836_MMb=
+szAl7TZlqn2lX3HR0WdXm260sh_olUHhmog5Q/3fp/1HFFARKDSzKnL1WBdbAfhg/t2/eixVs6S=
+RV6NmNqbOb2jzmGnaH3L89c-kuXBCM0GfDfI )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZud5N0cRSDutfgcrNgmk7TJCuxC3wHybhAdTlNm_ETa1bBMQbWrHXFIRZ6eXoUgt2lT2Uwo1=
+Qjvs_Bhtxg8f5BN/3fp/1HFFARKDSzKnL1WBdbAfhg/t3/rLkCkDhxYMsxTH13RMxTqOfXSiFgE=
+dZ4DvKlotdUHTs )
+             =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZu8HXKq5LFuOrUdJM6eHOAHgMYWt_MLTJe6wzEM7o-YwIE6LJdd85sWm2VjNcijU5Y/3fp/1=
+HFFARKDSzKnL1WBdbAfhg/t4/xqGSPVisRro_DRedm5cpnwUF1PxoubvE3DxlryfPWqs )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZvXkWyIXL-IF_plVey5iUZ3rP__ld01zngU6oOTev1JLp5b-sNDuXcnhhO-4HU3MUBdL-xQd=
+5zc9CxhHDqm9rAu/3fp/1HFFARKDSzKnL1WBdbAfhg/t5/5-5zOm7tv3wAr2RD9vcmhMYox5FxJ=
+o405RZDC96yGLM )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZuu_we49IP0XOX4WdOBLN-iiy0mmFZ_ZoINLf1142EqYv3eki94g7F7jo5cX12vui4/3fp/1=
+HFFARKDSzKnL1WBdbAfhg/t6/8gPDHi_fDvdF7rrrr2H5RJJA2w0jOsWZp5UKb58iQW8 )
+             =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZumhU_IjKnFEQI1SmALJugNe99O3qqhn9g6CeENr_d-Cw6tS8wi0qAShVimVjJEauehbnHhR=
+7nhCJXmvYHZjrBj/3fp/1HFFARKDSzKnL1WBdbAfhg/t7/37idY3Jn2HcZUfVldYV5PCWWvzPW0=
+LhGqJe6NP_c-Hk )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZtdIkGSS1C_5H8LPuYtHxU__i-ZUDAHR8Z3OiJAENS020k32kE7WK0GgzwIVILs0IfcpVXrK=
+SiHUAhU2HR8U78q/3fp/1HFFARKDSzKnL1WBdbAfhg/t8/SX2Fex-51c8IKfW1lPcl5WZH8oP8P=
+-JSLyQRuZLG8Vs )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZvLQVWRUHtHujT754jTEsquegFOw9dXtOxZmrQ2O9xPPgHbQOiXc3ud9QpfQI9emY-Bm1E3R=
+r1FVQh_tmed-OC0/3fp/1HFFARKDSzKnL1WBdbAfhg/t9/ORpm_ARlQxtk3UJgCn79gsN2PfQGt=
+rutK7gAq2JMujg )
+                ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty4=
+FuYlDrMeHi0aezPQBDx5EFfjlUR7YAfGm_Cff7v3x3/3fp/1HFFARKDSzKnL1WBdbAfhg/t10/D=
+PBbEea0kq5auuXT9_ebJghd0fTvAMlpW5h0cVc-WDk )
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y8iuMuIxoaYKyKJchF=
+WrQPbYyvTDLjtQ0WJSWfgZifEC/3fp/1HFFARKDSzKnL1WBdbAfhg/t11/gQ_OPpQPbeKCOtDEM=
+Klq6dI8bMBLQBHtNcB1RvDqCjw )
+Neon =E2=80=9890s fleeces. On-trend athleisure in colours that pop.
+Explore outerwear styles that will make you excited about cooler
+temperatures.
+
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZud2v6g906lH1KCi_SKQQWq0UEfuhgRUEU1qZ36Cu0h0FrKj-pJ3lNRZu205UJf65ueJZO_4=
+68-a5ZpcQmUwRXh/3fp/1HFFARKDSzKnL1WBdbAfhg/t12/vT4zz7elm1RHo0BPm-1kFPYYoSAn=
+NlV9seeDtNyc36s )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZud2v6g906lH1KCi_SKQQWqeIqUvc1wcXlImpRZNtgZfYaXcuGWp3xLy_kbZhNEsR3y3dtDs=
+mQAOaOguEatSfrW/3fp/1HFFARKDSzKnL1WBdbAfhg/t13/SaQxIEnaH0Wd315LoXzEgwTzc47V=
+8kimYs50PjPXEAM )
+             =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZud2v6g906lH1KCi_SKQQWqtf7GWq6vxKkDalL-cbYQkIyEocRcKCcFPXNxL4sx8_L-rdmcC=
+z4xlcJg4RTNVabj/3fp/1HFFARKDSzKnL1WBdbAfhg/t14/BM7pwiXjmd8bVMqSZgfQmF8gwpIf=
+nX64b6TVGGKKSxc )
+         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y2izV295_rphRj-bfJ=
+DMNZud2v6g906lH1KCi_SKQQWqkT5I1w8TdG8_RCz1M5vtaTuJsJSriOtWXW5e3eOshzA/3fp/1=
+HFFARKDSzKnL1WBdbAfhg/t15/Vd4iz7JlQAZFGyj9_9aijA0AnZwto7oN9QuB103ZugM )
+               ( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y8i=
+uMuIxoaYKyKJchFWrQPbYyvTDLjtQ0WJSWfgZifEC/3fp/1HFFARKDSzKnL1WBdbAfhg/t16/yo=
+cGzLyXrvtKIbJGOUdef272BxFJOeGF0-tPNrIBz64 )
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y09dANqMubEK9Uh3d6=
+KWBVNNqbCf1ApQKDZunuTtMCo4/3fp/1HFFARKDSzKnL1WBdbAfhg/t17/FGmCb37Vsz8BQXhOG=
+xdPVjJb8pq-__rMxFYND_mtXU4 )         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2ywyr0lqhglFZV2suyc=
+KqYyvGc-hES5PHhICFZQM_Wnce/3fp/1HFFARKDSzKnL1WBdbAfhg/t18/iT9X3lPVffxNvCZz-=
+2pQLifHFezF1wjCM_-7dE1-U1g )         =20
+( https://links.ohhey.depop.com/ss/c/lVxI9S5IQs3ebOZLevK3cMLTQAssiabkLpW2Eb=
+esxz_UsJTXFWgSh1QufCqbj24T/3fp/1HFFARKDSzKnL1WBdbAfhg/t19/l4Y4X4JY659510QkJ=
+JliP0txPo_jgH_cUttB_YiQIEk )         =20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yy3dQxWqYb1PZylsT8=
+FNg3Owh6WNmALKUpbxkKym1Inp/3fp/1HFFARKDSzKnL1WBdbAfhg/t20/zvdC6j3TTJo3HKtPf=
+TmjyUdapiXpQ168PCL806D4M4c )                =20
+( https://links.ohhey.depop.com/ss/c/lAVI_h_7X-VHj290jbLu7q1vfyEQQfe2OpU5tl=
+n88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDivAINVLROWvxqnK3qkujlogxAbimskOC=
+zwKHtcVlQAv7vt7/3fp/1HFFARKDSzKnL1WBdbAfhg/t21/Qm4GN8DeCscJebLit2qo8_49OKcI=
+tjtTRbU7hBOdiQs )
+         =20
+( https://links.ohhey.depop.com/ss/c/1HJmLSnrDX1t4WJsXNWFYQS2q8UMmTHCeFDZvk=
+1C0feTWqDG-QtN8dHX7hW4EWmn3-B9Xz25dCvtGCxw45QDcA/3fp/1HFFARKDSzKnL1WBdbAfhg=
+/t22/oRxiUj5fy70JoUXe90CGTU4xO-kHeEhXSnRayTPUGSw )
+7-9 Curtain Road
+London, EC2A 3LT        We'd be sad to see you go, but you can
+unsubscribe here ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty=
+1fEPgG8CtWm0NSlJVyX4mqcIIbZYiWETbsOwbl4IZiaiHQimquwVLOHjD0s0j99JS0HZv1Sfykq=
+b756VwGKQ4zX-8m_h-JGjXKtQE2xl7sAW6lnKyBrbux4kFwOfPY9-PurV6IlCT32CQI0rwo-RxG=
+atFgxTQre1QHfH26d4d_2veKaYKSJL0wpxzy9YbP6MFrNZVq-MUYIR3u_2FacbDrm4fQHdpTrQR=
+xvRwI768rMZPtEsmXwB5fgSMbhWLHespH7ay8AIMkv7k3WAsPdSUZLUaoL0VnM5dTSDW49axaqx=
+CyEMQZFolU1rksmdNf98GY5AENpZvwRoGrGfO4vJqUuaO7fgYZh04TYjbsdvtHAOKNrHJu-W7d8=
+YCraUF6Z6T-IV6YwOt8E3UC6CvTz5Onxs_ypn5u8yayg-J0Cdb03wBMYQCD0HFUULPyhrlH99kG=
+51huVh65XVOyyIW_AlB4/3fp/1HFFARKDSzKnL1WBdbAfhg/t23/4x9AvPiNVBXVE5OwcOyoahE=
+h1_pl8wvrheZWFbQPQlQ )
+--b3719f440677552eb2c966601140d2379041b05fbd62aa1c12b539857283
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w=
+3.org/TR/REC-html40/loose.dtd">
+<html style=3D"height: 100% !important; width: 100% !important; -ms-text-si=
+ze-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0=
+;">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"x-apple-disable-message-reformatting">
+   =20
+   =20
+   =20
+<style>body {
+margin: 0 auto !important; padding: 0 !important; height: 100% !important; =
+width: 100% !important;
+}
+img {
+-ms-interpolation-mode: bicubic;
+}
+.button-td:hover {
+background: #555555 !important; border-color: #555555 !important;
+}
+.button-a:hover {
+background: #555555 !important; border-color: #555555 !important;
+}
+@font-face {
+font-family: 'gt-america-extended-regular'; src: url('https://d2x3ljdtuhcn0=
+i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended=
+-regular.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhc=
+n0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extend=
+ed-regular.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.=
+net/font/gt-america-extended-regular/gt-america-trial-extended-regular.woff=
+') format('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-ameri=
+ca-extended-regular/gt-america-trial-extended-regular.ttf') format('truetyp=
+e'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-re=
+gular/gt-america-trial-extended-regular.svg') format('svg'); font-weight: n=
+ormal; font-style: normal;
+}
+@font-face {
+font-family: 'gt-america-extended-black'; src: url('https://d2x3ljdtuhcn0i.=
+cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-bla=
+ck.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cl=
+oudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black=
+.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/g=
+t-america-extended-black/gt-america-trial-extended-black.woff') format('wof=
+f'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-bl=
+ack/gt-america-trial-extended-black.ttf') format('truetype'), url('https://=
+d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-tri=
+al-extended-black.svg') format('svg'); font-weight: normal; font-style: nor=
+mal;
+}
+@font-face {
+font-family: 'gt-america-black'; src: url('https://d2x3ljdtuhcn0i.cloudfron=
+t.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.eot?#i=
+efix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloudfront.=
+net/font/gt-america-expanded-black/gt-america-trial-expanded-black.woff2') =
+format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america=
+-expanded-black/gt-america-trial-expanded-black.woff') format('woff'), url(=
+'https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-am=
+erica-trial-expanded-black.ttf') format('truetype'), url('https://d2x3ljdtu=
+hcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expand=
+ed-black.svg') format('svg'); font-weight: normal; font-style: normal;
+}
+@font-face {
+font-family: 'gt-america-regular'; src: url('https://d2x3ljdtuhcn0i.cloudfr=
+ont.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.=
+eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloud=
+front.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regula=
+r.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/=
+gt-america-expanded-regular/gt-america-trial-expanded-regular.woff') format=
+('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expand=
+ed-regular/gt-america-trial-expanded-regular.ttf') format('truetype'), url(=
+'https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-=
+america-trial-expanded-regular.svgg') format('svg'); font-weight: normal; f=
+ont-style: normal;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 413=
+px) {
+  .email-container {
+    min-width: 375px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fluid {
+    width: 100% !important; max-width: 100% !important; height: auto !impor=
+tant; margin-left: auto !important; margin-right: auto !important;
+  }
+  .stack-column {
+    display: block !important; width: 100% !important; max-width: 100% !imp=
+ortant; direction: ltr !important;
+  }
+  .stack-column-center {
+    display: block !important; width: 100% !important; max-width: 100% !imp=
+ortant; direction: ltr !important;
+  }
+  .stack-column-center {
+    text-align: center !important;
+  }
+  .center-on-narrow {
+    text-align: center !important; display: block !important; margin-left: =
+auto !important; margin-right: auto !important; float: none !important;
+  }
+  table.center-on-narrow {
+    display: inline-block !important;
+  }
+  .email-container p {
+    font-size: 17px !important; line-height: 22px !important;
+  }
+  .email-container h3 {
+    font-size: 25px !important; line-height: 1 !important;
+  }
+}
+</style>
+</head>
+<body bgcolor=3D"#FFFFFF" style=3D"mso-line-height-rule: exactly; height: 1=
+00% !important; width: 100% !important; -ms-text-size-adjust: 100%; -webkit=
+-text-size-adjust: 100%; margin: 0 auto; padding: 0;" width=3D"100%">
+<div style=3D"display:none !important;visibility:hidden;mso-hide:all;font-s=
+ize:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:=
+0;overflow:hidden;">More layers =3D more ways to style.</div>
+<center style=3D"width: 100%; background-color: #FFFFFF; text-align: left; =
+-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;" class=3D"">
+<!-- Visually Hidden Preheader Text : Begin -->
+<div style=3D"display: none; font-size: 1px; line-height: 1px; max-height: =
+0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-fami=
+ly: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;=
+"><!-- PREHEADER TEXT GOES HERE --></div>
+<!-- Visually Hidden Preheader Text : End -->
+<!-- Insert &zwnj;&nbsp; hack after hidden preview text -->
+<div style=3D"display: none; max-height: 0px; overflow: hidden; -ms-text-si=
+ze-adjust: 100%; -webkit-text-size-adjust: 100%;">
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;
+</div>
+<!-- Email Container : Begin -->
+<div class=3D"email-container" style=3D"max-width: 504px; -ms-text-size-adj=
+ust: 100%; -webkit-text-size-adjust: 100%; margin: auto;">
+<!-- Email Header : Begin -->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" ro=
+le=3D"presentation" style=3D"max-width: 504px; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table=
+-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: col=
+lapse !important; table-layout: fixed !important; margin: 0 auto;" width=3D=
+"100%">
+<!-- Email Header : End -->
+<tbody style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;=
+">
+	<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+         =20
+         =20
+        </tr>
+	</tbody>
+</table>
+<!-- Email Header : End -->
+<!-- TOP Container : Begin -->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"email-container" role=3D"presentation" style=3D"max-width: 504px; -m=
+s-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !impor=
+tant; border-collapse: collapse !important; table-layout: fixed !important;=
+ margin: 0 auto;" width=3D"100%">
+	<tbody style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%=
+;">
+             =20
+         =20
+    =20
+
+=20
+            <!-- H:|[Hero]| -->
+        <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: =
+100%;">
+          <td align=3D"center" style=3D"font-size: 0; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; ms=
+o-table-rspace: 0pt !important;">
+            <div style=3D"display: block; max-width: 100%; min-width: 30px;=
+ vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; margin: 0px;">
+              <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspac=
+e: 0pt !important; border-spacing: 0 !important; border-collapse: collapse =
+!important; table-layout: fixed !important; margin: 0 auto;">
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; padding: 0px;" class=3D"email-container">
+                <a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQ=
+G-r09OrTg6ty4FuYlDrMeHi0aezPQBDx5EFfjlUR7YAfGm_Cff7v3x3/3fp/1HFFARKDSzKnL1W=
+BdbAfhg/h24/uMyyy6kjnOStx611zK4-pbqn2EMBBPlc0PtLmXS-Dzs" universal=3D"true"=
+ style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><htt=
+ps: style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><=
+img src=3D"https://appboy-images.com/appboy/communication/assets/image_asse=
+ts/images/6152fb6353ab7c2b30caef53/original.jpg?1632828258" border=3D"0" st=
+yle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-=
+size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                  </https:></a>
+</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr> =20
+
+<!--BODY COPY STARTS-->
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                  <td bgcolor=3D"#ffffff" mc:edit=3D"LargeCopy1Copy" align=
+=3D"center" style=3D"font-size: 16px; font-family: Helvetica,sans-serif; le=
+tter-spacing: 0px; line-height: 24px; color: #000000; text-transform: none;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px 20px 20p=
+x;"><a target=3D"_blank" style=3D"color: #000000; text-decoration: none; -m=
+s-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+
+<br style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">N=
+ew term style is all about staying cool =E2=80=93 no matter how brisk it is=
+ outside. Nail your campus look with jackets and coats from our Depop class=
+ of 2021 edit. More layers that make the grade =3D more ways to style. <br =
+style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                </a></td>
+                </tr>
+
+                <!--BODY COPY ENDS-->=20
+
+
+                        <!-- H:|[PHOTO PHOTO PHOTO]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impor=
+tant; border-spacing: 0 !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 2px; border-right-color:=
+ white; border-right-style: solid; border-bottom-width: 3px; border-bottom-=
+color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webk=
+it-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65P=
+xi4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZu8xlG1woSDWIB3OLGE4xzi7WCYMIOvgR1Utr=
+kZZCxgfCH21gyv7TetQJsomyfTGCL-MPc2GNL72_ytVDG2Gp7sFqo9DeqHIgw4q7cW3KISAFEkc=
+DHo3frPBmIZFOYsJFFyUV_n628msp8BMzTID2tKjDDfY-3nq4jyJ08fCNkiccoNBxwf0t3-2FWe=
+hBu2HwnbB0LxU_CiXf0ouqgLmQ2r/3fp/1HFFARKDSzKnL1WBdbAfhg/h25/_KhNAaITTgX6wT2=
+2Z_GoY76-NUbvEyoPTA3myVxavmA" universal=3D"true" style=3D"-ms-text-size-adj=
+ust: 100%; -webkit-text-size-adjust: 100%;"><img src=3D"https://appboy-imag=
+es.com/appboy/communication/assets/image_assets/images/6153145339a2eb736995=
+6577/original.jpeg?1632834643" border=3D"0" style=3D"width: 100%; height: a=
+uto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interp=
+olation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 1px; border-right-color:=
+ white; border-right-style: solid; border-left-width: 1px; border-left-colo=
+r: white; border-left-style: solid; border-bottom-width: 3px; border-bottom=
+-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -web=
+kit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rsp=
+ace: 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZtDfiW5iVBf9l8Re9WqH1syR8wo2OFYJi4KYiY=
+33YDrEdZ_dcd4pOxdwlU89weLMT836_MMbszAl7TZlqn2lX3HkjhRabz04-GyRNDs6YpHCFn0ah=
+ZKNBzw3xVn8_sWUJsPNb2NGkqmnZYR0DLDgMbwSSt-o8MSJD3gs3OAxhDtxZcowLdcRB7DjIrw3=
+-KUTI2KmhoIqZthsieMwmmqD9dUAKc20C-4zy5i-Twp_o8kc89P81-JRS_HiHc7rlbts50BFYT1=
+DM7L-neev3dF1Jv-/3fp/1HFFARKDSzKnL1WBdbAfhg/h26/-kQE-ywFQJsLGlbPeyJPx0_0jBl=
+_d6sdbuTo4ySZ9Tg" universal=3D"true" style=3D"-ms-text-size-adjust: 100%; -=
+webkit-text-size-adjust: 100%;"><img src=3D"https://appboy-images.com/appbo=
+y/communication/assets/image_assets/images/61531632e9502e29b918ae62/origina=
+l.jpeg?1632835122" border=3D"0" style=3D"width: 100%; height: auto; -ms-tex=
+t-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode=
+: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+                        <div style=3D"display: table-cell; max-width: 45%; =
+min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-left-width: 2px; border-left-color: w=
+hite; border-left-style: solid; border-bottom-width: 3px; border-bottom-col=
+or: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-=
+text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace:=
+ 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZud5N0cRSDutfgcrNgmk7TJCuxC3wHybhAdTlN=
+m_ETa1bBMQbWrHXFIRZ6eXoUgt2lsJhyLy2i1f1rE9wJL5HQTHwwR5vLBd7x3mJTnM8wx-qKqV8=
+MmgobjcfnIcaDrM0LjmNB9L-KzGNrlqQIStdA-IDVqri3t-KFuMBRVQ1a7uWezKRZxzsOAofMSk=
+DZd6aluZRSbtBazRWuUPOxGN28Jjpm8xzfms2BDiULnPGICHCnY36gTfCQyCRBLFmMpC8A/3fp/=
+1HFFARKDSzKnL1WBdbAfhg/h27/mgJwxUT6LvD-VJu4zwSH2Fv1eWhFUxcD1Dplwc0f2v0" uni=
+versal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/615316b36e72a02ddf041e1b/original.jpeg?1632835251" bo=
+rder=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+                        <!-- H:|[PHOTO PHOTO PHOTO]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impor=
+tant; border-spacing: 0 !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 2px; border-right-color:=
+ white; border-right-style: solid; border-bottom-width: 3px; border-bottom-=
+color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webk=
+it-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65P=
+xi4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZu8HXKq5LFuOrUdJM6eHOAHgMYWt_MLTJe6wz=
+EM7o-YwJb-WK66bGz4su-_1BrNB9jhDRviGJ2n2IC43tzqgDMiZxAJOE7o-FrSKIMBW3d2bHS4e=
+Ju-I8PzBhFtoDiUDKfrrGgVEDc4ODevJrRf-Rs4o-LiKNVuM8ZF3a_wLQXo5IuIT-5P0cSpryh5=
+UnamEVorq4sWTxBctwtSlLjMNGAMkAh1tov2bUQ2CHCAg03Aww/3fp/1HFFARKDSzKnL1WBdbAf=
+hg/h28/6NmF5rwLj2kfjYOranee7ue6o8CyM8AJOohJl-jn5nI" universal=3D"true" styl=
+e=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><img src=
+=3D"https://appboy-images.com/appboy/communication/assets/image_assets/imag=
+es/615315402886a41227345e8e/original.jpeg?1632834880" border=3D"0" style=3D=
+"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 1px; border-right-color:=
+ white; border-right-style: solid; border-left-width: 1px; border-left-colo=
+r: white; border-left-style: solid; border-bottom-width: 3px; border-bottom=
+-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -web=
+kit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rsp=
+ace: 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZvXkWyIXL-IF_plVey5iUZ3rP__ld01zngU6oO=
+Tev1JLp5b-sNDuXcnhhO-4HU3MUA_Mqjqf1pb15z0PL12Y82Tn7MDA3F69d-V-1sOR1mB2jgPXA=
+jGgvJ2TKumXoouj5El4P20nWzrS3SeY96KrTFomLzlpHl53ol9e7ZshzHJmnwIUSTbsBEHiKAWM=
+fGV1Ggv8lWGb-LJ63ztFB7y7kH4O4I6RhhDVrKmt05w1irl-HLQtW4mV40kddmR5Iw8SCw/3fp/=
+1HFFARKDSzKnL1WBdbAfhg/h29/ggeq0wUwxzYruIOXqbsNbRuij23Dlqwc11EPy4JMs-c" uni=
+versal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/615315bf6e72a0154d041e43/original.jpeg?1632835007" bo=
+rder=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+                        <div style=3D"display: table-cell; max-width: 45%; =
+min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-left-width: 2px; border-left-color: w=
+hite; border-left-style: solid; border-bottom-width: 3px; border-bottom-col=
+or: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-=
+text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace:=
+ 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZuu_we49IP0XOX4WdOBLN-iiy0mmFZ_ZoINLf1=
+142EqYteBu9OEyuW9cOvG_ST-rwCTWQO2Q4K93-nz6WNnOw8Txy5W5iiqluJpbhTdDCjxFZeObZ=
+u2FTHivxrchVM-xoDzsyZ5NcDehL8ZG82v31uKiXz3on-xbJHHbzaB1Comy1nOHdAaVvfel1kIA=
+W-KCuG0ejMDT--zHVPvPUWWGoN8MLqYWtUdY2GlHZQ2oohSDw/3fp/1HFFARKDSzKnL1WBdbAfh=
+g/h30/j9aylCRdkitamE27YKV_NuFkSc6HnSgNq-bxWoqDKsw" universal=3D"true" style=
+=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><img src=
+=3D"https://appboy-images.com/appboy/communication/assets/image_assets/imag=
+es/61531673777eb202ff4fb48a/original.jpeg?1632835187" border=3D"0" style=3D=
+"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+             =20
+
+       =20
+       =20
+                        <!-- H:|[PHOTO PHOTO PHOTO]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impor=
+tant; border-spacing: 0 !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 2px; border-right-color:=
+ white; border-right-style: solid; border-bottom-width: 3px; border-bottom-=
+color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webk=
+it-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65P=
+xi4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZumhU_IjKnFEQI1SmALJugNe99O3qqhn9g6Ce=
+ENr_d-Cw6tS8wi0qAShVimVjJEaueV3GSdo6HrvmtC2gdLtvMR-atAY5Bswap4Qaq3kb3NgumdB=
+QpEoJIRgWPCgOg248o1_BxY0SKi7uBNoAfbcVp29rHs7JqGKxs1qtVRTQODsFaclWvYOO7eWpLX=
+KW5ivU8GlHWlo4vfpzxfkzg77tEwT4MkfnMGZuRbS64JzOB6gWxK58VnYBNZQr8SjLN-5Kw/3fp=
+/1HFFARKDSzKnL1WBdbAfhg/h31/tTKnY-oNEP3E9aDSxfxtfBkQGR1XScC5TDO2SGr97gA" un=
+iversal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adj=
+ust: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asse=
+ts/image_assets/images/615314ff9422b266c6a538d7/original.jpeg?1632834815" b=
+order=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%;=
+ -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-right-width: 1px; border-right-color:=
+ white; border-right-style: solid; border-left-width: 1px; border-left-colo=
+r: white; border-left-style: solid; border-bottom-width: 3px; border-bottom=
+-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -web=
+kit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rsp=
+ace: 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZtdIkGSS1C_5H8LPuYtHxU__i-ZUDAHR8Z3OiJ=
+AENS020k32kE7WK0GgzwIVILs0IdfMGXgTkIjo5A-KPt3-ucb-Y_gzvgjYyFMx5msVZFIG8UR4T=
+2d93haqmW6y6Mij5puUYL9vGy9BEO2jUhvX0xbiBzveY9wdggdhaVt6gF9qK8IZ0AJC6IDLr27u=
+djmjuCcMAYLb7hrW3kgtvPeTknr-S_gP5UWl2kb0jxf-9WLiWs91mM-3ESC94KhG9-BrH8/3fp/=
+1HFFARKDSzKnL1WBdbAfhg/h32/P6jkvHGHy6B60ZwkQF-i1OHshs1dcAWYP1kNWCM7K98" uni=
+versal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/615315f79422b2706ca53624/original.jpeg?1632835063" bo=
+rder=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+                        <div style=3D"display: table-cell; max-width: 45%; =
+min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"border-left-width: 2px; border-left-color: w=
+hite; border-left-style: solid; border-bottom-width: 3px; border-bottom-col=
+or: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-=
+text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace:=
+ 0pt !important;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZvLQVWRUHtHujT754jTEsquegFOw9dXtOxZmrQ=
+2O9xPPgHbQOiXc3ud9QpfQI9emY_v7Az-unB7P4BLBoeW4LikpOfmxZP1Q28wVvXQbF19JyMTmQ=
+22rJX31uSlC4XDxoasJJrJFu28WYZGZiFVakh2h_hdEWRupbtjgMaC4WoBaQBPTVNxUVD4FQ_zZ=
+nB482cOx5DyTFOF0oGNhydWdrI4QDnF3D_YxdGE86BA7uNZZ-h13vnflTWmlE4zMYvbJpI/3fp/=
+1HFFARKDSzKnL1WBdbAfhg/h33/1YSNfcZihVwu9EQH3_sfcJKVLjo7osbheTGCxRRuRtg" uni=
+versal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/6153157e51c18b3f93831132/original.jpeg?1632834942" bo=
+rder=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+
+             =20
+
+                        <!-- H:| CTA]| -->
+        </td>
+</tr>
+<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align=3D"center" style=3D"font-size: 0; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; ms=
+o-table-rspace: 0pt !important;">
+            <div style=3D"display: block; max-width: 100%; min-width: 30px;=
+ vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; margin: 0px;">
+              <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspac=
+e: 0pt !important; border-spacing: 0 !important; border-collapse: collapse =
+!important; table-layout: fixed !important; margin: 0 auto;">
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; padding: 0px;" class=3D"email-container">
+                <a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQ=
+G-r09OrTg6ty4FuYlDrMeHi0aezPQBDx5EFfjlUR7YAfGm_Cff7v3x3/3fp/1HFFARKDSzKnL1W=
+BdbAfhg/h34/6pgLy8dFylclA-Bg2W_dMtWGiU6gv6nvOmEu8s30iYY" universal=3D"true"=
+ style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><htt=
+ps: style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><=
+img src=3D"https://appboy-images.com/appboy/communication/assets/image_asse=
+ts/images/60dc6ec2f85f816f744acd6e/original.jpg?1625059010" border=3D"0" st=
+yle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-=
+size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                  </https:></a>
+</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+       =20
+          <!-- H:|[MTS]| -->
+        <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: =
+100%;">
+          <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0; -=
+ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace=
+: 0pt !important; mso-table-rspace: 0pt !important;">
+            <div style=3D"display: block; max-width: 100%; min-width: 30px;=
+ vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; margin: 0px;">
+              <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspac=
+e: 0pt !important; border-spacing: 0 !important; border-collapse: collapse =
+!important; table-layout: fixed !important; margin: 0 auto;">
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; padding: 0px;" class=3D"email-container">
+             <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurR=
+PSAbBmx2y8iuMuIxoaYKyKJchFWrQPakjVmpSqlmfulHYFXDfx9YirwiaoxSwqXRGm21Xzpp9hv=
+6eWowZHI6nV7O4RP0sDbIFWKHAeA4x119Y26NVDIx1jX3_cBWxtzrSsfDPzP5hkrFnDKIguZskQ=
+mMAnnUPHyXPll5NWxpxh2AAcYBu4Iwlk7quIM5mpid2AnuDnuyclqfz5K3NvhItdLczQz3F7A/3=
+fp/1HFFARKDSzKnL1WBdbAfhg/h35/RjoMNwh-B2EjAneYFghfZ_f83Scn6YWlSKn1_f6Ct0E" =
+universal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/as=
+sets/image_assets/images/6152fc6e6e72a02ec204211b/original.jpg?1632828526" =
+border=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%=
+; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                  </a>
+</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+       =20
+       =20
+  <!--BODY COPY STARTS-->
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                  <td bgcolor=3D"#ffffff" mc:edit=3D"LargeCopy1Copy" align=
+=3D"center" style=3D"font-size: 16px; font-family: Helvetica,sans-serif; le=
+tter-spacing: 0px; line-height: 24px; color: #000000; text-transform: none;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px 20px 20p=
+x;"><a target=3D"_blank" style=3D"color: #000000; text-decoration: none; -m=
+s-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+
+<br style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">N=
+eon =E2=80=9890s fleeces. On-trend athleisure in colours that pop. Explore =
+outerwear styles that will make you excited about cooler temperatures.=20
+<br style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                </a></td>
+                </tr>
+
+                <!--BODY COPY ENDS-->=20
+       =20
+       =20
+     <!-- H:|[PHOTO PHOTO]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impor=
+tant; border-spacing: 0 !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 2px;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65P=
+xi4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZud2v6g906lH1KCi_SKQQWq0UEfuhgRUEU1qZ=
+36Cu0h0FrKj-pJ3lNRZu205UJf65tXZQLQemaqvVlexr5YWRJztppv23pmRBNIJWquomnj48Fd8=
+jxvtE5hhtw-GvFYkRZ4RZ5NU8dlZ7Ddt5Tzrqs9mX7-LO4GcGSm8QBFZ50ayh3cnClplmOoYBpS=
+8bDdzQbsZ--OFKIo5XYDqaGwe6H8FORpRwhV8YRCgpTNY6eWeyHISH4m6elD79vf0NhtFfQ/3fp=
+/1HFFARKDSzKnL1WBdbAfhg/h36/WdOZccqOWT4geDe3bWzMOGj9QyPNF1Hd75dAktwnME0" un=
+iversal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adj=
+ust: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asse=
+ts/image_assets/images/615312ee777eb233014fb48b/original.jpeg?1632834286" b=
+order=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%;=
+ -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+                        <div style=3D"display: table-cell; max-width: 45%; =
+min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 2px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZud2v6g906lH1KCi_SKQQWqeIqUvc1wcXlImpR=
+ZNtgZfYaXcuGWp3xLy_kbZhNEsR1vRqLfIZb0vMY0-JK4bcmS9CnTJM2gqVRonK8u7KEt-NlMeg=
+gHaCnHbUZ43CQlR4A_3DnWfdO71s4HAHYnQfyfzSaEY7GFr23N-Jpy6AZhv7Cj2bK5EDmQv4M6L=
+TIavKC_VIsNdDYu2v9mVBD3QqHRl76Tka8NMXFTOa3R8EQQt0TSbIxbGkaqoCoP3-Z5FUE/3fp/=
+1HFFARKDSzKnL1WBdbAfhg/h37/fQ-r03Mm8UF8zA0_zPtTd5-oCbxCfEuXGHICXxXoaFM" uni=
+versal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adju=
+st: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asset=
+s/image_assets/images/6153137c6e72a02ddf041de0/original.jpeg?1632834428" bo=
+rder=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; =
+-webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+             =20
+                  <!-- H:|[PHOTO PHOTO]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impor=
+tant; border-spacing: 0 !important; border-collapse: collapse !important; t=
+able-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td bgcolor=3D"#ffffff" align=3D"center" style=3D"font-size: 0;=
+ -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspa=
+ce: 0pt !important; mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 2px;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65P=
+xi4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZud2v6g906lH1KCi_SKQQWqtf7GWq6vxKkDal=
+L-cbYQkIyEocRcKCcFPXNxL4sx8_IMyFYzPJatsyQ1A8xF8TW5OPSU5NYpi4LuozO3iUXD6aWc1=
+CK-dvD1h-5Tcpkr4Ed7R9hhr1ozkiHRK9Di0tWzLuvYrAvRfwshAN5qQ0gjshh9KriOCrGlYOZR=
+LCoAlrOaOvzFKfr_TINEzLHioguszZG5A2SQ2P9R8E9O5k0yyBooVkHqKyLGmos-J40TKYU/3fp=
+/1HFFARKDSzKnL1WBdbAfhg/h38/TEWdIyBtoZuz8aTefH7cv2C1EqTXwFutk-fG_4QDO20" un=
+iversal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adj=
+ust: 100%;"><img src=3D"https://appboy-images.com/appboy/communication/asse=
+ts/image_assets/images/61531292d5907e7ffb326699/original.jpeg?1632834194" b=
+order=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%;=
+ -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+                        <div style=3D"display: table-cell; max-width: 45%; =
+min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 2px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Px=
+i4LefurRPSAbBmx2y2izV295_rphRj-bfJDMNZud2v6g906lH1KCi_SKQQWqkT5I1w8TdG8_RCz=
+1M5vtaW4nhwf5ABEIxjr27kEpJijuBgAM0G6keNc_JHgO9hB6Tbkns5u9cCsF3IcI72Wb2s_-Ym=
+SJ8EHG-KJGz_9VUv3MF3vpMyZVtidiWI6URVxqpvuAR9w9VM0_Zd8HzM4LsOAXCMwybJi_pz5oY=
+YbFQ4mtx5tnoRjAzS_O4u8RXU9oacEQT5dWlq9CJno1fh0fkw/3fp/1HFFARKDSzKnL1WBdbAfh=
+g/h39/ppPP5XffBrYIjk-NVw5gXRBiW4vt9SLqQde5YdqKqzU" universal=3D"true" style=
+=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><img src=
+=3D"https://appboy-images.com/appboy/communication/assets/image_assets/imag=
+es/6153133e27fb9a251e9b43fe/original.jpeg?1632834366" border=3D"0" style=3D=
+"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-a=
+djust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+                        <!-- H:| CTA]| -->
+        </td>
+</tr>
+<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+          <td align=3D"center" style=3D"font-size: 0; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; ms=
+o-table-rspace: 0pt !important;">
+            <div style=3D"display: block; max-width: 100%; min-width: 30px;=
+ vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; margin: 0px;">
+              <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webki=
+t-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspac=
+e: 0pt !important; border-spacing: 0 !important; border-collapse: collapse =
+!important; table-layout: fixed !important; margin: 0 auto;">
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; padding: 0px;" class=3D"email-container">
+                <a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4Lef=
+urRPSAbBmx2y8iuMuIxoaYKyKJchFWrQPakjVmpSqlmfulHYFXDfx9YirwiaoxSwqXRGm21Xzpp=
+9hv6eWowZHI6nV7O4RP0sDbIFWKHAeA4x119Y26NVDIx1jX3_cBWxtzrSsfDPzP5hkrFnDKIguZ=
+skQmMAnnUPHyXPll5NWxpxh2AAcYBu4Iwlk7quIM5mpid2AnuDnuyclqfz5K3NvhItdLczQz3F7=
+A/3fp/1HFFARKDSzKnL1WBdbAfhg/h40/cYU_Dc918ek5IXxwVU-rUdmUAkXYqsYksQTTt8NL9_=
+w" universal=3D"true" style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;"><img src=3D"https://appboy-images.com/appboy/communication=
+/assets/image_assets/images/61165799cce94a1df0d5c652/original.jpg?162885416=
+8" border=3D"0" style=3D"width: 100%; height: auto; -ms-text-size-adjust: 1=
+00%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                  </a>
+</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+             =20
+
+<!-- Email footer : Begin -->
+
+<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+			<td bgcolor=3D"#d7d7d7" align=3D"center" style=3D"font-size: 0; -ms-text=
+-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !=
+important; mso-table-rspace: 0pt !important;" valign=3D"top">
+			<div class=3D"fluid" style=3D"display: inline-block; max-width: 100%; mi=
+n-width: 100px; vertical-align: top; width: 100%; -ms-text-size-adjust: 100=
+%; -webkit-text-size-adjust: 100%; margin: 0px;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size=
+-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; border-spacing: 0 !important; border-collapse: collapse !important;=
+ table-layout: fixed !important; margin: 0 auto;">
+				<tbody style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 1=
+00%;">
+				<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%=
+;">
+			=09
+			=09
+                <!--SPACER STARTS-->
+                </tr>
+<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                  <td height=3D"20px" style=3D"mso-line-height-rule: exactl=
+y; font-size: 20px; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-=
+text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace:=
+ 0pt !important;">&nbsp;</td>
+                </tr>
+                <!--SPACER ENDS-->
+			=09
+				<!-- H:|[social icons]| -->
+ <table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" width=3D"50%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-ad=
+just: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !import=
+ant; border-spacing: 0 !important; border-collapse: collapse !important; ta=
+ble-layout: fixed !important; margin: 0 auto;">
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td align=3D"center" style=3D"font-size: 0; -ms-text-size-adjus=
+t: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; =
+mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4L=
+efurRPSAbBmx2y09dANqMubEK9Uh3d6KWBVPxEXOw4E4x3ym1QmnK_tJ7Jm7vZuPkOLFQVPpD8K=
+cDW5LSVFwTNvNc3cqHq548qI8i2DIIs4XFt1NNSRh4KFyuHXMR2T4T550o0a8sjl4TtjO9n0Bqw=
+Uf2VzD0fXTRbv7zkQWDacqxSkvXT8TM9YzQT2A02H_tDT-X-yAB3JefWv04zFZKoJySX4hxzqlc=
+4X4/3fp/1HFFARKDSzKnL1WBdbAfhg/h41/ZtO-_ygLe56HbCBt9f9izwvMdDt5txR-vEGQfYUh=
+11s" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">=
+<img src=3D"https://appboy-images.com/appboy/communication/assets/image_ass=
+ets/images/5e1c90e55b99ac65bbb6c433/original.png?1578930405" border=3D"0" s=
+tyle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text=
+-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4Le=
+furRPSAbBmx2ywyr0lqhglFZV2suycKqYyvY3TUVOfVrH_ZvQ4WGy19FXmvJXAL4S-kpAPsUDHs=
+xZvBRe4Xd49BKrntXwM5aFEnhRyVS1F4pzCwuxOWX9-gw8LzRTJE_qNkRxHEDGlpEjP6el3c1eq=
+Y2W7FKxxSPr3E6N8wsHER17KLBUqSSr2O02SK-AYw_Sb3peSmKr1a-YedUhYDVbEceJSpYvIaea=
+dY/3fp/1HFFARKDSzKnL1WBdbAfhg/h42/lpgFY3aRxkfn5InDd0WkJJuTkabO0l95I6-gdN6hK=
+nA" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><=
+img src=3D"https://appboy-images.com/appboy/communication/assets/image_asse=
+ts/images/5e1c9138c2b47758e2c41e70/original.png?1578930488" border=3D"0" st=
+yle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-=
+size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+<div style=3D"display: table-cell; max-width: 45%; min-width: 15px; vertica=
+l-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%=
+; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/ss/c/lVxI9S5I=
+Qs3ebOZLevK3cMLTQAssiabkLpW2Ebesxz_UsJTXFWgSh1QufCqbj24T/3fp/1HFFARKDSzKnL1=
+WBdbAfhg/h43/yn2W8PVPQwrh5IBXvu9E-WnyRzjgAQdpkVwW8Ts8cGQ" style=3D"-ms-text=
+-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><img src=3D"https://ap=
+pboy-images.com/appboy/communication/assets/image_assets/images/5e1c91656a8=
+d6329cb88455b/original.png?1578930533" border=3D"0" style=3D"width: 100%; h=
+eight: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -m=
+s-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+<div style=3D"display: table-cell; max-width: 45%; min-width: 15px; vertica=
+l-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%=
+; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4Le=
+furRPSAbBmx2yy3dQxWqYb1PZylsT8FNg3MHiA37I2SWkjmLWqzB07MIbAAJIpprHW-8TTW2YQA=
+2KZT98L_JyIWEiS7RyFwcboP6e72Oq0H4lpGRhpMvIDr14FKmeKAlJPYoq5-MQXlWMtNf0rTa_l=
+ryWxeGaYc_v2RYwMDvIFes6CyIRIPmPw-4A4x9YmpNKo8G0B066RMz8ud000SAL1krsLH0ZfSwf=
+UM/3fp/1HFFARKDSzKnL1WBdbAfhg/h44/PbS59wRdW-xsS_K9QXS6iwALy9IWqOdQJ6RtOMZy9=
+vM" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><=
+img src=3D"https://appboy-images.com/appboy/communication/assets/image_asse=
+ts/images/5e1c9105c2b4770460c40081/original.png?1578930437" border=3D"0" st=
+yle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-=
+size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+             =20
+              </td>
+</tr>
+</table>
+				=09
+					 	<table role=3D"presentation" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -webkit-text-=
+size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt =
+!important; border-spacing: 0 !important; border-collapse: collapse !import=
+ant; table-layout: fixed !important; margin: 0 auto;">
+					 =09
+			=09
+            =20
+<!-- H:|[PHOTO PHOTO]| -->
+          <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust=
+: 100%;">
+            <td align=3D"center" style=3D"font-size: 0; -ms-text-size-adjus=
+t: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; =
+mso-table-rspace: 0pt !important;">
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                      <a href=3D"https://links.ohhey.depop.com/ss/c/lAVI_h_=
+7X-VHj290jbLu7q1vfyEQQfe2OpU5tln88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDi=
+vAINVLROWvxqnK3qkujlogxAbimskOCzwKHtcVlQAv7vt7/3fp/1HFFARKDSzKnL1WBdbAfhg/h=
+45/bsTcW_ThGvmLiRyaIyyV5SC2zwOGHnuZYHoiCqfoI6w" style=3D"-ms-text-size-adju=
+st: 100%; -webkit-text-size-adjust: 100%;"><img src=3D"https://appboy-image=
+s.com/appboy/communication/assets/image_assets/images/5e1c9312af874e210106d=
+48f/original.png?1578930962" border=3D"0" style=3D"width: 100%; height: aut=
+o; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpol=
+ation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div style=3D"display: table-cell; max-width: 45%; min-width:=
+ 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; margin: 0;">
+                <table role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" width=3D"100%" style=3D"-ms-text-size-adjust: 100%; -we=
+bkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rs=
+pace: 0pt !important; border-spacing: 0 !important; border-collapse: collap=
+se !important; table-layout: fixed !important; margin: 0 auto;">
+                  <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">
+                  <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !im=
+portant; padding: 10px;" class=3D"grid-elements">
+                     <a href=3D"https://links.ohhey.depop.com/ss/c/1HJmLSnr=
+DX1t4WJsXNWFYQS2q8UMmTHCeFDZvk1C0feTWqDG-QtN8dHX7hW4EWmn3-B9Xz25dCvtGCxw45Q=
+DcA/3fp/1HFFARKDSzKnL1WBdbAfhg/h46/XhSoFo1WxXxc6WFGOOXSPxXRUspRozeZ2CW9g2V7=
+0P0" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">=
+<img src=3D"https://appboy-images.com/appboy/communication/assets/image_ass=
+ets/images/5e1c93376a8d634753d86f53/original.png?1578930999" border=3D"0" s=
+tyle=3D"width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text=
+-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+
+       =20
+
+        </table>
+					 =09
+       =20
+       =20
+<!-- ADDRESS -->
+					<table bgcolor=3D"#d7d7d7" align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"-ms-text-size-adjus=
+t: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; =
+mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-coll=
+apse: collapse !important; table-layout: fixed !important; margin: 0 auto;"=
+>
+<td style=3D"padding-bottom: 10px; padding-top: 10px; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; ms=
+o-table-rspace: 0pt !important;" class=3D"">
+<img border=3D"0" class=3D"center-on-narrow" src=3D"https://appboy-images.c=
+om/appboy/communication/assets/image_assets/images/5e1c95d26a8d636ae990e7a2=
+/original.png?1578931666" style=3D"width: 100%; height: auto; -ms-text-size=
+-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicu=
+bic;">
+				=09
+					    =20
+            <!--BODY COPY STARTS-->
+                </td>
+<tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                  <td bgcolor=3D"#d7d7d7" mc:edit=3D"LargeCopy1Copy" align=
+=3D"center" style=3D"font-size: 12px; font-family: Helvetica,sans-serif; le=
+tter-spacing: 0px; line-height: 16px; color: #000000; padding-top: 0px; pad=
+ding-left: 10px; padding-right: 10px; text-transform: none; -ms-text-size-a=
+djust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !importa=
+nt; mso-table-rspace: 0pt !important;">
+<a target=3D"_blank" style=3D"color: #000001; text-decoration: none; -ms-te=
+xt-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> <b style=3D"-ms-tex=
+t-size-adjust: 100%; -webkit-text-size-adjust: 100%;">7-9 Curtain Road=20
+                  <br style=3D"-ms-text-size-adjust: 100%; -webkit-text-siz=
+e-adjust: 100%;">London, EC2A 3LT
+                  </b></a>
+                  </td>
+                </tr>
+
+                <!--BODY COPY ENDS-->
+               =20
+				=09
+            <!--BODY COPY STARTS-->
+                <tr style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%;">
+                  <td mc:edit=3D"LargeCopy1Copy" align=3D"center" style=3D"=
+font-size: 9px; font-family: Helvetica,sans-serif; letter-spacing: 0px; lin=
+e-height: 20px; color: #000000; text-transform: none; -ms-text-size-adjust:=
+ 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; ms=
+o-table-rspace: 0pt !important; padding: 5px 10px 20px;">
+<a href=3D"https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty1fEPgG8C=
+tWm0NSlJVyX4mqcIIbZYiWETbsOwbl4IZiaiHQimquwVLOHjD0s0j99JS0HZv1Sfykqb756VwGK=
+Q4zX-8m_h-JGjXKtQE2xl7sAW6lnKyBrbux4kFwOfPY9-PurV6IlCT32CQI0rwo-RxGatFgxTQr=
+e1QHfH26d4d_2veKaYKSJL0wpxzy9YbP6MFrNZVq-MUYIR3u_2FacbDrm4fQHdpTrQRxvRwI768=
+rMZPtEsmXwB5fgSMbhWLHespH7ay8AIMkv7k3WAsPdSUZLUaoL0VnM5dTSDW49axaqxCyEMQZFo=
+lU1rksmdNf98GY5AENpZvwRoGrGfO4vJqUuaO7fgYZh04TYjbsdvtHAOKNrHJu-W7d8YCraUF6Z=
+6T-IV6YwOt8E3UC6CvTz5Onxs_ypn5u8yayg-J0Cdb03wBMYQCD0HFUULPyhrlH99kG51huVh65=
+XVOyyIW_AlB4/3fp/1HFFARKDSzKnL1WBdbAfhg/h47/z65gLFEDz1bVr0P5zzGTSJpfGPvazXh=
+h2s2RwhRQsoU" target=3D"_blank" style=3D"color: #000001; text-decoration: n=
+one; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">We'd be s=
+ad to see you go, but you can <u style=3D"-ms-text-size-adjust: 100%; -webk=
+it-text-size-adjust: 100%;"> unsubscribe here</u></a>
+                  </td>
+                </tr>
+
+                <!--BODY COPY ENDS-->
+               =20
+			=09
+			</table>
+		=09
+		=09
+<!-- Email footer : End -->
+
+
+</tbody>
+</table>  </div>
+</td>
+</tr>
+</table>                                 </td>
+</tr>
+</table>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</tbody>
+</table>
+</div>
+</center>
+<img src=3D"https://links.ohhey.depop.com/ss/o/qIYzJXGPjg60qVTEHfvZwQ/3fp/1=
+HFFARKDSzKnL1WBdbAfhg/ho.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0=
+" style=3D"height:1px !important;width:1px !important;border-width:0 !impor=
+tant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !imp=
+ortant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !=
+important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+--b3719f440677552eb2c966601140d2379041b05fbd62aa1c12b539857283--

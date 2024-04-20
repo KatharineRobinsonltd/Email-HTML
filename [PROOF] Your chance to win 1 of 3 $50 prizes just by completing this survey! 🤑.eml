@@ -1,0 +1,420 @@
+Delivered-To: katharinerobinsonltd@gmail.com
+Received: by 2002:a05:622a:34c:0:0:0:0 with SMTP id r12csp4093738qtw;
+        Tue, 28 Jun 2022 05:33:14 -0700 (PDT)
+X-Google-Smtp-Source: AGRyM1scx2jYxBES4X240axZuMEYzje0sTwShcBP8UrOWXro9VgSzUZ0pGRb3Vgvau26oMCavcrr
+X-Received: by 2002:a17:903:10c:b0:16a:1166:4ee9 with SMTP id y12-20020a170903010c00b0016a11664ee9mr3374979plc.138.1656419594308;
+        Tue, 28 Jun 2022 05:33:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1656419594; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ojxJIqxhV5208eH2+Xdpc8IaAJBcXVpHv/mL5xH+qh7qtEFFo4M5AWn4n6KBxF/62g
+         sZKsiq1un2kGFoDeOqr8N+K+KS7GhluYxvfF4gEfMKkpGkeJsGaGlSYm2oeLNjMPMFdR
+         7OIbzzcS1SpqrKq+Gsc7FpOyFk94f0KKU14n3zr2Xus1gfqTWRLfWtIxvsGMoSQVRp8Y
+         1HtrQXvVpEJK9bJLTPmmNQLTay2VN3Xsf1xKM12uggsDoPdx00oXP8kGk8q85ZOz8LgB
+         IylAWFCEVuNsj+KfD+JSRmLsFvlJYkn2VAVMHybfTt8rkF+ove/LJ0wKXaDujgnMP8RA
+         GaCg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=from:subject:reply-to:mime-version:date:message-id:to
+         :dkim-signature;
+        bh=K6nxHEhfDAxBvQGVIGTHXe38pE1We4zmwduVKg0p7gs=;
+        b=EYnbr5zESwintkWUlFQEhowYsga5OuHRYgUYeC194eb0Bjz9uCd8/gbSx/75gg+qkG
+         SuzchZpNeP8qsZiXAAumBulyd9SsFG6fI5qpvqzPBthTrg6Vfg9YGk1tyG0kO1gNTrEZ
+         +hQPPo07SNNSS4eBQR58AdtCH6dbJPUhrmZTXn7eXv+XlBhS5s9BbtoH7PoEdvURfFLX
+         MpXE+Wa0Qeqws7KVZ2dd2BqLge7GhRLDj2PcKwygUzougmayzankGP81vvcIrYuZj/rJ
+         5/sUKjH5YBONem2jUYA37dZSL4K+ZmOVBOnaMkk/tkYxmqFLj7iPkr+PDjBYg28IiRzg
+         4EXQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@m.myunidays.com header.s=scph0519 header.b=HiikpLTh;
+       spf=pass (google.com: domain of msprvs1=19178zqnytvkg=bounces-264390@bounces.m.myunidays.com designates 147.253.216.229 as permitted sender) smtp.mailfrom="msprvs1=19178zqnytVKg=bounces-264390@bounces.m.myunidays.com";
+       dmarc=pass (p=REJECT sp=QUARANTINE dis=NONE) header.from=myunidays.com
+Return-Path: <msprvs1=19178zqnytVKg=bounces-264390@bounces.m.myunidays.com>
+Received: from mta-216-229.sparkpostmail.com (mta-216-229.sparkpostmail.com. [147.253.216.229])
+        by mx.google.com with ESMTPS id k69-20020a638448000000b0040dd2904e95si10328655pgd.51.2022.06.28.05.33.13
+        for <katharinerobinsonltd@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 28 Jun 2022 05:33:14 -0700 (PDT)
+Received-SPF: pass (google.com: domain of msprvs1=19178zqnytvkg=bounces-264390@bounces.m.myunidays.com designates 147.253.216.229 as permitted sender) client-ip=147.253.216.229;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@m.myunidays.com header.s=scph0519 header.b=HiikpLTh;
+       spf=pass (google.com: domain of msprvs1=19178zqnytvkg=bounces-264390@bounces.m.myunidays.com designates 147.253.216.229 as permitted sender) smtp.mailfrom="msprvs1=19178zqnytVKg=bounces-264390@bounces.m.myunidays.com";
+       dmarc=pass (p=REJECT sp=QUARANTINE dis=NONE) header.from=myunidays.com
+X-MSFBL: dkwTXeUPm3Af5waPKK5OBjHUXiGxFI5yk6BdOP0FKiU=|eyJ0ZW5hbnRfaWQiOiJ
+	zcGMiLCJtZXNzYWdlX2lkIjoiNjJiMzA5ZjViYTYyNDFhNTE4ZWIiLCJjdXN0b21
+	lcl9pZCI6IjI2NDM5MCIsInIiOiJrYXRoYXJpbmVyb2JpbnNvbmx0ZEBnbWFpbC5
+	jb20iLCJzdWJhY2NvdW50X2lkIjoiMCJ9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=m.myunidays.com;
+	s=scph0519; t=1656419593; i=@m.myunidays.com;
+	bh=K6nxHEhfDAxBvQGVIGTHXe38pE1We4zmwduVKg0p7gs=;
+	h=To:Message-ID:Date:Content-Type:Subject:From:From:To:Cc:Subject;
+	b=HiikpLThfLKXHqHOYHt7J1VwkOoabtfwb/Eq1kXCr5B7KXC5zyvvqYb9k0D+m3uqj
+	 Q2e/bLl6N6R+1feO5XNX5n+oIAGSu41HrDpON2fL0bovbr6zOwAgSlzQe9Bvqvs3so
+	 2/Oo8XtEWAi73VK1PnXuFoiF7jgrdbMjEZ1CSDGg=
+To: katharinerobinsonltd@gmail.com
+Message-ID: <81.BE.46062.905FAB26@hf.mta1vrest.cc.prd.sparkpost>
+Date: Tue, 28 Jun 2022 12:33:13 +0000
+Content-Type: multipart/alternative; boundary="_----w3iCyaOlJAqW+BZGvBPP6w===_F0/BE-46062-905FAB26"
+MIME-Version: 1.0
+Reply-To: feedback@myunidays.com
+X-Message-ID: kJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg
+Subject: =?utf-8?B?W1BST09GXSBZb3VyIGNoYW5jZSB0byB3aW4gMSBvZiAzICQ1MCBw?=
+	=?utf-8?B?cml6ZXMganVzdCBieSBjb21wbGV0aW5nIHRoaXMgc3VydmV5ISDwn6SR?=
+From: "UNiDAYS" <offers@m.myunidays.com>
+
+--_----w3iCyaOlJAqW+BZGvBPP6w===_F0/BE-46062-905FAB26
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+
+Use your voice. We're listening =F0=9F=91=82=0A=0A=0A=0A =0A<https://myunid=
+ayscounsel.com/s.php=3Fp=3D107&l=3Dl&e=3D553&lan=3Den_gb&psdm=3D0&pshh=3D0&=
+pshf=3D0&tmp=3D4&xtCountry=3DUS&xid=3DEee9SLrE-0Wti2PZE3a7ag=3D=3D&h=3Da7e7=
+579f>=0A=0A=0A=0AComplete this survey and be in with the chance of winning =
+3 x $50=0A=0A=0A*This survey is slightly longer than usual so we're offerin=
+g two more voucher =0Aprizes!=0A=0A=0AWe'd love to hear from you, just clic=
+k below to answer some questions, and be =0Ain with a chance of winning.=0A=
+=0AGet Started =0A<https://myunidayscounsel.com/s.php=3Fp=3D107&l=3Dl&e=3D5=
+53&lan=3Den_gb&psdm=3D0&pshh=3D0&pshf=3D0&tmp=3D4&xtCountry=3DUS&xid=3DEee9=
+SLrE-0Wti2PZE3a7ag=3D=3D&h=3Da7e7579f>=0A=0A=0A=0A=0A=0A <https://www.faceb=
+ook.com/unidays>  <https://twitter.com/MyUNiDAYS>  =0A<https://www.instagra=
+m.com/unidays_us/>  <https://www.tiktok.com/@myunidays> =0A=0AView online =
+=0A<http://links.m.myunidays.com/e/evib=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c1=
+3d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DVUotO6Y2CRUkcoQxgKqoXz2JovP=
+JYKbOvWHaB59vTR0cSyNSmKk4iSGM7HR43xJMGzGRO6T7aDce9akD1jb_hk4LAZcMRezMqfoi-h=
+UJR_RnbK96XK44PtJQrd4og7fc>=0A=0ASupport <https://www.myunidays.com/support=
+>=0A=0AMy account <https://www.myunidays.com/support>=0A=0AUnsubscribe =0A<=
+http://links.m.myunidays.com/e/testUnsubscribe=3F_k=3Dab2538e7bcb54e1bb8aa1=
+282d6c13d5b&_u=3Dkatharinerobinsonltd%40gmail.com&_t=3D6194664&_mtOnly=3Dfa=
+lse>=0A=0A=0ADon=E2=80=99t junk your savings! Add offers@m.myunidays.com to=
+ your address book. =0AUNiDAYS is registered at UNiDAYS Inc. 434 W 33rd Str=
+eet, Suite 830, NY, NY 10001
+--_----w3iCyaOlJAqW+BZGvBPP6w===_F0/BE-46062-905FAB26
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="UTF-8"
+
+<!DOCTYPE html><html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"u=
+rn:schemas-microsoft-com:office:office" lang=3D"en" style=3D"box-sizing: bo=
+rder-box;"><head><title></title><meta http-equiv=3D"Content-Type" content=
+=3D"text/html; charset=3Dutf-8"><meta name=3D"viewport" content=3D"width=3D=
+device-width,initial-scale=3D1"><!--[if mso]><xml><o:OfficeDocumentSettings=
+><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettin=
+gs></xml><![endif]--><style>*{box-sizing:border-box}body{margin:0;padding:0=
+}a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!=
+important}#MessageViewBody a{color:inherit;text-decoration:none}p{line-heig=
+ht:inherit}.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-=
+height:0;overflow:hidden}@media(max-width:620px){.row-content{width:100%!im=
+portant}.mobile_hide{display:none}.stack .column{width:100%;display:block}.=
+mobile_hide{min-height:0;max-height:0;max-width:0;overflow:hidden;font-size=
+:0}.desktop_hide,.desktop_hide table{display:table!important;max-height:non=
+e!important}}</style></head><body style=3D"box-sizing: border-box; backgrou=
+nd-color: #fff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text=
+-size-adjust: none;">=0D=0A<div style=3D"color:transparent;visibility:hidde=
+n;opacity:0;font-size:0px;border:0;max-height:1px;width:1px;margin:0px;padd=
+ing:0px;border-width:0px!important;display:none!important;line-height:0px!i=
+mportant;"><img border=3D"0" width=3D"1" height=3D"1" src=3D"http://links1.=
+m.myunidays.com/q/otFr11DivTUfAB1kn7vqvg~~/AAQIxgA~/RgRknXoJPVcDc3BjQgpiswn=
+1umJBpRjrUh5rYXRoYXJpbmVyb2JpbnNvbmx0ZEBnbWFpbC5jb21YBAAAAAA~" alt=3D""/></=
+div>=0D=0A<span style=3D"color:transparent;visibility:hidden;display:none;o=
+pacity:0;height:0;width:0;font-size:0;">Use your voice. We're listening =F0=
+=9F=91=82</span><img src=3D"http://links.m.myunidays.com/e/testOpen" style=
+=3D"border:0;width:1px;height:1px;border-width:0px!important;display:none!i=
+mportant;line-height:0!important;" width=3D"1" height=3D"1"/><table class=
+=3D"nl-container" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; mso-table-lsp=
+ace: 0; mso-table-rspace: 0; background-color: #fff;" bgcolor=3D"#fff"><tbo=
+dy style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;">=
+<td style=3D"box-sizing: border-box;"><table class=3D"row row-1" align=3D"c=
+enter" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso=
+-table-rspace: 0;"><tbody style=3D"box-sizing: border-box;"><tr style=3D"bo=
+x-sizing: border-box;"><td style=3D"box-sizing: border-box;"><table class=
+=3D"row-content stack" align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; mso-ta=
+ble-lspace: 0; mso-table-rspace: 0; background-color: #d7f6e7; color: #000;=
+ background-image: url(https://d15k2d11r6t6rl.cloudfront.net/public/users/I=
+ntegrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/ab2538e7bcb54e1bb8aa1282d6c=
+13d5b/editor_images/6830244_preview.png); background-position: top center; =
+background-repeat: repeat; width: 600px;" width=3D"600" bgcolor=3D"#d7f6e7"=
+ background=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrato=
+rs/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/ab2538e7bcb54e1bb8aa1282d6c13d5b/ed=
+itor_images/6830244_preview.png"><tbody style=3D"box-sizing: border-box;"><=
+tr style=3D"box-sizing: border-box;"><td class=3D"column column-1" width=3D=
+"100%" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-table-rspa=
+ce: 0; font-weight: 400; text-align: left; vertical-align: top; padding-top=
+: 0; padding-bottom: 0; border-top: 0; border-right: 0; border-bottom: 0; b=
+order-left: 0;" align=3D"left" valign=3D"top"><table class=3D"image_block" =
+width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pre=
+sentation" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-table-=
+rspace: 0;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: =
+border-box; padding-bottom: 25px; padding-top: 25px; width: 100%; padding-r=
+ight: 0; padding-left: 0;" width=3D"100%"><div align=3D"center" style=3D"bo=
+x-sizing: border-box; line-height: 10px;"> <a href=3D"http://links.m.myunid=
+ays.com/u/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5b&_m=3DkJ1qrq1LjCguwN=
+DDpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUws3GU5kFG6x32xvpmFkIMckLeK-yIlV=
+lT54hlBwnV0MK2q-ZBqeqZK8KRp7Jnozlo6N9mHOBpPg0_Rq2GTlGLR3WUcwS82XuOieea9Hgmi=
+8m3xTmsyLuTeiDsVMYSjTsy7kDcIYJ5rT0_eX96oSbUz7lsED_NV4T3Okmund6fLiFvtvplrlwR=
+pM4p8zRE-pto96A-Lw_kOkFMR9u1WKO8iHU-9I2xh03nwgSFdCKWmEoDKY7tzaYh8s7Hc7XZI9o=
+2tqK7Zv9kqf9Q2HHlMP2qOtTON88HnZALVWJEEFukYP7wyFTxXrbNaaLApwWMntN8DjqSGcjRvT=
+fqykCTp0-qzb8wymNxyZQZtcK4p4IeFtX5jLYM-7HumNkRFb05Ec2SLTFE7S5GUvKXW_Uel2vFx=
+ughn3Ke3dILb7Jxd6DomfyOn3lTBJMy-IUmncwC1tFc5DQF4X7o0220-PhZyfJwKAkKEObWbDVd=
+nSRMHIQjXv5EsLjbrZxGuIKrf0bHdEVF4ZTulGswgtzmKBkss5ZPC2D60KSVBn_gu7hprjYdSAk=
+" target=3D"_blank" style=3D"box-sizing: border-box; outline: none;" tabind=
+ex=3D"-1"><img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/In=
+tegrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/ab2538e7bcb54e1bb8aa1282d6c1=
+3d5b/Logo-01.png" style=3D"box-sizing: border-box; display: block; height: =
+auto; border: 0; width: 120px; max-width: 100%;" width=3D"120" alt=3D"The C=
+ounsel" title=3D"The Counsel"></a></div></td></tr></table></td></tr></tbody=
+></table></td></tr></tbody></table><table class=3D"row row-2" align=3D"cent=
+er" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D=
+"presentation" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-ta=
+ble-rspace: 0;"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-s=
+izing: border-box;"><td style=3D"box-sizing: border-box;"><table class=3D"r=
+ow-content stack" align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" role=3D"presentation" style=3D"box-sizing: border-box; mso-table-l=
+space: 0; mso-table-rspace: 0; background-color: #d7f6e7; color: #000; widt=
+h: 600px;" width=3D"600" bgcolor=3D"#d7f6e7"><tbody style=3D"box-sizing: bo=
+rder-box;"><tr style=3D"box-sizing: border-box;"><td class=3D"column column=
+-1" width=3D"100%" style=3D"box-sizing: border-box; mso-table-lspace: 0; ms=
+o-table-rspace: 0; font-weight: 400; text-align: left; vertical-align: top;=
+ padding-top: 0; padding-bottom: 0; border-top: 0; border-right: 0; border-=
+bottom: 0; border-left: 0;" align=3D"left" valign=3D"top"><table class=3D"t=
+ext_block" width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" style=3D"box-sizing: border-box; mso-table-lspace: 0;=
+ mso-table-rspace: 0; word-break: break-word;"><tr style=3D"box-sizing: bor=
+der-box;"><td style=3D"box-sizing: border-box; padding-bottom: 20px; paddin=
+g-left: 40px; padding-right: 40px;"><div style=3D"box-sizing: border-box; f=
+ont-family: sans-serif;"><div class=3D"txtTinyMce-wrapper" style=3D"box-siz=
+ing: border-box; font-family: Arial,Helvetica Neue,Helvetica,sans-serif; fo=
+nt-size: 12px; mso-line-height-alt: 14.399999999999999px; color: #303099; l=
+ine-height: 1.2;"><p style=3D"box-sizing: border-box; line-height: inherit;=
+ margin: 0; font-size: 14px; text-align: center;"><span style=3D"box-sizing=
+: border-box; font-size: 58px;"><strong style=3D"box-sizing: border-box;"><=
+span style=3D"box-sizing: border-box; font-size: 42px;">Complete this surve=
+y and be in with the chance of winning 3 x $50</span></strong></span></p></=
+div></div></td></tr></table><table class=3D"text_block" width=3D"100%" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D=
+"box-sizing: border-box; mso-table-lspace: 0; mso-table-rspace: 0; word-bre=
+ak: break-word;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-siz=
+ing: border-box; padding-bottom: 20px; padding-left: 60px; padding-right: 6=
+0px;"><div style=3D"box-sizing: border-box; font-family: sans-serif;"><div =
+class=3D"txtTinyMce-wrapper" style=3D"box-sizing: border-box; font-family: =
+Arial,Helvetica Neue,Helvetica,sans-serif; font-size: 12px; mso-line-height=
+-alt: 14.399999999999999px; color: #303099; line-height: 1.2;"><p style=3D"=
+box-sizing: border-box; line-height: inherit; margin: 0; font-size: 14px; t=
+ext-align: center;"> <span style=3D"box-sizing: border-box; font-size: 18px=
+;"><em style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-=
+box;"><span style=3D"box-sizing: border-box;">*This survey is slightly long=
+er than usual so we're offering two more voucher prizes!</span></span></em>=
+</span></p></div></div></td></tr></table><table class=3D"text_block" width=
+=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-table-rspac=
+e: 0; word-break: break-word;"><tr style=3D"box-sizing: border-box;"><td st=
+yle=3D"box-sizing: border-box; padding-bottom: 15px; padding-left: 40px; pa=
+dding-right: 40px;"><div style=3D"box-sizing: border-box; font-family: sans=
+-serif;"><div class=3D"txtTinyMce-wrapper" style=3D"box-sizing: border-box;=
+ font-family: Arial,Helvetica Neue,Helvetica,sans-serif; font-size: 12px; m=
+so-line-height-alt: 14.399999999999999px; color: #303099; line-height: 1.2;=
+"><p style=3D"box-sizing: border-box; line-height: inherit; margin: 0; font=
+-size: 14px; text-align: center;"><span style=3D"box-sizing: border-box; fo=
+nt-size: 28px;"><strong style=3D"box-sizing: border-box;"><span style=3D"bo=
+x-sizing: border-box;">We'd love to hear from you, just click below to answ=
+er some questions, and be in with a chance of winning.</span></strong></spa=
+n></p></div></div></td></tr></table><table class=3D"button_block" width=3D"=
+100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-table-rspace: 0=
+;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-bo=
+x; padding-bottom: 50px; padding-left: 10px; padding-right: 10px; padding-t=
+op: 10px; text-align: center;" align=3D"center"><div align=3D"center" style=
+=3D"box-sizing: border-box;"> <!--[if mso]><v:roundrect xmlns:v=3D"urn:sche=
+mas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" hr=
+ef=3D"http://links.m.myunidays.com/u/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d=
+6c13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUws3G=
+U5kFG6x32xvpmFkIMckLeK-yIlVlT54hlBwnV0MK2q-ZBqeqZK8KRp7Jnozlo6N9mHOBpPg0_Rq=
+2GTlGLR3WUcwS82XuOieea9Hgmi8m3xTmsyLuTeiDsVMYSjTsy7kDcIYJ5rT0_eX96oSbUz7lsE=
+D_NV4T3Okmund6fLiFvtvplrlwRpM4p8zRE-pto96A-Lw_kOkFMR9u1WKO8iHU-9I2xh03nwgSF=
+dCKWmEoDKY7tzaYh8s7Hc7XZI9o2tqK7Zv9kqf9Q2HHlMP2qOtTON88HnZALVWJEEFukYP7wyFT=
+xXrbNaaLApwWMntN8DjqSGcjRvTfqykCTp0-qzZFNoRWpbqJzEnnnimlkZH2d0HzsR-uWcfmBF8=
+u_97DCyCmScLfKYNooESIBkgIqcD-49ukIMKBS31OI7E00VsXBWMHybkhPwiqVozCUGJJYWtG4g=
+zlLLgxm0ODH127UBGXO8SZoRoMg7u1gyfQvBdRAZB2fSQhbAUDlqFnwP5XpjMV4SXILecwRlcEw=
+JrGimXLc9EhU_2EzlXolm_SmOTN" style=3D"height:50px;width:147px;v-text-anchor=
+:middle;" arcsize=3D"8%" stroke=3D"false" fillcolor=3D"#303099"><w:anchorlo=
+ck/><v:textbox inset=3D"0px,0px,0px,0px"><center style=3D"color:#ffffff; fo=
+nt-family:Arial, sans-serif; font-size:20px"><![endif]--> <a href=3D"http:/=
+/links.m.myunidays.com/u/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5b&_m=
+=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUws3GU5kFG6x32x=
+vpmFkIMckLeK-yIlVlT54hlBwnV0MK2q-ZBqeqZK8KRp7Jnozlo6N9mHOBpPg0_Rq2GTlGLR3WU=
+cwS82XuOieea9Hgmi8m3xTmsyLuTeiDsVMYSjTsy7kDcIYJ5rT0_eX96oSbUz7lsED_NV4T3Okm=
+und6fLiFvtvplrlwRpM4p8zRE-pto96A-Lw_kOkFMR9u1WKO8iHU-9I2xh03nwgSFdCKWmEoDKY=
+7tzaYh8s7Hc7XZI9o2tqK7Zv9kqf9Q2HHlMP2qOtTON88HnZALVWJEEFukYP7wyFTxXrbNaaLAp=
+wWMntN8DjqSGcjRvTfqykCTp0-qzbuwIvQ-vYjL3QXRBBZUk6Uaun8x35vmgdOx3T9AX3zQ1FkW=
+nYPCLxJFmiI5bH0eaoT5BpoUUuD2aOmP04-8IW-CpCshEObmjIfsNg9qgAARN-sIEJFU0QPq-gs=
+eG-_EMPyx11gMFy0zRcM8T9c300OR1Usy8JEG_qzCaHW-3KxQEfw8EXK8tqV_XC4jOjfkRkpDZM=
+27sAV60oU7XUeDjvr" target=3D"_blank" style=3D"box-sizing: border-box; text-=
+decoration: none; display: inline-block; color: #ffffff; background-color: =
+#303099; border-radius: 4px; width: auto; border-top: 1px solid #303099; fo=
+nt-weight: 400; border-right: 1px solid #303099; border-bottom: 1px solid #=
+303099; border-left: 1px solid #303099; padding-top: 5px; padding-bottom: 5=
+px; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; text-align: =
+center; mso-border-alt: none; word-break: keep-all;"><span style=3D"box-siz=
+ing: border-box; padding-left: 20px; padding-right: 20px; font-size: 20px; =
+display: inline-block; letter-spacing: normal;"><span style=3D"box-sizing: =
+border-box; font-size: 16px; line-height: 2; word-break: break-word; mso-li=
+ne-height-alt: 32px;"><strong style=3D"box-sizing: border-box;"><span style=
+=3D"box-sizing: border-box; font-size: 20px; line-height: 40px;" data-mce-s=
+tyle=3D"font-size: 20px; line-height: 40px;">Get Started</span></strong></s=
+pan></span></a> <!--[if mso]></center></v:textbox></v:roundrect><![endif]--=
+></div></td></tr></table></td></tr></tbody></table></td></tr></tbody></tabl=
+e><table class=3D"row row-3" align=3D"center" width=3D"100%" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"box-sizin=
+g: border-box; mso-table-lspace: 0; mso-table-rspace: 0;"><tbody style=3D"b=
+ox-sizing: border-box;"><tr style=3D"box-sizing: border-box;"><td style=3D"=
+box-sizing: border-box;"><table class=3D"row-content stack" align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" st=
+yle=3D"box-sizing: border-box; mso-table-lspace: 0; mso-table-rspace: 0; co=
+lor: #000; width: 600px;" width=3D"600"><tbody style=3D"box-sizing: border-=
+box;"><tr style=3D"box-sizing: border-box;"><td class=3D"column column-1" w=
+idth=3D"100%" style=3D"box-sizing: border-box; mso-table-lspace: 0; mso-tab=
+le-rspace: 0; font-weight: 400; text-align: left; vertical-align: top; padd=
+ing-top: 5px; padding-bottom: 5px; border-top: 0; border-right: 0; border-b=
+ottom: 0; border-left: 0;" align=3D"left" valign=3D"top"><table class=3D"te=
+xt_block" width=3D"100%" border=3D"0" cellpadding=3D"10" cellspacing=3D"0" =
+role=3D"presentation" style=3D"box-sizing: border-box; mso-table-lspace: 0;=
+ mso-table-rspace: 0; word-break: break-word;"><tr style=3D"box-sizing: bor=
+der-box;"><td style=3D"box-sizing: border-box;"><div style=3D"box-sizing: b=
+order-box; font-family: sans-serif;"><div class=3D"txtTinyMce-wrapper" styl=
+e=3D"box-sizing: border-box; font-family: Arial,Helvetica Neue,Helvetica,sa=
+ns-serif; font-size: 12px; mso-line-height-alt: 14.399999999999999px; color=
+: #555; line-height: 1.2;"><p style=3D"box-sizing: border-box; line-height:=
+ inherit; margin: 0; font-size: 14px; text-align: center;"><table align=3D"=
+center" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"=
+table-layout: fixed; vertical-align: top; border-spacing: 0; border-collaps=
+e: collapse; mso-table-tspace: 0; mso-table-rspace: 0; mso-table-bspace: 0;=
+ mso-table-lspace: 0; padding-top:5px; padding-bottom:5px; padding-right: 0=
+px; padding-left: 0px;" valign=3D"top"> <tbody> <tr style=3D"vertical-align=
+: top; display: inline-block;" align=3D"center" valign=3D"top"> <td style=
+=3D"vertical-align: top;padding-top:10px; padding-bottom: 15px; padding-rig=
+ht: 10px; padding-left: 20px;" valign=3D"top"><a target=3D"_blank" href=3D"=
+http://links.m.myunidays.com/u/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5=
+b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUwnT5x4KFTI=
+WfMfbipg4PCjcsEh10Ml82csFaX1guIIpek6eUBfCLrq_jgOKg5gXrUxGdxVJYFi5t_JF0igJqR=
+aUPqxVGif0mnBHOlOwrQOAnu471SX5jpqqSAEDPyXwXq0A92_X5JraGgsbUrDSy0Fgx0j23i3lP=
+pAHYMG-hL8o5VrtWKzvJ8Sldr9kJ52vdA2qKfcYlkBliE2D6VP6UG3U-ZzXdTPLoN8NmRYtw07z=
+EP6bwSCsPV2eK0F-GkBBiy6uI7OLmdVbhH4lFYIdtAqoYRHWEU7xhS1Sdb5IXr2zW7hEeRBwhq6=
+vqDZlr-ejfAF2GtA6dj1x4ttCisMKMPKGoyG0wulaTo7uLQ9-W8E3L5CScZkJ6voyqULOqtsSD9=
+zszAZXjDdTXD7pRqJRniiQ%3D"><img width=3D"32" height=3D"32" alt=3D"Facebook"=
+ title=3D"Facebook" style=3D"outline: none; text-decoration: none; clear: b=
+oth; height: auto; display: block;" src=3D"https://d2fi4ri5dhpqd1.cloudfron=
+t.net/public/resources/social-networks-icon-sets/circle-color/facebook@2x.p=
+ng"/></a></td> <td style=3D"padding-top:10px; padding-bottom: 15px; padding=
+-right: 10px; padding-left: 10px; border-collapse: collapse;" valign=3D"top=
+"><a target=3D"_blank" href=3D"http://links.m.myunidays.com/u/click=3F_t=3D=
+ab2538e7bcb54e1bb8aa1282d6c13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=
+=3DvjFiuWy91VAaUKf2navUwmDxGwJjShbtunWhFyPxsPneQ1iDMcMHWoIiPdCN-pQjVNdeDSS8=
+XgFBylYBn1u3iqhUPSgXDbkvizFOd3MrIlS5ZjJr5AXnZ8v-yeKcOXDRokFgNOGzwAjJ-g0edrJ=
+bMCoNoIhe6CORqv7F4YsMS_VDhCT1_4raVYewy0u21AFFG6xnUA4QKNUAd8GhRiDVEvJvA_hPCy=
+ArLDo70k07IRCSkfvV1OKAtd3ggRvMO_VihIJuSNJcQJr-niVf-ta8hIorN8X0tAEnT7U1QB1LS=
+0RfTstU4ZXUlelp82UhqYpoOnbE4LZiWzGLjeURkjVCs2aAlk4rZIk6pDeBT1uCW566EYkM11Be=
+KIFdiIiR3dk0EXKDlsGQO6UmeDmz9jC7kWTfNIEelBKSNAknC2XgVyk%3D"><img width=3D"3=
+2" height=3D"32" alt=3D"Twitter" title=3D"Twitter" style=3D"outline: none;h=
+eight: auto;display: block;" src=3D"https://d2fi4ri5dhpqd1.cloudfront.net/p=
+ublic/resources/social-networks-icon-sets/circle-color/twitter@2x.png"/></a=
+></td> <td style=3D"vertical-align: top;padding-top:10px; padding-bottom: 1=
+5px; padding-right: 10px; padding-left: 10px; border-collapse: collapse;" v=
+align=3D"top"><a target=3D"_blank" href=3D"http://links.m.myunidays.com/u/c=
+lick=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbw=
+xRJsZtg&_e=3DvjFiuWy91VAaUKf2navUwgq_6rgHpzxACUMwnSFkM2coaVXark8ZisyblM9S-l=
+PIrTHng7QEXiEqv8kLCvlHXeGLhKQ9wmI7G5yD0qtThf7tGuEWoZv8SS7ItBxHtXQWMjohLk20o=
+_v4dW1B6BfMgsO9n5MpIwnEkvxZOrNYtpH9-ZqyXBLsy6dv0j1LY4p1Vjt8pYFvcG8BQxraLQHA=
+GxtW_x5h9Fdsrnva89XHRTS8IuzQak0ZHgbjMpFAH0-LaooHOA_R24urxlOV7s5B5YVRhU8mTIs=
+2aOaChXmVah921Vt72jd7lvLQom3Mnmz8fa8rNDJHMhweLM02dnRQmSQ8RXYta95cMXs2MkTxBE=
+r4Exd0QwaoVCHtoYWg19rzLupDkWBnvQ12MAta6Nj4gPg9vH9jvC24IJZ_QKuA48ag7wabQY2UW=
+URuK1TokEIF"><img width=3D"32" height=3D"32" alt=3D"Instagram" title=3D"Ins=
+tagram" style=3D"outline: none;height: auto;display: block;" src=3D"https:/=
+/d2fi4ri5dhpqd1.cloudfront.net/public/resources/social-networks-icon-sets/c=
+ircle-color/instagram@2x.png"/></a></td> <td style=3D"vertical-align: top;p=
+adding-top:10px; padding-bottom: 15px; padding-right: 10px; padding-left: 1=
+0px; border-collapse: collapse;" valign=3D"top"><a target=3D"_blank" href=
+=3D"http://links.m.myunidays.com/u/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c=
+13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUwpkpWX=
+M4ri7Ncg2HVVqUtedVGMyme61L7zv7ZeLQh38RUdYvRGlIV6E9fNP_ruteiQvcDQyHla4BE87RY=
+bDq9NUwl4q-99Jhe7wrCdsRV4FJhba9Ts0rCP4lDw-g1789L_UrIxZm_FnWKxSPbEG94rNl2wO_=
+yswLlnw72jaab5vAWihlqRJplOXuF_gCFt1OWXatf_hS2YnO9mZyiPKEAYcp16L10TKzF2HQWBl=
+KwQ_Y7T39OPjx52eS5Ehk1nLt8FrEI1H7bIzeBXdLTPx3HlrJ1y97QBzL2MJh9hm2_Lu9xi0Asm=
+iVhp8gFoAMdQLwop0yDxdiUSJn8HklcEnh9fndlzJY3-K2bZEN7W1U42g9B8Wj-pFMLoTMbET8M=
+mWeGAtyxJFhRlrv34HtY7GxcdQ%3D"><img width=3D"32" height=3D"32" alt=3D"tikto=
+k" title=3D"tiktok" style=3D"outline: none;height: auto;display: block;" sr=
+c=3D"https://images.unidays.world/i/creative/f4ec5ba4-0f94-4c3c-aa96-7282ae=
+504730"/></a></td> </tr> </tbody> </table> <table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"col" style=3D"max-width=
+: 600px;background-color:transparent;margin: 0 auto;box-sizing:border-box;"=
+ width=3D"100%"> <tbody class=3D"col"> <tr class=3D"col"> <th class=3D"col"=
+ style=3D"box-sizing:border-box;max-width: 300px; min-width: 120px; padding=
+-right: 15px; padding-left: 15px; padding-top:15px; padding-bottom:15px;"> =
+<p style=3D"font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; fo=
+nt-size: 14px; line-height: 16px; text-align: center; margin: 0;"><a style=
+=3D"color: #000000; font-size: 14px; text-decoration: none;" target=3D"_bla=
+nk" href=3D"http://links.m.myunidays.com/e/evib=3F_t=3Dab2538e7bcb54e1bb8aa=
+1282d6c13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3DVUotO6Y2CRUkcoQxgKq=
+oXz2JovPJYKbOvWHaB59vTR0cSyNSmKk4iSGM7HR43xJMGzGRO6T7aDce9akD1jb_hk4LAZcMRe=
+zMqfoi-hUJR_RnbK96XK44PtJQrd4og7fc"><strong>View online</strong></a></p> </=
+th> <th class=3D"col" style=3D"box-sizing:border-box;max-width: 300px; min-=
+width: 120px; padding-right: 15px; padding-left: 15px; padding-top:15px; pa=
+dding-bottom:15px;"> <p style=3D"font-family: Arial, 'Helvetica Neue', Helv=
+etica, sans-serif; font-size: 14px; line-height: 16px; text-align: center; =
+margin: 0;"><a style=3D"color: #000000; font-size: 14px; text-decoration: n=
+one; " target=3D"_blank" href=3D"http://links.m.myunidays.com/a/click=3F_t=
+=3Dab2538e7bcb54e1bb8aa1282d6c13d5b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_=
+e=3DvjFiuWy91VAaUKf2navUwpdgsl5sDf130ccqJJhX_dxS0T3Pth0N7zH1Z3L32Ago36b65Em=
+cr0UJZEfcjLCVH3mnS32PWXgQx9RWRDGNdDqisa_QWWufNMc0pRmvwqDDoLRUd3JOu-PIwQJh40=
+G_u6LH-aA1_rkuEHB929RHMkWt-FTpWYufGPnDPgjyzQys3txjdFV5Ai0DAa1ePsl8bGr8IP7pK=
+cwMB0YIU5-uHu0PYSSkWuhBnDve5g0mZNIkoqeOEqY9nFiUtCfxEuvZnInJ-adiGJd6qDPsZ60R=
+w56qvtK7I4S8SAawmCgJouskvJYi0na5RU6-3i4i7n2Ucc1Vd8ENUcRWtJusDubHxwNXZK8BTa1=
+iQv2o8bNXBZ5YQWm2MO4w5sIM87ckkXmUKPg7HnbSs23QFHf0yrktWIg%3D"><strong>Suppor=
+t</strong></a></p> </th> <th class=3D"col" style=3D"box-sizing:border-box;m=
+ax-width: 300px; min-width: 120px; padding-right: 15px; padding-left: 15px;=
+ padding-top:15px; padding-bottom:15px;"> <p style=3D"font-family: Arial, '=
+Helvetica Neue', Helvetica, sans-serif; font-size: 14px; line-height: 16px;=
+ text-align: center; margin: 0;"><a style=3D"color: #000000; font-size: 14p=
+x; text-decoration: none;" target=3D"_blank" href=3D"http://links.m.myunida=
+ys.com/a/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5b&_m=3DkJ1qrq1LjCguwND=
+DpiduEuLbwxRJsZtg&_e=3DvjFiuWy91VAaUKf2navUwpdgsl5sDf130ccqJJhX_dxS0T3Pth0N=
+7zH1Z3L32Ago36b65Emcr0UJZEfcjLCVH3mnS32PWXgQx9RWRDGNdDqisa_QWWufNMc0pRmvwqD=
+DoLRUd3JOu-PIwQJh40G_u6LH-aA1_rkuEHB929RHMkWt-FTpWYufGPnDPgjyzQys3txjdFV5Ai=
+0DAa1ePsl8bJbty1y_VCNVn0i4cdzfT1CN3PtwJ_9T2f2ABBb6_-ch3TtbKbJC4cDDxNybEetv1=
+fcsaCo9aw0f5u3bvvr_F-Fg1XJIC-dAtAlkOxUjUUR8N1AqdF1F8qH12Y0WKF2Y3jGEZ4cixVP5=
+ldtVZlsRyOldeOU1ILP2_CQa5E42XgtLzA4fCs14IKKTQ5yu0AIjCiJ-XcZfoVbscB9t5cKxfAk=
+%3D"><strong>My account</strong></a></p> </th> <th class=3D"col" style=3D"b=
+ox-sizing:border-box;max-width: 300px; min-width: 120px; padding-right: 15p=
+x; padding-left: 15px; padding-top:15px; padding-bottom:15px;"> <p style=3D=
+"font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 14=
+px; line-height: 16px; text-align: center; margin: 0;"><a style=3D"color: #=
+000000; font-size: 14px; text-decoration: none;" target=3D"_blank" href=3D"=
+http://links.m.myunidays.com/a/click=3F_t=3Dab2538e7bcb54e1bb8aa1282d6c13d5=
+b&_m=3DkJ1qrq1LjCguwNDDpiduEuLbwxRJsZtg&_e=3D-fJDey44eRb6hZRdJ3FZHeqtx4828S=
+16l7BNI92hP-3pGzVB7-PMWgbQVITTv66amHNYiCOu92Ek5ocXCBIoktZcfo0CIjk2KE_7xdoh_=
+Nw4SNtSApnJSpil9uBAnKwhmwR45gu2P0GVO6S0bGcjyuiU2Aia5bcMBrQzE6anp676wCtcAXaj=
+h0bja7TO8ovGk2xldpHU4ssZNYLHcjwaFG8i0aDWhjd--sU0dcaoCg9cCK7T8ZJWZCXhlkXb2fB=
+6MtnuHSxR9I6egyKasiNwwqFdgzlk-K58EROh0DfnHAHEu2qN601bgESmOPpjfllvXa3SQfMJ1z=
+vurOy_xZ6y4k5pU9O2EFf4Ip5xsfllHGiX0Qz-7kefkWz45uca5wDm57QSESpNHWGA6XzaYSvrn=
+XNiXirSbOH7JYYzB3fF_Av-fSfL6BAGqsGGieCMb72It3T70xNxbGYf-xpUT0ZhWGbt1TlEfiDu=
+tFzc1cl_LsIffjeBaB2w6ayNyJcRrn2wXsKXZLltHPdwBMLUDku4koeqPApOKuwTqv9_xPvlk4z=
+fKbbQ6arj8EORe4N3vCBM"><strong>Unsubscribe</strong></a></p> </th> </tr> </t=
+body> </table> &nbsp; <table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation" style=3D"table-layout: fixed; vertical-align: =
+top; border-spacing: 0; border-collapse: collapse; mso-table-tspace: 0; mso=
+-table-rspace: 0; mso-table-bspace: 0; mso-table-lspace: 0; margin: 0 auto;=
+min-width: 320px; max-width: 600px;padding-top:5px; padding-bottom:5px; pad=
+ding-right: 0px; padding-left: 0px;overflow-wrap: break-word; word-wrap: br=
+eak-word; word-break: break-word; background-color: transparent;" valign=3D=
+"top"> <tbody> <tr style=3D"vertical-align: top;" align=3D"center" valign=
+=3D"top"> <td style=3D"vertical-align: top;padding-top:10px;padding-right:2=
+0px;padding-bottom:10px;padding-left:20px;" valign=3D"top"> <p style=3D"fon=
+t-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size: 11px; l=
+ine-height: 15px; text-align: center; margin: 0; color: #010101;">Don=E2=80=
+=99t junk your savings! Add <strong>offers@m.myunidays.com</strong> to your=
+ address book. UNiDAYS is registered at UNiDAYS Inc. 434 W 33rd Street, Sui=
+te 830, NY, NY 10001</p> </td> </tr> </tbody> </table> </p></div></div></td=
+></tr></table></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table><!-- End -->=0D=0A<img border=3D"0" width=3D"1" height=3D"=
+1" alt=3D"" src=3D"http://links1.m.myunidays.com/q/fmJjuy4vgrha5DZU0nQh9A~~=
+/AAQIxgA~/RgRknXoJPlcDc3BjQgpiswn1umJBpRjrUh5rYXRoYXJpbmVyb2JpbnNvbmx0ZEBnb=
+WFpbC5jb21YBAAAAAA~">=0D=0A</body></html>
+--_----w3iCyaOlJAqW+BZGvBPP6w===_F0/BE-46062-905FAB26--
+

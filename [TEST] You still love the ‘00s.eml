@@ -1,0 +1,1952 @@
+Delivered-To: katharinerobinsonltd@gmail.com
+Received: by 2002:ac8:5ad4:0:0:0:0:0 with SMTP id d20csp1393207qtd;
+        Fri, 19 Aug 2022 06:17:34 -0700 (PDT)
+X-Google-Smtp-Source: AA6agR5y9ONNzOZlqEM0fmKATnL1FA/+wBTUiVHAoysGtCvUuinnlx9UVG1a8BBc0j5Hl12Il2/t
+X-Received: by 2002:a05:6a00:4306:b0:52e:3bdc:2635 with SMTP id cb6-20020a056a00430600b0052e3bdc2635mr7794676pfb.79.1660915054198;
+        Fri, 19 Aug 2022 06:17:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1660915054; cv=none;
+        d=google.com; s=arc-20160816;
+        b=b6o3anlkcn4Ctl+9137CsSokksoVBb20LHMB/sHfb/8btoEs6ZbF9cnZqw7BxrEwYN
+         EpYT1BQm5luYtK8rWisrfBbPes7OtJMhBN52jIWjEQFQ5NdlnPq2Z7gsPEOubMqg6fyU
+         UrWF0C8a4/JUNTRRCaUszgmRkIRS2KGzdBrS16KSPOCbGAQn1u5WbNpQ9isqSvqdN8Ow
+         RHCcBkp1bTf5XBOupUTnMxA/aswrfQMAbrR9IWlwh+FTfOyS77D5HxJh45lBh4CrhCYl
+         a+eGM/kQ0YPqgbIb7IGS3ezsKcQth0QNzBb/KoZ4xs7lT0Ei7N9AUXXI/F89Cdybgju2
+         spCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:reply-to:subject:message-id:mime-version:from:date
+         :dkim-signature:dkim-signature;
+        bh=UK7YvFy/HmOL7ZOJQ8QCI4+ndHCd3aItkYtwCypq6AM=;
+        b=L6EKF6M+jnN4mX+R29bqUfawzwUWgnqZnPxoOEHQdv9lBcd/sXxK47g6JKdpK9/51I
+         +wwqyCxCVC+PfKTpTJLZnkhBRIYcwZCFEYpwteHDKIdaytoDdh/ItPRXso0igURvO8p/
+         fzSTxWg+cRnmXO/9G7lFUteVaX+MAIf56eHpa2V+4izJFZlcapG/Gi/ncKJIdItUgLpQ
+         VQgvp0SHv3uTjGdFVHjyyz+kOrBT4rmd7UpezK/pGgBGTKyIbDJO61yizReMITOri+D4
+         yAv+dQNjFbYrbRQG0s23OmYwnK5cfHbOLK+tGPy5TBu84F8XbPRQDaW5LqvNTkce0OEC
+         xx0g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ohhey.depop.com header.s=s1 header.b=J3WULNre;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ZHDsk0Oc;
+       spf=pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) smtp.mailfrom="bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ohhey.depop.com
+Return-Path: <bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com>
+Received: from xtrwprzb.outbound-mail.sendgrid.net (xtrwprzb.outbound-mail.sendgrid.net. [167.89.53.235])
+        by mx.google.com with ESMTPS id a7-20020a170902ecc700b0016a2fa25c91si4206013plh.229.2022.08.19.06.17.33
+        for <katharinerobinsonltd@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 19 Aug 2022 06:17:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) client-ip=167.89.53.235;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ohhey.depop.com header.s=s1 header.b=J3WULNre;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ZHDsk0Oc;
+       spf=pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com designates 167.89.53.235 as permitted sender) smtp.mailfrom="bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.ohhey.depop.com";
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=ohhey.depop.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ohhey.depop.com;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:cc;
+	s=s1; bh=UK7YvFy/HmOL7ZOJQ8QCI4+ndHCd3aItkYtwCypq6AM=;
+	b=J3WULNre3b4jyLL4zpKbv9WBAJlhkjluKrszxvYd4R8mWhNIav5XD7GB7IGgkdlnnZVx
+	6JRr5yYutARelQavcVIpuwxq3nlfBgT/PBF9VFznk7hpme8dI/NMQtucBEpkyRwE1JE/Hj
+	ZZvZONtKwtSJ8kow5dzaJyxrkYdcykUbThkWA9nBTFLqQ3MJAaE3wNLxz6cVu98FZH+c6F
+	TPErnOE2CBw4mnXbrbicjmHeDJ0Txa06twFYIcShacm4I5Vf1oVZJWK9K6fNonot9Wiu84
+	sLDTG175tuUsVJywWlFmAvXX/7H5jgiRRMzrNaR6orCc2808eTmSNE8fdLSBsb3Q==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
+	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:cc;
+	s=smtpapi; bh=UK7YvFy/HmOL7ZOJQ8QCI4+ndHCd3aItkYtwCypq6AM=;
+	b=ZHDsk0Ocy0os4AtGHeyCq5QlPFpuQo0Zwx7veCq9HoTvP1l47JRCf2W9/XBpdZRSJ4ij
+	rKp036/9XCM0sbANWHzyHrbo/RlTJs0ge6ON4lxAp4vggVTwjdh2Np6mUHGntUQySf+di4
+	BzM7v+AzNjZeylAywDIja/Fiqnnti65gk=
+Received: by filterdrecv-95b8b4995-g2vm7 with SMTP id filterdrecv-95b8b4995-g2vm7-1-62FF8D6C-C2
+        2022-08-19 13:17:32.817908478 +0000 UTC m=+2481145.448188912
+Received: from Mjg0NzQxNw (unknown)
+	by geopod-ismtpd-3-4 (SG) with HTTP
+	id Yu-wNPo4Rg2Yb4c5vW2tYw
+	Fri, 19 Aug 2022 13:17:32.752 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=df6267321201c0ab13496635e73c52a29bda648127361e830e43b071c762
+Date: Fri, 19 Aug 2022 13:17:32 +0000 (UTC)
+From: Depop <team@ohhey.depop.com>
+Mime-Version: 1.0
+Message-ID: <Yu-wNPo4Rg2Yb4c5vW2tYw@geopod-ismtpd-3-4>
+Subject: [TEST] You still love the =?UTF-8?B?4oCYMDBz?=
+Reply-To: team@ohhey.depop.com
+X-Feedback-ID: 2847417:SG
+X-SG-EID: 
+ =?us-ascii?Q?RdiCwKUBEHs9YpR=2FuCubuLXhTsj9Exs396C9llsjFg2O4vGJNzjBvBG+8zBP1e?=
+ =?us-ascii?Q?8pDKgSj5dSD8q+qUtN6CYbHqKpMr9VXbLUxP1sX?=
+ =?us-ascii?Q?zmhmzXaVzNMA286tRPAuZ+2hEesc6h9pcytYCaJ?=
+ =?us-ascii?Q?GLfUaV5egyrZpgtN=2FAO+60dE52Qz2UU=2FScCwnym?=
+ =?us-ascii?Q?YNgmoLNZ++xjgmqcE5G=2FOwKU+HMiWoclri5Y6lR?=
+ =?us-ascii?Q?zOKQ6WwrNOPa=2FuMVhqHnQDcwE95xEm0I=2FvEycW?=
+X-SG-ID: 
+ =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FKvUYPFb2vwyNNeBc9bJi?=
+ =?us-ascii?Q?ChLhJd9pEqGuYCCcENreSyW3Uo=2F4G7+4BbvOA62?=
+ =?us-ascii?Q?9fm6dhBYLj30Nd6V2CRkbD8FaVNDObfzhU=2FJrrR?=
+ =?us-ascii?Q?U8tljYTqTfB1ILR6StHndvcBb=2Fj1+HtoNcKOeUl?=
+ =?us-ascii?Q?SBto8Ekd6F5l+A9fXB1AXin1sBr4V+FVxDjtX4w?=
+ =?us-ascii?Q?oW687sXimDZKQl+1iW02j7fw+UWHu0Ms0Y2vnNq?=
+ =?us-ascii?Q?7FLzoxtlRXg7c3ecAvRfODHTKegxWAx=2FDJEfX6X?=
+ =?us-ascii?Q?JnqMq+Ht5qFr3QQTeQzu64F7F3Zl=2FjeshksKwIf?=
+ =?us-ascii?Q?53b33Q2v4ttk+GE3SwFq4pcPLEgmKh5nKsk=2F1Y+?=
+ =?us-ascii?Q?Sth6GBpiFpXfQ7fZK3m4W3zUByupr4phFlcQuzs?=
+ =?us-ascii?Q?kI120WRs4mvxhI3oDRZYlj9E6uIhrEsjlFmOPAL?=
+ =?us-ascii?Q?vvNh1DXDRn0blQneL9fIoDUJwHiotfX6=2FHHQ+1U?= =?us-ascii?Q?=3D?=
+To: katharinerobinsonltd@gmail.com
+X-Entity-ID: +NJyOEpzJOxSxQutoJShNQ==
+
+--df6267321201c0ab13496635e73c52a29bda648127361e830e43b071c762
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+Y2K style is still trending =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C
+=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C
+=E2=80=8C =E2=80=8C        =20
+Depop ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty3deYGxC0K85=
+gJOxI3OMOF4SRcf15X2oYgWr5KNb9jgZ/3oq/35cKRJsFQJSqCg7njM_mGg/t0/aq_XlIW-tTa3=
+fGU900QpOjrtZHWaqjSww5K9kM18CZo )
+Search ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty5wi4YHs2Q7=
+3VuGhQAwI5mukfVL5elFBsVWGL1Z939mW/3oq/35cKRJsFQJSqCg7njM_mGg/t1/OOZ6-UA-vLV=
+p02wpBL5onFkBLDmyLdssCAxkA2V9jBA )
+Likes ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty-wpmf08ayhR=
+yT6dJHoxbc8lkArXpsgHSUEmcLXviHrV/3oq/35cKRJsFQJSqCg7njM_mGg/t2/qmidWgyIUyEI=
+tna0gn0o0kMY_lXO5z-Ce0bOTjuDvuw )  Saves=20
+( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty2Kwdbw5swKxmP6eam=
+b489_JBp8S1WK7F7ff2XFFuk0c/3oq/35cKRJsFQJSqCg7njM_mGg/t3/vol6RQ4uemotv0tJPG=
+CsQKCXD9T5iEAWmQ-zJ3dXCfA )
+
+
+
+
+
+
+
+
+ Shop Y2K
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-imS25=
+IbOwTXxOSnMINR136phRyBC7Bw/3oq/35cKRJsFQJSqCg7njM_mGg/t4/80TQiijVHBV9Rz8PSN=
+0loLyb1Sw2C_myXYmFY2IiWok )
+=20
+
+ The Y2K trend is still big on
+Depop. Experiment with =E2=80=9800s-inspired nearly-new corsets and retro
+baby tees.=20
+
+
+
+
+
+
+ Shop Y2K
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-imS25=
+IbOwTXxOSnMINR136phRyBC7Bw/3oq/35cKRJsFQJSqCg7njM_mGg/t5/gzee8ZutX3TzCihZFn=
+RiaCKTbO7fpaZoVbiN-v9aFKU )
+=20
+
+
+
+
+ We=E2=80=99re sold
+
+ Meet 4 sellers with Y2K edits
+that we think you=E2=80=99re going to love. Expect retro sportswear,
+halterneck tops and plenty of baby tees.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Shop @dollsauce
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y7ZRGxwdaKDGcF8nQ5=
+_pNRdYcC-rO_QoD6uqUGNDBRvn/3oq/35cKRJsFQJSqCg7njM_mGg/t6/8Pu0-14Bqh5JzZCSBC=
+f-lzt6FIPjT7FYNdKRx_lCKcg )
+
+
+
+
+ Shop now
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y7ZRGxwdaKDGcF8nQ5=
+_pNRdYcC-rO_QoD6uqUGNDBRvn/3oq/35cKRJsFQJSqCg7njM_mGg/t7/Wv3OEM8nm0XUlCy5jI=
+yB50UufsvtFUxD2mJnQ1mJOOs )
+
+
+
+
+ Shop @cocobellevintage
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y0tXWuF0PiSIyG5Gtf=
+XQtZJ29Nidt7UGZ_vUu6SrG_6N/3oq/35cKRJsFQJSqCg7njM_mGg/t8/DwwIf2A6_5kRMccXHH=
+DFxuy46An6vRXuLBp5rCvcsrw )
+
+
+
+
+ Shop now
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y0tXWuF0PiSIyG5Gtf=
+XQtZJ29Nidt7UGZ_vUu6SrG_6N/3oq/35cKRJsFQJSqCg7njM_mGg/t9/horOfuRntl6HOT__9P=
+aH36eqc85sxkBbJk8KvxdXCH0 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Shop @soniccvintage
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y88x2Aq0QApGjoL5zP=
+IAtxQuvjV1DMsLsjwoTPEIdsl1/3oq/35cKRJsFQJSqCg7njM_mGg/t10/1w6qHuWLPYotIU0Jf=
+x3dEpw5yOxlZFlF-zHI5hrOp2M )
+
+
+
+
+ Shop now
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y88x2Aq0QApGjoL5zP=
+IAtxQuvjV1DMsLsjwoTPEIdsl1/3oq/35cKRJsFQJSqCg7njM_mGg/t11/JWAUBsUn-3TiD4ni4=
+0xRCrG60ulxCpq0MOZELVWL6Fc )
+
+
+
+
+ Shop @shopvivien
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y-k2otgMbe9R4bZsPL=
+HxDge6RmF8lgbQOCna7TswBiVS/3oq/35cKRJsFQJSqCg7njM_mGg/t12/pQArRlEmQTLhg6d_o=
+tzkBgiQ0Avas652KrQFQU0OX6I )
+
+
+
+
+ Shop now
+=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y-k2otgMbe9R4bZsPL=
+HxDge6RmF8lgbQOCna7TswBiVS/3oq/35cKRJsFQJSqCg7njM_mGg/t13/kCTJ3ntfde85HiSn6=
+qrdEZud4FAI-oqvZXVhG4nixOw )
+
+Biggest brands on Depop
+Nike ( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-=
+imS25IbOwRUWUsCZoyyS3-J13oVtl-g/3oq/35cKRJsFQJSqCg7njM_mGg/t14/VbPIU1dOsPAI=
+MYJSyUkt5WkABmEAkGljlRsJ1ejE-qU ) Adidas
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-imS25=
+IbOwTLyAtwcWet5wc-wS28O3Yy/3oq/35cKRJsFQJSqCg7njM_mGg/t15/6EwhAM6q7njH0jLzL=
+gmYFaCMIIk8etO3CPH8mdRoAiY )
+The North Face ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6ty8W=
+I7Y4UzVs_RCv9bSGfgEeRQJiENYZxOy5RatL-YHbM/3oq/35cKRJsFQJSqCg7njM_mGg/t16/SY=
+mzpL9D8ZWcLce65sm-1riE_yBWl-8WcEX4TtugQZE )
+Levi's ( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlV=
+o-imS25IbOwRksOm8wbCzOswhyJzj8vaD/3oq/35cKRJsFQJSqCg7njM_mGg/t17/KYJF4xw_AA=
+GngYcY1fQY8BJPVbHkZf2uDdLmlBCGMiU )
+Dr. Martens ( https://links.ohhey.depop.com/ss/c/7URIxRHFQG-r09OrTg6tyzLxEu=
+3w01IkxRUhZ0Cz8c4qfzON1VYZx6bTFRJG1mwq/3oq/35cKRJsFQJSqCg7njM_mGg/t18/T4xql=
+gs_iBVg_FpzKXyqvS9pdc1xtvcqkFc7Se0K4wc )
+Zara ( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-=
+imS25IbOwRDK3hJzM0XjzWqkIKDWV-s/3oq/35cKRJsFQJSqCg7njM_mGg/t19/5W_66wriFijo=
+Raqg-oQNGv7lf-NByNWRG6YBWnGMNYw ) Jordan
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yydvyRvKYlVo-imS25=
+IbOwTts6GH05itOSkd4OpAL851/3oq/35cKRJsFQJSqCg7njM_mGg/t20/3acdP71dhoT9JS4mW=
+-dvQx7f25KTxtFGF__vzlB80OQ )
+Instagram ( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y09dANqM=
+ubEK9Uh3d6KWBVNNqbCf1ApQKDZunuTtMCo4/3oq/35cKRJsFQJSqCg7njM_mGg/t21/-LRlgzJ=
+R0d5QbePQ_YKYVTDNTVkCsOwUOWgdh9gmR1E ) Facebook=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2ywyr0lqhglFZV2suyc=
+KqYyvGc-hES5PHhICFZQM_Wnce/3oq/35cKRJsFQJSqCg7njM_mGg/t22/GLrjd5HJLGtDQ8y00=
+DUYCMw02U4eJ4pGUDeHr7u47j8 ) Twitter=20
+( https://links.ohhey.depop.com/ss/c/lVxI9S5IQs3ebOZLevK3cMLTQAssiabkLpW2Eb=
+esxz_UsJTXFWgSh1QufCqbj24T/3oq/35cKRJsFQJSqCg7njM_mGg/t23/-Vs8Ui7yn9w3kiZSt=
+hRKa1N-RJo7GUKxgMhagehpfjg ) Youtube=20
+( https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yy3dQxWqYb1PZylsT8=
+FNg3Owh6WNmALKUpbxkKym1Inp/3oq/35cKRJsFQJSqCg7njM_mGg/t24/-2QNymlCf6E9jUUUr=
+LA9V5EJKdCTgRc5ssdmfxrvsOM )           App Store=20
+( https://links.ohhey.depop.com/ss/c/lAVI_h_7X-VHj290jbLu7q1vfyEQQfe2OpU5tl=
+n88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDivAINVLROWvxqnK3qkujlogxAbimskOC=
+zwKHtcVlQAv7vt7/3oq/35cKRJsFQJSqCg7njM_mGg/t25/UQIRnvIFV7NmHAKamnOFeHhaeyOi=
+SaFcqzBTYiz4QRY )
+ Play Store=20
+( https://links.ohhey.depop.com/ss/c/1HJmLSnrDX1t4WJsXNWFYQS2q8UMmTHCeFDZvk=
+1C0feTWqDG-QtN8dHX7hW4EWmn3-B9Xz25dCvtGCxw45QDcA/3oq/35cKRJsFQJSqCg7njM_mGg=
+/t26/JwpkMYPPq8tbbkwrGorDPdBJlrMPOrfzrXAM2zx4fQs )
+Depop     2nd Floor
+20 Farringdon Road
+London, EC1M 3HE     We=E2=80=99d be sad to see you go, but you can
+unsubscribe here (
+https://links.ohhey.depop.com/ss/c/DMwH9Y34fgg1tm7kj3rO-tQhZJRYhzroD5qEMCgr=
+myfWWdE2VlqOkf_J_qhQVQR5C_iunZhJq8bMj85Quoa3LSTcACLnF2puV9HB3VTQ5wbjc02S5pf=
+Ydq69ekR8Qd8OEyfjoxCSLZuMYMv5B9NkPA/3oq/35cKRJsFQJSqCg7njM_mGg/t27/kNbLTY9s=
+FqVhlo8jn7HuBFCcqvzSidSUl2S9rUsE6wE
+)
+--df6267321201c0ab13496635e73c52a29bda648127361e830e43b071c762
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- EMAIL FORMAT --><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=
+=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:off=
+ice:office" style=3D"color-scheme: light dark; supported-color-schemes: lig=
+ht dark;">
+<head>
+	<!--[if gte mso 9]>
+	<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<meta http-equiv=3D"Content-type" content=3D"text/html; charset=3Dutf-8">
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+, maximum-scale=3D1">
+	<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+	<meta name=3D"format-detection" content=3D"date=3Dno">
+	<meta name=3D"format-detection" content=3D"address=3Dno">
+	<meta name=3D"format-detection" content=3D"telephone=3Dno">
+	<meta name=3D"x-apple-disable-message-reformatting">
+	<meta name=3D"color-scheme" content=3D"light dark">
+	<meta name=3D"supported-color-schemes" content=3D"light dark">
+	<title>Depop - buy, sell, discover unique fashion</title>
+	<!--[if gte mso 9]>
+	<style type=3D"text/css" media=3D"all">
+		sup { font-size: 100% !important; }
+	</style>
+	<![endif]-->
+=09
+
+=09
+<style>body {
+padding: 0 !important; margin: 0 auto !important; display: block !important=
+; min-width: 100% !important; width: 100% !important; background: #ffffff; =
+-webkit-text-size-adjust: none;
+}
+img {
+margin: 0 !important; -ms-interpolation-mode: bicubic;
+}
+@media (prefers-color-scheme: dark) {
+  .dm-bg-red {
+    background: #ff2300 !important;
+  }
+  .dm-bg-blue {
+    background: #1564D4 !important;
+  }
+  .dm-bg-blue2 {
+    background: #657786 !important;
+  }
+  .dm-bg-white {
+    background: #fffffe !important;
+  }
+  .dm-bg-black {
+    background: #000001 !important;
+  }
+  .dm-bg-grey {
+    background: #d7d7d7 !important;
+  }
+  .dm-bg-grey2 {
+    background: #43484D !important;
+  }
+  .link {
+    color: #000001 !important;
+  }
+  .link-u {
+    color: #000001 !important;
+  }
+  table {
+    color: #000001 !important;
+  }
+  th {
+    color: #000001 !important;
+  }
+  td {
+    color: #000001 !important;
+  }
+  div {
+    color: #000001 !important;
+  }
+  a {
+    color: #000001 !important;
+  }
+  span {
+    color: #000001 !important;
+  }
+  .c-red a {
+    color: #FF2300 !important;
+  }
+  .c-red a span {
+    color: #FF2300 !important;
+  }
+  .c-red {
+    color: #FF2300 !important;
+  }
+  .c-white a {
+    color: #ffffff !important;
+  }
+  .c-white a span {
+    color: #ffffff !important;
+  }
+  .c-white {
+    color: #ffffff !important;
+  }
+  .c-blue a {
+    color: #6685B2 !important;
+  }
+  .c-blue a span {
+    color: #6685B2 !important;
+  }
+  .c-blue {
+    color: #6685B2 !important;
+  }
+  .c-black a {
+    color: #000001 !important;
+  }
+  .c-black a span {
+    color: #000001 !important;
+  }
+  .c-black {
+    color: #000001 !important;
+  }
+  .dm-b-black {
+    border-bottom: 2px dashed #000001 !important;
+  }
+  .dm-b-s-black {
+    border-bottom: 2px solid #000001 !important;
+  }
+  .dm-b-d-black {
+    border-bottom: 2px dotted #000001 !important;
+  }
+  .dm-b-white {
+    border-bottom: 2px dashed #f8f8f8 !important;
+  }
+  .dm-b-s-white {
+    border-bottom: 2px solid #f8f8f8 !important;
+  }
+  .dm-b-d-white {
+    border-bottom: 2px dotted #f8f8f8 !important;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  .mpt-40 {
+    padding-top: 40px !important;
+  }
+  .mfz-26 {
+    font-size: 26px !important;
+  }
+  .mlh-34 {
+    line-height: 34px !important;
+  }
+  .mpx-20 {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  .mpy-25 {
+    padding-top: 25px !important; padding-bottom: 25px !important;
+  }
+  .mfz-13 {
+    font-size: 13px !important;
+  }
+  .mfz-14 {
+    font-size: 14px !important;
+  }
+  .mfz-18 {
+    font-size: 18px !important;
+  }
+  .mlh-17 {
+    line-height: 17px !important;
+  }
+  .mlh-20 {
+    line-height: 20px !important;
+  }
+  .mpx-5 {
+    padding-left: 5px !important; padding-right: 5px !important;
+  }
+  .mpx-0 {
+    padding-left: 0px !important; padding-right: 0px !important;
+  }
+  .mfz-15 {
+    font-size: 15px !important;
+  }
+  .mfz-19 {
+    font-size: 19px !important;
+  }
+  .mfz-25 {
+    font-size: 25px !important;
+  }
+  .mlh-19 {
+    line-height: 19px !important;
+  }
+  .mlh-22 {
+    line-height: 22px !important;
+  }
+  .mlh-23 {
+    line-height: 23px !important;
+  }
+  .mlh-25 {
+    line-height: 25px !important;
+  }
+  .mlh-32 {
+    line-height: 32px !important;
+  }
+  .mfz-20 {
+    font-size: 20px !important;
+  }
+  .mlh-24 {
+    line-height: 24px !important;
+  }
+  .mfz-33 {
+    font-size: 33px !important;
+  }
+  .mlh-40 {
+    line-height: 40px !important;
+  }
+  .mpb-35 {
+    padding-bottom: 35px !important;
+  }
+  .mpx-15 {
+    padding-left: 15px !important; padding-right: 15px !important;
+  }
+  .mfz-20 {
+    font-size: 20px !important;
+  }
+  .mlh-29 {
+    line-height: 29px !important;
+  }
+  .mpb-15 {
+    padding-bottom: 15px !important;
+  }
+  .mpb-5 {
+    padding-bottom: 5px !important;
+  }
+  .mpx-5 {
+    padding-left: 5px !important; padding-right: 5px !important;
+  }
+  .td {
+    width: 100% !important; min-width: 100% !important;
+  }
+  .m-shell {
+    width: 100% !important; min-width: 100% !important;
+  }
+  .mt-left {
+    text-align: left !important;
+  }
+  .mt-center {
+    text-align: center !important;
+  }
+  .mt-right {
+    text-align: right !important;
+  }
+  .me-left {
+    margin-right: auto !important;
+  }
+  .me-center {
+    margin: 0 auto !important;
+  }
+  .me-right {
+    margin-left: auto !important;
+  }
+  .h-auto {
+    height: auto !important;
+  }
+  .w-auto {
+    width: auto !important;
+  }
+  .fluid-img img {
+    width: 100% !important; max-width: 100% !important; height: auto !impor=
+tant;
+  }
+  .mw-120 {
+    width: 120px !important;
+  }
+  .mw-120 img {
+    width: 100% !important; max-width: 120px !important; height: auto !impo=
+rtant;
+  }
+  .mw-150 img {
+    width: 100% !important; max-width: 150px !important; height: auto !impo=
+rtant;
+  }
+  .mw-240 {
+    width: 240px !important; height: auto !important;
+  }
+  .mw-260 {
+    width: 260px !important; height: auto !important;
+  }
+  .mw-img-240 img {
+    width: 240px !important; height: auto !important;
+  }
+  .mw-img-260 img {
+    width: 260px !important; height: auto !important;
+  }
+  .column {
+    float: left !important; width: 100% !important; display: block !importa=
+nt;
+  }
+  .column-top {
+    float: left !important; width: 100% !important; display: block !importa=
+nt;
+  }
+  .w-130 {
+    width: 130px !important;
+  }
+  .m-hide {
+    display: none !important; width: 0 !important; height: 0 !important; fo=
+nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
+  }
+  .m-block {
+    display: block !important;
+  }
+  .w-15 {
+    width: 15px !important;
+  }
+  .w-2p {
+    width: 2% !important;
+  }
+  .w-4p {
+    width: 4% !important;
+  }
+  .w-32p {
+    width: 32% !important;
+  }
+  .w-48p {
+    width: 48% !important;
+  }
+  .w-49p {
+    width: 49% !important;
+  }
+  .w-50p {
+    width: 50% !important;
+  }
+  .w-100p {
+    width: 100% !important;
+  }
+  .m-column {
+    display: inline-block !important; float: none !important; padding-left:=
+ 5px !important;
+  }
+  .btn-22 {
+    font-size: 14px !important; line-height: 18px !important;
+  }
+  .btn-22 a {
+    padding: 8px 10px !important;
+  }
+  .mw-auto {
+    width: auto !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mpt-40 {
+    padding-top: 40px !important;
+  }
+  .mfz-26 {
+    font-size: 26px !important;
+  }
+  .mlh-34 {
+    line-height: 34px !important;
+  }
+  .mpx-20 {
+    padding-left: 20px !important; padding-right: 20px !important;
+  }
+  .mpy-25 {
+    padding-top: 25px !important; padding-bottom: 25px !important;
+  }
+  .mfz-13 {
+    font-size: 13px !important;
+  }
+  .mfz-14 {
+    font-size: 14px !important;
+  }
+  .mfz-18 {
+    font-size: 18px !important;
+  }
+  .mlh-17 {
+    line-height: 17px !important;
+  }
+  .mlh-20 {
+    line-height: 20px !important;
+  }
+  .mpx-5 {
+    padding-left: 5px !important; padding-right: 5px !important;
+  }
+  .mpx-0 {
+    padding-left: 0px !important; padding-right: 0px !important;
+  }
+  .mfz-15 {
+    font-size: 15px !important;
+  }
+  .mfz-19 {
+    font-size: 19px !important;
+  }
+  .mfz-25 {
+    font-size: 25px !important;
+  }
+  .mlh-19 {
+    line-height: 19px !important;
+  }
+  .mlh-22 {
+    line-height: 22px !important;
+  }
+  .mlh-23 {
+    line-height: 23px !important;
+  }
+  .mlh-25 {
+    line-height: 25px !important;
+  }
+  .mlh-32 {
+    line-height: 32px !important;
+  }
+  .mfz-20 {
+    font-size: 20px !important;
+  }
+  .mlh-24 {
+    line-height: 24px !important;
+  }
+  .mfz-33 {
+    font-size: 33px !important;
+  }
+  .mlh-40 {
+    line-height: 40px !important;
+  }
+  .mpb-35 {
+    padding-bottom: 35px !important;
+  }
+  .mpx-15 {
+    padding-left: 15px !important; padding-right: 15px !important;
+  }
+  .mfz-20 {
+    font-size: 20px !important;
+  }
+  .mlh-29 {
+    line-height: 29px !important;
+  }
+  .mpb-15 {
+    padding-bottom: 15px !important;
+  }
+  .mpb-5 {
+    padding-bottom: 5px !important;
+  }
+  .mpx-5 {
+    padding-left: 5px !important; padding-right: 5px !important;
+  }
+  .td {
+    width: 100% !important; min-width: 100% !important;
+  }
+  .m-shell {
+    width: 100% !important; min-width: 100% !important;
+  }
+  .mt-left {
+    text-align: left !important;
+  }
+  .mt-center {
+    text-align: center !important;
+  }
+  .mt-right {
+    text-align: right !important;
+  }
+  .me-left {
+    margin-right: auto !important;
+  }
+  .me-center {
+    margin: 0 auto !important;
+  }
+  .me-right {
+    margin-left: auto !important;
+  }
+  .h-auto {
+    height: auto !important;
+  }
+  .w-auto {
+    width: auto !important;
+  }
+  .fluid-img img {
+    width: 100% !important; max-width: 100% !important; height: auto !impor=
+tant;
+  }
+  .mw-120 {
+    width: 120px !important;
+  }
+  .mw-120 img {
+    width: 100% !important; max-width: 120px !important; height: auto !impo=
+rtant;
+  }
+  .mw-150 img {
+    width: 100% !important; max-width: 150px !important; height: auto !impo=
+rtant;
+  }
+  .mw-240 {
+    width: 240px !important; height: auto !important;
+  }
+  .mw-260 {
+    width: 260px !important; height: auto !important;
+  }
+  .mw-img-240 img {
+    width: 240px !important; height: auto !important;
+  }
+  .mw-img-260 img {
+    width: 260px !important; height: auto !important;
+  }
+  .column {
+    float: left !important; width: 100% !important; display: block !importa=
+nt;
+  }
+  .column-top {
+    float: left !important; width: 100% !important; display: block !importa=
+nt;
+  }
+  .w-130 {
+    width: 130px !important;
+  }
+  .m-hide {
+    display: none !important; width: 0 !important; height: 0 !important; fo=
+nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
+  }
+  .m-block {
+    display: block !important;
+  }
+  .w-15 {
+    width: 15px !important;
+  }
+  .w-2p {
+    width: 2% !important;
+  }
+  .w-4p {
+    width: 4% !important;
+  }
+  .w-32p {
+    width: 32% !important;
+  }
+  .w-48p {
+    width: 48% !important;
+  }
+  .w-49p {
+    width: 49% !important;
+  }
+  .w-50p {
+    width: 50% !important;
+  }
+  .w-100p {
+    width: 100% !important;
+  }
+  .m-column {
+    display: inline-block !important; float: none !important; padding-left:=
+ 5px !important;
+  }
+  .btn-22 {
+    font-size: 14px !important; line-height: 18px !important;
+  }
+  .btn-22 a {
+    padding: 8px 10px !important;
+  }
+  .mw-auto {
+    width: auto !important;
+  }
+}
+@media screen and (max-device-width: 360px) {
+  .btn-22 {
+    font-size: 12px !important; line-height: 16px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .btn-22 {
+    font-size: 12px !important; line-height: 16px !important;
+  }
+}
+@media screen and (max-device-width: 330px) {
+  .mmw-img-220 img {
+    width: 220px !important; height: auto !important;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .mmw-img-220 img {
+    width: 220px !important; height: auto !important;
+  }
+}
+</style>
+</head>
+<body class=3D"body dm-bg-white" style=3D"display: block !important; min-wi=
+dth: 100% !important; width: 100% !important; -webkit-text-size-adjust: non=
+e; margin: 0 auto; padding: 0;" bgcolor=3D"#fffffe">
+<div style=3D"display:none !important;visibility:hidden;mso-hide:all;font-s=
+ize:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:=
+0;overflow:hidden;">Y2K style is still trending</div>
+	<center>
+		<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"width: 100%; margin: 0; padding: 0;" bgcolor=3D"#fffffe" class=3D"gw=
+fw dm-bg-white">
+			<tr>
+				<td style=3D"width: 100%; margin: 0; padding: 0;" align=3D"center" vali=
+gn=3D"top">
+					<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+						<!-- Preview Text -->
+						<tr class=3D"m-hide" style=3D"mso-hide: all;">
+							<td style=3D"font-size: 0pt; line-height: 0pt;">
+								<span class=3D"mcnPreviewText" style=3D"display: none; font-size: 0=
+px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: 0; overflow=
+: hidden; visibility: hidden; mso-hide: all;">&nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C	&nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C	&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
+=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
+&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
+=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
+=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
+sp; =E2=80=8C</span>
+							</td>
+						</tr>
+						<!-- END Preview Text -->
+					</table>
+					<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+class=3D"m-shell">
+						<tr>
+							<td class=3D"td" style=3D"width: 600px; min-width: 600px; font-size:=
+ 0pt; line-height: 0pt; font-weight: normal; margin: 0; padding: 0;">
+
+<!-- CONDITIONAL LOGIC STARTS -->
+
+<!-- BUYER BLOCKS START -->
+<!-- BUYER LOGO + HEADER -->
+<!-- Content block B - Logo & header -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
+s=3D"dm-bg-white" bgcolor=3D"#ffffff">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img px-15 pb-20" valign=3D"top" style=3D"font-size: 0pt; =
+line-height: 0pt; padding-left: 15px; padding-right: 15px; padding-bottom: =
+20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+
+				<!-- Header -->
+				<tr>
+					<td class=3D"img-center pt-45 pb-45 px-15" style=3D"font-size: 0pt; li=
+ne-height: 0pt; padding: 45px 15px;" align=3D"center">
+						<a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQG-r09OrTg6=
+ty3deYGxC0K85gJOxI3OMOF4SRcf15X2oYgWr5KNb9jgZ/3oq/35cKRJsFQJSqCg7njM_mGg/h2=
+8/S2Y8X1FKPCkofrCtnepEcXxQKcXhtdHQ_tgtLhakVeI" universal=3D"true" target=3D=
+"_blank" style=3D"color: #000001; text-decoration: none;">
+						<img src=3D"https://braze-images.com/appboy/communication/assets/imag=
+e_assets/images/626bf6438aefc457fe9ecb25/original.png?1651242563" width=3D"=
+148" height=3D"38" border=3D"0" alt=3D"Depop" style=3D"-ms-interpolation-mo=
+de: bicubic; margin: 0;">
+						</a>
+					</td>
+				</tr>
+				<!-- END Header -->
+
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img pb-20" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+
+				<!-- Navigation -->
+				<tr>
+					<td class=3D"title-20 a-center px-20 px-15 c-black" style=3D"font-size=
+: 20px; line-height: 24px; color: #000001; font-family: Helvetica, Arial, s=
+ans-serif; font-weight: normal; min-width: auto !important; padding-left: 1=
+5px; padding-right: 15px;" align=3D"center">
+						<a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQG-r09OrTg6=
+ty5wi4YHs2Q73VuGhQAwI5mukfVL5elFBsVWGL1Z939mW/3oq/35cKRJsFQJSqCg7njM_mGg/h2=
+9/2POeAazRfPSUo2p62JPL22Qxr8vfArhb773ISRJYiUg" universal=3D"true" target=3D=
+"_blank" class=3D"linkc-black" style=3D"color: #000001; text-decoration: no=
+ne;"><span class=3D"link c-black" style=3D"color: #000001; text-decoration:=
+ none;">Search</span></a> &nbsp;&nbsp;&nbsp;<span class=3D"m-hide">&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;</span>&nbsp;&nbsp;&nbsp; <a href=3D"https://links.ohhey.depop.com/u=
+ni/ss/c/7URIxRHFQG-r09OrTg6ty-wpmf08ayhRyT6dJHoxbc8lkArXpsgHSUEmcLXviHrV/3o=
+q/35cKRJsFQJSqCg7njM_mGg/h30/omH6CGGNBoAEjpk-84h5hXPZ3TL1IUy24bFsGRlc_74" u=
+niversal=3D"true" target=3D"_blank" class=3D"link c-black" style=3D"color: =
+#000001; text-decoration: none;"><span class=3D"link c-black" style=3D"colo=
+r: #000001; text-decoration: none;">Likes</span></a> &nbsp;&nbsp;&nbsp;<spa=
+n class=3D"m-hide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; <a href=3D"http=
+s://links.ohhey.depop.com/uni/ss/c/7URIxRHFQG-r09OrTg6ty2Kwdbw5swKxmP6eamb4=
+89_JBp8S1WK7F7ff2XFFuk0c/3oq/35cKRJsFQJSqCg7njM_mGg/h31/2lzhkVpJwtC-xH3Zz3H=
+rXHC1KmLDmKJxnE9-zLjAvck" universal=3D"true" target=3D"_blank" class=3D"lin=
+k c-black" style=3D"color: #000001; text-decoration: none;"><span class=3D"=
+link c-black" style=3D"color: #000001; text-decoration: none;">Saves</span>=
+</a>
+					</td>
+				</tr>
+				<!-- END Navigation -->
+
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img pb-20" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+
+				<!-- Solid Line -->
+				<tr>
+					<td class=3D"img px-15" style=3D"font-size: 0pt; line-height: 0pt; pad=
+ding-left: 15px; padding-right: 15px;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"img dm-b-s-black" style=3D"border-bottom-width: 2px; b=
+order-bottom-color: #000001; border-bottom-style: solid; font-size: 0pt; li=
+ne-height: 0pt;" align=3D"left">&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- END Solid Line -->
+
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img px-15 pb-20" valign=3D"top" style=3D"font-size: 0pt; =
+line-height: 0pt; padding-left: 15px; padding-right: 15px; padding-bottom: =
+20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block B - Logo & header -->
+
+
+
+
+<!-- HERO IMAGE -->
+
+
+
+
+<!-- Content block C2 - Image 2 (600px - 700px) -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tr>
+					<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;" al=
+ign=3D"left">
+				=09
+				=09
+				=09
+				=09
+						<a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2yyd=
+vyRvKYlVo-imS25IbOwTXxOSnMINR136phRyBC7Bw/3oq/35cKRJsFQJSqCg7njM_mGg/h32/B7=
+MOG9ddJnxs4WH-LbKqNpteNQzUkdJqS5GPEWd8Wtw" =3D"" target=3D"_blank" style=3D=
+"color: #000001; text-decoration: none;"><img src=3D"
+https://braze-images.com/appboy/communication/assets/image_assets/images/62=
+ff67382876cd4d9998f687/original.jpg?1660905272
+" width=3D"600" height=3D"700" border=3D"0" alt=3D"
+Shop Y2K
+" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+					=09
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block C2 - Image 2 (600px - 700px) -->
+
+<!-- BODY COPY -->
+
+				<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<!-- Spacer - 35px -->
+				<tr>
+					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 35px -->
+
+				<!-- Body -->
+				<tr>
+					<td class=3D"title-22 a-center px-20" style=3D"font-size: 17px; line-h=
+eight: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal=
+; min-width: auto !important; color: #000001; padding-left: 20px; padding-r=
+ight: 20px;" align=3D"center">
+					=09
+The Y2K trend is still big on Depop. Experiment with =E2=80=9800s-inspired =
+nearly-new corsets and retro baby tees.=20
+
+					</td>
+				</tr>
+				<!-- END Body -->
+
+				<!-- Spacer - 35px -->
+				<tr>
+					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 35px -->
+	</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+<!-- Content block E - CTA BUTTON -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<!-- Button -->
+				<tr>
+					<td class=3D"btn-25 mfz-20 mlh-29 dm-bg-black" bgcolor=3D"#000001" sty=
+le=3D"mso-padding-alt: 20px 10px; font-size: 25px; line-height: 29px; color=
+: #ffffff; font-weight: bold; font-family: Helvetica, Arial, sans-serif; mi=
+n-width: auto !important;" align=3D"center">
+				=09
+				=09
+					=20
+				=09
+							<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAbBm=
+x2yydvyRvKYlVo-imS25IbOwTXxOSnMINR136phRyBC7Bw/3oq/35cKRJsFQJSqCg7njM_mGg/h=
+33/kgQci3WiFoumOo4hCEakKt3I9t-I6THnkUdpZON4leM"=20
+universal=3D"true"
+=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
+t-decoration: none; color: #ffffff; padding: 20px 10px;"><span class=3D"lin=
+k c-white" style=3D"text-decoration: none; color: #ffffff;">
+Shop Y2K
+</span></a>
+						=09
+					</td>
+				</tr>
+				<!-- END Button -->
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block E - CTA BUTTON -->
+
+<!-- WE'RE SOLD -->
+
+
+
+
+<!-- Content block D5 - LOCK UP (TITLE / BODY COPY) -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<!-- Spacer - 60px -->
+				<tr>
+					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 60px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 60px -->
+
+				<!-- Title -->
+				<tr>
+					<td class=3D"title-45 a-center" style=3D"font-size:=20
+40px
+; line-height:=20
+47px
+; font-family: Helvetica, Arial, sans-serif; font-weight: bold; min-width: =
+auto !important; color: #000001; padding-left: 15px; padding-right: 15px;" =
+align=3D"center">
+					=09
+We=E2=80=99re sold
+
+					</td>
+				</tr>
+				<!-- END Title -->
+
+				<!-- Spacer - 35px -->
+				<tr>
+					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 35px -->
+
+				<!-- Body -->
+				<tr>
+					<td class=3D"title-22 a-center px-20" style=3D"font-size: 17px; line-h=
+eight: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal=
+; min-width: auto !important; color: #000001; padding-left: 20px; padding-r=
+ight: 20px;" align=3D"center">
+					=09
+Meet 4 sellers with Y2K edits that we think you=E2=80=99re going to love. E=
+xpect retro sportswear, halterneck tops and plenty of baby tees.=20
+
+					</td>
+				</tr>
+				<!-- END Body -->
+
+				<!-- Spacer - 35px -->
+				<tr>
+					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 35px -->
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block D5 - LOCK UP (TITLE / BODY COPY) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Content block F2 - 2 products images / CTA BUTTON  -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tr>
+					<td class=3D"img pr-5" width=3D"50%" valign=3D"top" style=3D"padding-r=
+ight: 5px; font-size: 0pt; line-height: 0pt;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;"=
+ align=3D"left">
+							=09
+
+								=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y7ZRGxwdaKDGcF8nQ5_pNRdYcC-rO_QoD6uqUGNDBRvn/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h34/lOOGDF_WFeQEnSvOA4-eahM_osu5oproTB9NItylkiw"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" style=3D"color: #000001; text-decoration: none;"><i=
+mg src=3D"
+https://braze-images.com/appboy/communication/assets/image_assets/images/62=
+ff67342a4763473c057a15/original.jpg?1660905268
+" width=3D"295" height=3D"300" border=3D"0" alt=3D"
+Shop @dollsauce
+" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+													=09
+								</td>
+							</tr>
+							<tr>
+								<td class=3D"btn-25 mfz-20 mlh-29 dm-bg-black" bgcolor=3D"#000001" =
+style=3D"mso-padding-alt: 20px 10px; font-size: 25px; line-height: 29px; co=
+lor: #ffffff; font-weight: bold; font-family: Helvetica, Arial, sans-serif;=
+ min-width: auto !important;" align=3D"center">
+							=09
+
+				=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y7ZRGxwdaKDGcF8nQ5_pNRdYcC-rO_QoD6uqUGNDBRvn/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h35/KBzoWveoOuTqWRm5k7VBVqQ4i9M1sVvySBdN6OGr9Ts"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
+t-decoration: none; color: #ffffff; padding: 20px 10px;"><span class=3D"lin=
+k c-white" style=3D"text-decoration: none; color: #ffffff;">
+Shop now
+</span></a>
+								=09
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class=3D"img pl-5" width=3D"50%" valign=3D"top" style=3D"padding-l=
+eft: 5px; font-size: 0pt; line-height: 0pt;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;"=
+ align=3D"left">
+
+							=09
+								=09
+				=09
+					=20
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y0tXWuF0PiSIyG5GtfXQtZJ29Nidt7UGZ_vUu6SrG_6N/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h36/DyKb5L156ynBLxm16L2kC8fQVvm5CRj1rMROStY-bmc"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" style=3D"color: #000001; text-decoration: none;"><i=
+mg src=3D"
+https://braze-images.com/appboy/communication/assets/image_assets/images/62=
+ff6733e3241117a09cb8a5/original.jpg?1660905267
+" width=3D"295" height=3D"300" border=3D"0" alt=3D"
+Shop @cocobellevintage=20
+" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+													=09
+								</td>
+							</tr>
+							<tr>
+								<td class=3D"btn-25 mfz-20 mlh-29 dm-bg-black" bgcolor=3D"#000001" =
+style=3D"mso-padding-alt: 20px 10px; font-size: 25px; line-height: 29px; co=
+lor: #ffffff; font-weight: bold; font-family: Helvetica, Arial, sans-serif;=
+ min-width: auto !important;" align=3D"center">
+							=09
+							=09
+							=09
+				=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y0tXWuF0PiSIyG5GtfXQtZJ29Nidt7UGZ_vUu6SrG_6N/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h37/g05mF-twUr-7DfcF2VIAGqOeGj1VTtlffGHzek8QiQE"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
+t-decoration: none; color: #ffffff; padding: 20px 10px;"><span class=3D"lin=
+k c-white" style=3D"text-decoration: none; color: #ffffff;">
+Shop now
+</span></a>
+									=09
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block F2 - 2 products images / CTA BUTTON  -->
+
+<!-- Spacer - 10px -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img pb-10" valign=3D"top" style=3D"font-size: 0pt; line-heig=
+ht: 0pt; padding-bottom: 10px;" align=3D"left">&nbsp;</td>
+	</tr>
+</table>
+<!-- END Spacer - 10px -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Content block F2 - 2 products images / CTA BUTTON  -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tr>
+					<td class=3D"img pr-5" width=3D"50%" valign=3D"top" style=3D"padding-r=
+ight: 5px; font-size: 0pt; line-height: 0pt;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;"=
+ align=3D"left">
+							=09
+
+								=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y88x2Aq0QApGjoL5zPIAtxQuvjV1DMsLsjwoTPEIdsl1/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h38/p9iuEDG6LZPtJxXenjC5KIEQD1KgoZX_E4D8WCKsL30"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" style=3D"color: #000001; text-decoration: none;"><i=
+mg src=3D"
+https://braze-images.com/appboy/communication/assets/image_assets/images/62=
+ff6733deed3d00668eba34/original.jpg?1660905266
+" width=3D"295" height=3D"300" border=3D"0" alt=3D"
+Shop @soniccvintage
+" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+													=09
+								</td>
+							</tr>
+							<tr>
+								<td class=3D"btn-25 mfz-20 mlh-29 dm-bg-black" bgcolor=3D"#000001" =
+style=3D"mso-padding-alt: 20px 10px; font-size: 25px; line-height: 29px; co=
+lor: #ffffff; font-weight: bold; font-family: Helvetica, Arial, sans-serif;=
+ min-width: auto !important;" align=3D"center">
+							=09
+
+				=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y88x2Aq0QApGjoL5zPIAtxQuvjV1DMsLsjwoTPEIdsl1/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h39/p4nZr8WWwTCN1hv0UHIqNGQfAW_KFOQT9_wCuZBKDcs"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
+t-decoration: none; color: #ffffff; padding: 20px 10px;"><span class=3D"lin=
+k c-white" style=3D"text-decoration: none; color: #ffffff;">
+Shop now
+</span></a>
+								=09
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class=3D"img pl-5" width=3D"50%" valign=3D"top" style=3D"padding-l=
+eft: 5px; font-size: 0pt; line-height: 0pt;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;"=
+ align=3D"left">
+
+							=09
+								=09
+				=09
+					=20
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y-k2otgMbe9R4bZsPLHxDge6RmF8lgbQOCna7TswBiVS/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h40/kzktnEqwwVBgLLNVIuxmv_OcM0FlhsOlFPt6hgSa-ss"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" style=3D"color: #000001; text-decoration: none;"><i=
+mg src=3D"
+https://braze-images.com/appboy/communication/assets/image_assets/images/62=
+ff67312115042a7b1490e8/original.jpg?1660905265
+" width=3D"295" height=3D"300" border=3D"0" alt=3D"
+Shop @shopvivien
+" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+													=09
+								</td>
+							</tr>
+							<tr>
+								<td class=3D"btn-25 mfz-20 mlh-29 dm-bg-black" bgcolor=3D"#000001" =
+style=3D"mso-padding-alt: 20px 10px; font-size: 25px; line-height: 29px; co=
+lor: #ffffff; font-weight: bold; font-family: Helvetica, Arial, sans-serif;=
+ min-width: auto !important;" align=3D"center">
+							=09
+							=09
+							=09
+				=09
+				=09
+			=09
+				=09
+				=09
+									<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurRPSAb=
+Bmx2y-k2otgMbe9R4bZsPLHxDge6RmF8lgbQOCna7TswBiVS/3oq/35cKRJsFQJSqCg7njM_mGg=
+/h41/rlcEgw1K-zcaQDqnlO8T5mJpvL5IvvqrW31ZN7NGl8k"=20
+universal=3D"true" / leave blank
+=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
+t-decoration: none; color: #ffffff; padding: 20px 10px;"><span class=3D"lin=
+k c-white" style=3D"text-decoration: none; color: #ffffff;">
+Shop now
+</span></a>
+									=09
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block F2 - 2 products images / CTA BUTTON  -->
+
+<!-- DEPOP'S BIGGEST BRANDS -->
+<!-- Content block G - FOOTER -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
+ft">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<!-- Spacer - 60px -->
+				<tr>
+					<td class=3D"img pb-60" valign=3D"top" style=3D"font-size: 0pt; line-h=
+eight: 0pt; padding-bottom: 60px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 60px -->
+
+				<!-- Textarea -->
+				<tr>
+					<td class=3D"title-22 a-center px-15" style=3D"font-size: 20px; line-h=
+eight: 28px; color: #000001; font-family: Helvetica, Arial, sans-serif; fon=
+t-weight: normal; min-width: auto !important; padding-left: 15px; padding-r=
+ight: 15px;" align=3D"center">
+						Biggest brands on Depop
+					</td>
+				</tr>
+				<!-- END Textarea -->
+
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img px-15 pb-20" valign=3D"top" style=3D"font-size: 0pt; =
+line-height: 0pt; padding-left: 15px; padding-right: 15px; padding-bottom: =
+20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+
+				<!-- Solid Line -->
+				<tr>
+					<td class=3D"img px-15" style=3D"font-size: 0pt; line-height: 0pt; pad=
+ding-left: 15px; padding-right: 15px;" align=3D"left">
+						<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+							<tr>
+								<td class=3D"img dm-b-s-black" style=3D"border-bottom-width: 2px; b=
+order-bottom-color: #000001; border-bottom-style: solid; font-size: 0pt; li=
+ne-height: 0pt;" align=3D"left">&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- END Solid Line -->
+
+				<!-- Spacer - 20px -->
+				<tr>
+					<td class=3D"img px-15 pb-20" valign=3D"top" style=3D"font-size: 0pt; =
+line-height: 0pt; padding-left: 15px; padding-right: 15px; padding-bottom: =
+20px;" align=3D"left">&nbsp;</td>
+				</tr>
+				<!-- END Spacer - 20px -->
+
+				<!-- Buttons -->
+				<tr>
+          <td class=3D"img px-15 pb-20 mt-center" style=3D"font-size: 0pt; =
+line-height: 0pt; padding-left: 15px; padding-right: 15px; padding-bottom: =
+20px;" align=3D"left">
+							<!-- Row 1 -->
+							<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+								<tr>
+									<td class=3D"pb-10" style=3D"padding-bottom: 10px;">
+										<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+											<tr>
+												<td width=3D"155" valign=3D"top">
+													<!-- Button 1 -->
+													<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0">
+														<tr>
+															<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-paddi=
+ng-alt: 12px 15px; border-radius: 8px; font-size: 22px; line-height: 26px; =
+color: #ffffff; font-family: Helvetica, Arial, sans-serif; min-width: auto =
+!important;" bgcolor=3D"#000001" align=3D"center">
+																<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4Lef=
+urRPSAbBmx2yydvyRvKYlVo-imS25IbOwRUWUsCZoyyS3-J13oVtl-g/3oq/35cKRJsFQJSqCg7=
+njM_mGg/h42/zABFaDaDFijiYlvsZZVWnHLNKvG8HjJsFbdhv8ctBtA" universal=3D"true"=
+ target=3D"_blank" class=3D"link c-white" style=3D"display: block; text-dec=
+oration: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-w=
+hite" style=3D"text-decoration: none; color: #ffffff;">Nike</span></a>
+															</td>
+														</tr>
+													</table>
+													<!-- END Button 1 -->
+												</td>
+												<td class=3D"w-auto mpx-5" width=3D"15" style=3D"font-size: 0pt=
+; line-height: 0pt;">&nbsp;</td>
+												<td width=3D"155" valign=3D"top">
+													<!-- Button 2 -->
+													<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0">
+														<tr>
+															<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-paddi=
+ng-alt: 12px 15px; border-radius: 8px; font-size: 22px; line-height: 26px; =
+color: #ffffff; font-family: Helvetica, Arial, sans-serif; min-width: auto =
+!important;" bgcolor=3D"#000001" align=3D"center">
+																<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4Lef=
+urRPSAbBmx2yydvyRvKYlVo-imS25IbOwTLyAtwcWet5wc-wS28O3Yy/3oq/35cKRJsFQJSqCg7=
+njM_mGg/h43/IfqhnOuqISFytAU7xZpD5qe408ZmMZnfuNpsSWfBmzs" universal=3D"true"=
+ target=3D"_blank" class=3D"link c-white" style=3D"display: block; text-dec=
+oration: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-w=
+hite" style=3D"text-decoration: none; color: #ffffff;">Adidas</span></a>
+															</td>
+														</tr>
+													</table>
+													<!-- END Button 2 -->
+												</td>
+												<td class=3D"w-auto mpx-5" width=3D"15" style=3D"font-size: 0pt=
+; line-height: 0pt;">&nbsp;</td>
+												<td width=3D"230" valign=3D"top">
+													<!-- Button 3 -->
+													<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0">
+														<tr>
+															<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-paddi=
+ng-alt: 12px 15px; border-radius: 8px; white-space: nowrap; font-size: 22px=
+; line-height: 26px; color: #ffffff; font-family: Helvetica, Arial, sans-se=
+rif; min-width: auto !important;" bgcolor=3D"#000001" align=3D"center">
+																<a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQ=
+G-r09OrTg6ty8WI7Y4UzVs_RCv9bSGfgEeRQJiENYZxOy5RatL-YHbM/3oq/35cKRJsFQJSqCg7=
+njM_mGg/h44/PR1AxUTvGibSgQu04c-wV5HDx66zp9slDZhYJ-RA5T8" universal=3D"true"=
+ target=3D"_blank" class=3D"link c-white" style=3D"display: block; text-dec=
+oration: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-w=
+hite" style=3D"text-decoration: none; color: #ffffff;">The&nbsp;North&nbsp;=
+Face</span></a>
+															</td>
+														</tr>
+													</table>
+													<!-- END Button 3 -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END Row 1 -->	=09
+
+							<!-- Row 2 -->
+							<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+								<tr>
+									<td class=3D"w-auto" width=3D"109" valign=3D"top">
+										<!-- Button 1 -->
+										<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+											<tr>
+												<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-padding-=
+alt: 12px 15px; border-radius: 8px; font-size: 22px; line-height: 26px; col=
+or: #ffffff; font-family: Helvetica, Arial, sans-serif; min-width: auto !im=
+portant;" bgcolor=3D"#000001" align=3D"center">
+													<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurR=
+PSAbBmx2yydvyRvKYlVo-imS25IbOwRksOm8wbCzOswhyJzj8vaD/3oq/35cKRJsFQJSqCg7njM=
+_mGg/h45/7AgFphJvZ_39Lehf50iou8DWXwKURJ-Fl3HwLlU1AKM" universal=3D"true" ta=
+rget=3D"_blank" class=3D"link c-white" style=3D"display: block; text-decora=
+tion: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-whit=
+e" style=3D"text-decoration: none; color: #ffffff;">Levi's</span></a>
+												</td>
+											</tr>
+										</table>
+										<!-- END Button 1 -->
+									</td>
+									<td class=3D"w-auto mpx-5" width=3D"15" style=3D"font-size: 0pt; l=
+ine-height: 0pt;">&nbsp;</td>
+									<td class=3D"w-auto" width=3D"177" valign=3D"top">
+										<!-- Button 2 -->
+										<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+											<tr>
+												<td class=3D"btn-22 a-center dm-bg-black" style=3D"white-space:=
+ nowrap; mso-padding-alt: 12px 15px; border-radius: 8px; font-size: 22px; l=
+ine-height: 26px; color: #ffffff; font-family: Helvetica, Arial, sans-serif=
+; min-width: auto !important;" bgcolor=3D"#000001" align=3D"center">
+													<a href=3D"https://links.ohhey.depop.com/uni/ss/c/7URIxRHFQG-r=
+09OrTg6tyzLxEu3w01IkxRUhZ0Cz8c4qfzON1VYZx6bTFRJG1mwq/3oq/35cKRJsFQJSqCg7njM=
+_mGg/h46/eVG-_3UPSr4SYYpUvEcsO1HFotXGPxNM32v8x0xoPUs" universal=3D"true" ta=
+rget=3D"_blank" class=3D"link c-white" style=3D"display: block; text-decora=
+tion: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-whit=
+e" style=3D"text-decoration: none; color: #ffffff;">Dr. Martens</span></a>
+												</td>
+											</tr>
+										</table>
+										<!-- END Button 2 -->
+									</td>
+									<td class=3D"w-auto mpx-5" width=3D"15" style=3D"font-size: 0pt; l=
+ine-height: 0pt;">&nbsp;</td>
+									<td class=3D"w-auto" width=3D"109" valign=3D"top">
+										<!-- Button 3 -->
+										<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+											<tr>
+												<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-padding-=
+alt: 12px 15px; border-radius: 8px; font-size: 22px; line-height: 26px; col=
+or: #ffffff; font-family: Helvetica, Arial, sans-serif; min-width: auto !im=
+portant;" bgcolor=3D"#000001" align=3D"center">
+													<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurR=
+PSAbBmx2yydvyRvKYlVo-imS25IbOwRDK3hJzM0XjzWqkIKDWV-s/3oq/35cKRJsFQJSqCg7njM=
+_mGg/h47/MfyTGMtgfqmfR6PTTWeNp0FOzi5NxbxnwX2DeNUx0TY" universal=3D"true" ta=
+rget=3D"_blank" class=3D"link c-white" style=3D"display: block; text-decora=
+tion: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-whit=
+e" style=3D"text-decoration: none; color: #ffffff;">Zara</span></a>
+												</td>
+											</tr>
+										</table>
+										<!-- END Button 3 -->
+									</td>
+									<td class=3D"w-auto mpx-5" width=3D"15" style=3D"font-size: 0pt; l=
+ine-height: 0pt;">&nbsp;</td>
+									<td class=3D"w-auto" width=3D"130" valign=3D"top">
+										<!-- Button 4 -->
+										<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+											<tr>
+												<td class=3D"btn-22 a-center dm-bg-black" style=3D"mso-padding-=
+alt: 12px 15px; border-radius: 8px; font-size: 22px; line-height: 26px; col=
+or: #ffffff; font-family: Helvetica, Arial, sans-serif; min-width: auto !im=
+portant;" bgcolor=3D"#000001" align=3D"center">
+													<a href=3D"https://links.ohhey.depop.com/uni/ss/c/65Pxi4LefurR=
+PSAbBmx2yydvyRvKYlVo-imS25IbOwTts6GH05itOSkd4OpAL851/3oq/35cKRJsFQJSqCg7njM=
+_mGg/h48/FwIrBOk4sbzeZ2dE4Xh0ug_kV1HvIeHbZHNdwxXAPZw" universal=3D"true" ta=
+rget=3D"_blank" class=3D"link c-white" style=3D"display: block; text-decora=
+tion: none; color: #ffffff; padding: 12px 15px;"><span class=3D"link c-whit=
+e" style=3D"text-decoration: none; color: #ffffff;">Jordan</span></a>
+												</td>
+											</tr>
+										</table>
+										<!-- END Button 4 -->
+									</td>
+								</tr>
+							</table>
+							<!-- END Row 2 -->
+						</td>
+				</tr>
+				<!-- END Buttons -->
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Content block G - FOOTER -->
+
+<!-- EMAIL FOOTER -->
+<!-- Footer -->
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+	<tr>
+		<td class=3D"img pt-37 pb-37 dm-bg-grey mpx-15" bgcolor=3D"#D7D7D7" style=
+=3D"font-size: 0pt; line-height: 0pt; padding-top: 37px; padding-bottom: 37=
+px;" align=3D"left">
+			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tr>
+					<td align=3D"center" class=3D"pb-44" style=3D"padding-bottom: 44px;">
+						<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+							<tr>
+								<td class=3D"img" width=3D"40" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2=
+y09dANqMubEK9Uh3d6KWBVNNqbCf1ApQKDZunuTtMCo4/3oq/35cKRJsFQJSqCg7njM_mGg/h49=
+/StXI70rVsa_N3JKebaApYRMkqhBz13oD0hoaTHq2lIY" target=3D"_blank" style=3D"co=
+lor: #000001; text-decoration: none;"><img src=3D"https://appboy-images.com=
+/appboy/communication/assets/image_assets/images/60dc39caca35d87f50167237/o=
+riginal.png?1625045450" width=3D"40" height=3D"39" border=3D"0" alt=3D"Inst=
+agram" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+								</td>
+								<td class=3D"img" width=3D"35" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">&nbsp;</td>
+								<td class=3D"img" width=3D"39" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2=
+ywyr0lqhglFZV2suycKqYyvGc-hES5PHhICFZQM_Wnce/3oq/35cKRJsFQJSqCg7njM_mGg/h50=
+/NAecq26LOt75jE5aMkzBGgJW2TU1tBwbJOT8Ounc6Oo" target=3D"_blank" style=3D"co=
+lor: #000001; text-decoration: none;"><img src=3D"https://appboy-images.com=
+/appboy/communication/assets/image_assets/images/60dc39ca8d484f51ba06dcc4/o=
+riginal.png?1625045450" width=3D"39" height=3D"38" border=3D"0" alt=3D"Face=
+book" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+								</td>
+								<td class=3D"img" width=3D"35" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">&nbsp;</td>
+								<td class=3D"img" width=3D"39" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/lVxI9S5IQs3ebOZLevK3=
+cMLTQAssiabkLpW2Ebesxz_UsJTXFWgSh1QufCqbj24T/3oq/35cKRJsFQJSqCg7njM_mGg/h51=
+/ECQNr_HF9ULSmO3c3tMIKtIChhSO0bC3w2C1ihq6tPI" target=3D"_blank" style=3D"co=
+lor: #000001; text-decoration: none;"><img src=3D"https://appboy-images.com=
+/appboy/communication/assets/image_assets/images/60dc39ca7864aa49656652d3/o=
+riginal.png?1625045450" width=3D"39" height=3D"38" border=3D"0" alt=3D"Twit=
+ter" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+								</td>
+								<td class=3D"img" width=3D"35" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">&nbsp;</td>
+								<td class=3D"img" width=3D"46" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2=
+yy3dQxWqYb1PZylsT8FNg3Owh6WNmALKUpbxkKym1Inp/3oq/35cKRJsFQJSqCg7njM_mGg/h52=
+/dF7tr2JCZh0eX9HDqSsy5XcAWHVTTZ0TnWZVOeHw4Pk" target=3D"_blank" style=3D"co=
+lor: #000001; text-decoration: none;"><img src=3D"https://appboy-images.com=
+/appboy/communication/assets/image_assets/images/60dc39ca235912047d10effb/o=
+riginal.png?1625045450" width=3D"46" height=3D"32" border=3D"0" alt=3D"Yout=
+ube" style=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=3D"center" class=3D"pb-36" style=3D"padding-bottom: 36px;">
+						<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+							<tr>
+								<td class=3D"img mw-120" width=3D"163" style=3D"font-size: 0pt; lin=
+e-height: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/lAVI_h_7X-VHj290jbLu=
+7q1vfyEQQfe2OpU5tln88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDivAINVLROWvxqn=
+K3qkujlogxAbimskOCzwKHtcVlQAv7vt7/3oq/35cKRJsFQJSqCg7njM_mGg/h53/nqGWv4pL_m=
+rJLefI1O6WHgSDli3JsKruHFDGMNKmm8s" target=3D"_blank" style=3D"color: #00000=
+1; text-decoration: none;"><img src=3D"https://appboy-images.com/appboy/com=
+munication/assets/image_assets/images/60dc39ca265b1248964d64f7/original.png=
+?1625045450" width=3D"163" height=3D"51" border=3D"0" alt=3D"App Store" sty=
+le=3D"-ms-interpolation-mode: bicubic; margin: 0;"></a>
+								</td>
+								<td class=3D"img" width=3D"25" style=3D"font-size: 0pt; line-height=
+: 0pt;" align=3D"left">&nbsp;</td>
+								<td class=3D"img mw-120" width=3D"163" style=3D"font-size: 0pt; lin=
+e-height: 0pt;" align=3D"left">
+									<a href=3D"https://links.ohhey.depop.com/ss/c/1HJmLSnrDX1t4WJsXNWF=
+YQS2q8UMmTHCeFDZvk1C0feTWqDG-QtN8dHX7hW4EWmn3-B9Xz25dCvtGCxw45QDcA/3oq/35cK=
+RJsFQJSqCg7njM_mGg/h54/hlb_qrmdK4w70zoY97H-DzaaofOzqPNtkfNviOO7K2g" target=
+=3D"_blank" style=3D"color: #000001; text-decoration: none;"><img src=3D"ht=
+tps://appboy-images.com/appboy/communication/assets/image_assets/images/60d=
+c41b51ae7cf05a09fdd4e/original.png?1625047477" width=3D"163" height=3D"51" =
+border=3D"0" alt=3D"Play Store" style=3D"-ms-interpolation-mode: bicubic; m=
+argin: 0;"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class=3D"img-center pb-10" style=3D"font-size: 0pt; line-height: 0=
+pt; padding-bottom: 10px;" align=3D"center">
+						<img src=3D"https://appboy-images.com/appboy/communication/assets/ima=
+ge_assets/images/60dc39cace4f884fe9355460/original.png?1625045450" width=3D=
+"94" height=3D"24" border=3D"0" alt=3D"Depop" style=3D"-ms-interpolation-mo=
+de: bicubic; margin: 0;">
+					</td>
+				</tr>
+				<tr>
+					<td class=3D"text-15 a-center pb-29" style=3D"font-size: 15px; line-he=
+ight: 19px; color: #000001; font-family: Helvetica, Arial, sans-serif; min-=
+width: auto !important; padding-bottom: 29px;" align=3D"center">
+						2nd Floor <br>
+						20 Farringdon Road <br>
+						London, EC1M 3HE
+					</td>
+				</tr>
+				<tr>
+					<td class=3D"text-12 a-center" style=3D"font-size: 12px; line-height: =
+16px; color: #000001; font-family: Helvetica, Arial, sans-serif; min-width:=
+ auto !important;" align=3D"center">
+						We=E2=80=99d be sad to see you go, but you can <a href=3D"https://lin=
+ks.ohhey.depop.com/ss/c/65Pxi4LefurRPSAbBmx2y5kHDEJL-7N-jRxZS7GUCaZMkGwBLhH=
+SqcEOS504S8ZnTX6lyjw-Bvhmi7s1Ue-C9SPVkzvaFBmPglYGt3LSI9JhWxSw0YCRpC8v9TplNw=
+pTessM0jT2fo9OeMGGjFDKfg/3oq/35cKRJsFQJSqCg7njM_mGg/h55/UNgyJ71oOfVK5wchkB9=
+q0pk1EOwcCLVBpozViDphK7o" target=3D"_blank" class=3D"link-u" style=3D"color=
+: #000001; text-decoration: underline;"><span class=3D"link-u" style=3D"col=
+or: #000001; text-decoration: underline;">unsubscribe here</span></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END Footer -->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<img src=3D"https://links.ohhey.depop.com/ss/o/qIYzJXGPjg60qVTEHfvZwQ/3oq/3=
+5cKRJsFQJSqCg7njM_mGg/ho.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0=
+" style=3D"height:1px !important;width:1px !important;border-width:0 !impor=
+tant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !imp=
+ortant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !=
+important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+--df6267321201c0ab13496635e73c52a29bda648127361e830e43b071c762--
