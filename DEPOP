@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html style="height: 100% !important; width: 100% !important; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0;">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <style>
+      body {
+      margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important;
+      }
+      img {
+      -ms-interpolation-mode: bicubic;
+      }
+      .button-td:hover {
+      background: #555555 !important; border-color: #555555 !important;
+      }
+      .button-a:hover {
+      background: #555555 !important; border-color: #555555 !important;
+      }
+      @font-face {
+      font-family: 'gt-america-extended-regular'; src: url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended-regular.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended-regular.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended-regular.woff') format('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended-regular.ttf') format('truetype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-regular/gt-america-trial-extended-regular.svg') format('svg'); font-weight: normal; font-style: normal;
+      }
+      @font-face {
+      font-family: 'gt-america-extended-black'; src: url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black.woff') format('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black.ttf') format('truetype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-extended-black/gt-america-trial-extended-black.svg') format('svg'); font-weight: normal; font-style: normal;
+      }
+      @font-face {
+      font-family: 'gt-america-black'; src: url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.woff') format('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.ttf') format('truetype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-black/gt-america-trial-expanded-black.svg') format('svg'); font-weight: normal; font-style: normal;
+      }
+      @font-face {
+      font-family: 'gt-america-regular'; src: url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.eot?#iefix') format('embedded-opentype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.woff2') format('woff2'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.woff') format('woff'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.ttf') format('truetype'), url('https://d2x3ljdtuhcn0i.cloudfront.net/font/gt-america-expanded-regular/gt-america-trial-expanded-regular.svgg') format('svg'); font-weight: normal; font-style: normal;
+      }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        .email-container {
+          min-width: 375px !important;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .fluid {
+          width: 100% !important; max-width: 100% !important; height: auto !important; margin-left: auto !important; margin-right: auto !important;
+        }
+        .stack-column {
+          display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important;
+        }
+        .stack-column-center {
+          display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important;
+        }
+        .stack-column-center {
+          text-align: center !important;
+        }
+        .center-on-narrow {
+          text-align: center !important; display: block !important; margin-left: auto !important; margin-right: auto !important; float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+        .email-container p {
+          font-size: 17px !important; line-height: 22px !important;
+        }
+        .email-container h3 {
+          font-size: 25px !important; line-height: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  
+  <body bgcolor="#FFFFFF" style="mso-line-height-rule: exactly; height: 100% !important; width: 100% !important; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0 auto; padding: 0;"
+  width="100%">
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">More layers = more ways to style.</div>
+    <center style="width: 100%; background-color: #FFFFFF; text-align: left; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"
+    class="">
+      <!-- Visually Hidden Preheader Text : Begin -->
+      <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+        <!-- PREHEADER TEXT GOES HERE -->
+      </div>
+      <!-- Visually Hidden Preheader Text : End -->
+      <!-- Email Container : Begin -->
+      <div class="email-container" style="max-width: 504px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: auto;">
+        <!-- Email Header : Begin -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="max-width: 504px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;"
+        width="100%">
+          <!-- Email Header : End -->
+          <tbody style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"></tr>
+          </tbody>
+        </table>
+        <!-- Email Header : End -->
+        <!-- TOP Container : Begin -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="email-container"
+        role="presentation" style="max-width: 504px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;"
+        width="100%">
+          <tbody style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+            <!-- H:|[Hero]| -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+              <td align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                <div style="display: block; max-width: 100%; min-width: 30px; vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px;"
+                      class="email-container">
+                        <a href="https://depop.app.link/TkK48dUuSib" universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                          <https: style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6152fb6353ab7c2b30caef53/original.jpg?1632828258"
+                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                          </https:>
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!--BODY COPY STARTS-->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+              <td bgcolor="#ffffff" mc:edit="LargeCopy1Copy" align="center" style="font-size: 16px; font-family: Helvetica,sans-serif; letter-spacing: 0px; line-height: 24px; color: #000000; text-transform: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px 20px 20px;">
+                <a target="_blank" style="color: #000000; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                  <br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">New term style is all about staying cool – no matter how brisk it is outside.
+                  Nail your campus look with jackets and coats from our Depop class of 2021 edit.
+                  More layers that make the grade = more ways to style.
+                  <br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                </a>
+              </td>
+            </tr>
+            <!--BODY COPY ENDS-->
+            <!-- H:|[PHOTO PHOTO PHOTO]| -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+              <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                        <td style="border-right-width: 2px; border-right-color: white; border-right-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                        class="grid-elements">
+                          <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fplis%2Dvintage%2Dpvc%2Dcoat%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                          universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6153145339a2eb7369956577/original.jpeg?1632834643"
+                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                        <td style="border-right-width: 1px; border-right-color: white; border-right-style: solid; border-left-width: 1px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                        class="grid-elements">
+                          <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Ftheoldgaragevintage%2Dvintage%2Dnapapijri%2Dwinter%2Drainforest%2Djacket%2Dd382%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                          universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/61531632e9502e29b918ae62/original.jpeg?1632835122"
+                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                        <td style="border-left-width: 2px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                        class="grid-elements">
+                          <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fmaggieandclo%2Dvintage%2Dafghan%2Dcoat%2Dno%2Dlabel%2Dec64%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                          universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615316b36e72a02ddf041e1b/original.jpeg?1632835251"
+                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- H:|[PHOTO PHOTO PHOTO]| -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                      <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                        <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                              <td style="border-right-width: 2px; border-right-color: white; border-right-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                              class="grid-elements">
+                                <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2F5thseason%2Dwaweee%2Dstunning%2Dvintage%2D1970s%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                  <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615315402886a41227345e8e/original.jpeg?1632834880"
+                                  border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                              <td style="border-right-width: 1px; border-right-color: white; border-right-style: solid; border-left-width: 1px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                              class="grid-elements">
+                                <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fmintage%5F%5Fclothing%2Dcampri%2Dnew%2Dyork%2Dyankees%2Dbaseball%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                  <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615315bf6e72a0154d041e43/original.jpeg?1632835007"
+                                  border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                              <td style="border-left-width: 2px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                              class="grid-elements">
+                                <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fjimjamboree%2Dlazy%2Doaf%2Dpink%2Dcheck%2Dfur%2D80f4%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                  <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/61531673777eb202ff4fb48a/original.jpeg?1632835187"
+                                  border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <!-- H:|[PHOTO PHOTO PHOTO]| -->
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                              <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td style="border-right-width: 2px; border-right-color: white; border-right-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                                    class="grid-elements">
+                                      <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Ffairygorlvintage%2Dvintage%2Dearly%2D00s%2Damaranto%2Dcream%2Dd17e%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                      universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615314ff9422b266c6a538d7/original.jpeg?1632834815"
+                                        border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td style="border-right-width: 1px; border-right-color: white; border-right-style: solid; border-left-width: 1px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                                    class="grid-elements">
+                                      <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fthebreadandbuttercollection%2Dnike%2Dski%2Djacket%2Din%2Dblue%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                      universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615315f79422b2706ca53624/original.jpeg?1632835063"
+                                        border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td style="border-left-width: 2px; border-left-color: white; border-left-style: solid; border-bottom-width: 3px; border-bottom-color: white; border-bottom-style: solid; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                                    class="grid-elements">
+                                      <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fhangervintagedepop%2Dvintage%2Dbeige%2Dclassic%2D80s%2Dtrench%2D37a5%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                      universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6153157e51c18b3f93831132/original.jpeg?1632834942"
+                                        border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <!-- H:| CTA]| -->
+                            </td>
+                          </tr>
+                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                              <div style="display: block; max-width: 100%; min-width: 30px; vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px;"
+                                    class="email-container">
+                                      <a href="https://depop.app.link/TkK48dUuSib" universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <https: style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/60dc6ec2f85f816f744acd6e/original.jpg?1625059010"
+                                          border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                        </https:>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <!-- H:|[MTS]| -->
+                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                              <div style="display: block; max-width: 100%; min-width: 30px; vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px;"
+                                    class="email-container">
+                                      <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fsimplyretro%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                      universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6152fc6e6e72a02ec204211b/original.jpg?1632828526"
+                                        border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--BODY COPY STARTS-->
+                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td bgcolor="#ffffff" mc:edit="LargeCopy1Copy" align="center" style="font-size: 16px; font-family: Helvetica,sans-serif; letter-spacing: 0px; line-height: 24px; color: #000000; text-transform: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px 20px 20px;">
+                              <a target="_blank" style="color: #000000; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                <br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Neon ‘90s fleeces. On-trend athleisure in colours that pop. Explore outerwear
+                                styles that will make you excited about cooler temperatures.
+                                <br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                              </a>
+                            </td>
+                          </tr>
+                          <!--BODY COPY ENDS-->
+                          <!-- H:|[PHOTO PHOTO]| -->
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                              <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 2px;"
+                                      class="grid-elements">
+                                        <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fsimplyretro%2Dvintage%2Dpatterned%2Dfleece%2Dvintage%2D90s%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                        universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/615312ee777eb233014fb48b/original.jpeg?1632834286"
+                                          border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                  style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                      <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 2px;"
+                                      class="grid-elements">
+                                        <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fsimplyretro%2Dvintage%2Dlevis%2Ddenim%2Djacket%2Drare%2D99ad%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                        universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                          <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6153137c6e72a02ddf041de0/original.jpeg?1632834428"
+                                          border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
+                                <!-- H:|[PHOTO PHOTO]| -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td bgcolor="#ffffff" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                      <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 2px;"
+                                            class="grid-elements">
+                                              <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fsimplyretro%2Dvintage%2Dadidas%2Dwindbreaker%2Djacket%2Drare%2De39e%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                              universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/61531292d5907e7ffb326699/original.jpeg?1632834194"
+                                                border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 2px;"
+                                            class="grid-elements">
+                                              <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fproducts%2Fsimplyretro%2Dthe%2Dnorth%2Dface%2Dvintage%2Dblack%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                              universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/6153133e27fb9a251e9b43fe/original.jpeg?1632834366"
+                                                border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <!-- H:| CTA]| -->
+                                    </td>
+                                  </tr>
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                      <div style="display: block; max-width: 100%; min-width: 30px; vertical-align: middle; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                          <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 0px;"
+                                            class="email-container">
+                                              <a href="https://depop.app.link/3p?$3p=e_ab&$original_url=https%3A%2F%2Fwww%2Edepop%2Ecom%2Fsimplyretro%2F%3Futm%5Fmedium%3Dcrm%26utm%5Fsource%3Demail%26utm%5Fcampaign%3D30092021%2DEmail%2DBroadcast%2DClassof2021Dedicated%2DUK%2DBuyers%26%7Etags%3DUKClassof2021%2D3009"
+                                              universal="true" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/61165799cce94a1df0d5c652/original.jpg?1628854168"
+                                                border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <!-- Email footer : Begin -->
+                                  <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                    <td bgcolor="#d7d7d7" align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                                    valign="top">
+                                      <div class="fluid" style="display: inline-block; max-width: 100%; min-width: 100px; vertical-align: top; width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"
+                                        style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                          <tbody style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                              <!--SPACER STARTS-->
+                                            </tr>
+                                            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                              <td height="20px" style="mso-line-height-rule: exactly; font-size: 20px; line-height: 20px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">&nbsp;</td>
+                                            </tr>
+                                            <!--SPACER ENDS-->
+                                            <!-- H:|[social icons]| -->
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="50%"
+                                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                              <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <td align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://www.instagram.com/accounts/login/?next=/depop/" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c90e55b99ac65bbb6c433/original.png?1578930405"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://www.facebook.com/depop/?utm_medium=crm&utm_source=email&utm_campaign=30092021-Email-Broadcast-Classof2021Dedicated-UK-Buyers&~tags=UKClassof2021-3009"
+                                                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c9138c2b47758e2c41e70/original.png?1578930488"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://twitter.com/depop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c91656a8d6329cb88455b/original.png?1578930533"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://www.youtube.com/depop?utm_medium=crm&utm_source=email&utm_campaign=30092021-Email-Broadcast-Classof2021Dedicated-UK-Buyers&~tags=UKClassof2021-3009"
+                                                          style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c9105c2b4770460c40081/original.png?1578930437"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                            style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                              <!-- H:|[PHOTO PHOTO]| -->
+                                              <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <td align="center" style="font-size: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://apps.apple.com/gb/app/depop-buy-sell-and-share/id518684914" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c9312af874e210106d48f/original.png?1578930962"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                  <div style="display: table-cell; max-width: 45%; min-width: 15px; vertical-align: middle; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                    style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                                      <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 10px;"
+                                                        class="grid-elements">
+                                                          <a href="https://play.google.com/store/apps/details?id=com.depop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                            <img src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c93376a8d634753d86f53/original.png?1578930999"
+                                                            border="0" style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                          </a>
+                                                        </td>
+                                                      </tr>
+                                                    </table>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                            <!-- ADDRESS -->
+                                            <table bgcolor="#d7d7d7" align="center" border="0" cellpadding="0" cellspacing="0"
+                                            role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto;">
+                                              <td style="padding-bottom: 10px; padding-top: 10px; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;"
+                                              class="">
+                                                <img border="0" class="center-on-narrow" src="https://appboy-images.com/appboy/communication/assets/image_assets/images/5e1c95d26a8d636ae990e7a2/original.png?1578931666"
+                                                style="width: 100%; height: auto; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                                <!--BODY COPY STARTS-->
+                                              </td>
+                                              <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <td bgcolor="#d7d7d7" mc:edit="LargeCopy1Copy" align="center" style="font-size: 12px; font-family: Helvetica,sans-serif; letter-spacing: 0px; line-height: 16px; color: #000000; padding-top: 0px; padding-left: 10px; padding-right: 10px; text-transform: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important;">
+                                                  <a target="_blank" style="color: #000001; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> <b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">7-9 Curtain Road 
+                  <br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">London, EC2A 3LT
+                  </b>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <!--BODY COPY ENDS-->
+                                              <!--BODY COPY STARTS-->
+                                              <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <td mc:edit="LargeCopy1Copy" align="center" style="font-size: 9px; font-family: Helvetica,sans-serif; letter-spacing: 0px; line-height: 20px; color: #000000; text-transform: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 5px 10px 20px;">
+                                                  <a href="https://dashboard-01.braze.com/enc_user/unsubscribe?d=6mJ9KCf5KMdzc1AUDtYUrQ%3D%3D%24zTfvb2qFMkruC4JrA4DbJvrd2hGppu292H%2FpDyKvxGCqmcB26%2FLM9h5GRbiS%0AZUPj67xiDp09f31OJ%2BbJx8abKCI8Z1O1F%2Ba5u5uEtmDkq7O6F9%2BxMA08lXnv%0A4Xk2zjWU%2BqfQSfyLaXYaTTCclKuK9c8y%2FeA7tsIwtRTeJp0qwYLNETDaNKCV%0AG0bamhG8NbUQXbwt5BApC4K9319kiUdNq%2BtUOS4cG%2BX0gxzbhZitPnQ%3D&1=1"
+                                                  target="_blank" style="color: #000001; text-decoration: none; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">We'd be sad to see you go, but you can <u style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"> unsubscribe here</u>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <!--BODY COPY ENDS-->
+                                            </table>
+                                            <!-- Email footer : End -->
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </tbody>
+        </table>
+      </div>
+    </center>
+    <img src="https://links.ohhey.depop.com/ss/o/qIYzJXGPjg60qVTEHfvZwQ/3fp/1HFFARKDSzKnL1WBdbAfhg/ho.gif"
+    alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"
+    />
+  </body>
+
+</html>
