@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+<title>
+</title>
+<!--[if !mso]><!-->
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<!--<![endif]-->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!--[if mso]>
+<noscript>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<![endif]-->
+<!--[if lte mso 11]>
+<style type="text/css" data-inliner="ignore">
+.mj-outlook-group-fix { width:100% !important; }
+</style>
+<![endif]-->
+<!--[if !mso]><!--><!--<![endif]-->
+<style>a:link {color:#F03A75;font-weight:normal;text-decoration:underline;font-style:normal}
+a:visited {color:#F03A75;font-weight:normal;text-decoration:underline;font-style:normal}
+a:active {color:#F03A75;font-weight:normal;text-decoration:underline;font-style:normal}
+a:hover {color:#F03A75;font-weight:normal;text-decoration:underline;font-style:normal}</style><style>@import url(https://static-forms.klaviyo.com/fonts/api/v1/We55WH/custom_fonts.css);
+#outlook a {
+padding: 0
+}
+body {
+margin: 0;
+padding: 0;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%
+}
+table, td {
+border-collapse: collapse;
+mso-table-lspace: 0;
+mso-table-rspace: 0
+}
+img {
+border: 0;
+line-height: 100%;
+outline: none;
+text-decoration: none;
+-ms-interpolation-mode: bicubic
+}
+p {
+display: block;
+margin: 13px 0
+}
+@media only screen and (min-width: 480px) {
+.mj-column-per-100 {
+width: 100% !important;
+max-width: 100%
+}
+}
+.moz-text-html .mj-column-per-100 {
+width: 100% !important;
+max-width: 100%
+}
+@media only screen and (max-width: 480px) {
+div.kl-row.colstack div.kl-column {
+display: block !important;
+width: 100% !important
+}
+}
+.hlb-subblk td {
+word-break: normal
+}
+@media only screen and (max-width: 480px) {
+.hlb-wrapper .hlb-block-settings-content {
+padding: 9px !important
+}
+.hlb-logo {
+padding-bottom: 9px !important
+}
+.r2-tbl {
+width: 100%
+}
+.r2-tbl .lnk {
+width: 100%
+}
+.r2-tbl .hlb-subblk:last-child {
+padding-right: 0 !important
+}
+.r2-tbl .hlb-subblk {
+padding-right: 10px !important
+}
+.kl-hlb-stack {
+display: block !important;
+width: 100% !important;
+padding-right: 0 !important
+}
+.kl-hlb-stack.vspc {
+margin-bottom: 9px
+}
+.kl-hlb-wrap {
+display: inline-block !important;
+width: auto !important
+}
+.kl-hlb-no-wrap {
+display: table-cell !important
+}
+.kl-hlb-wrap.nospc.nospc {
+padding-right: 0 !important
+}
+}
+@media only screen and (max-width: 480px) {
+.component-wrapper .mob-no-spc {
+padding-left: 0 !important;
+padding-right: 0 !important
+}
+}
+@media only screen and (max-width: 480px) {
+.kl-text {
+padding-right: 18px !important;
+padding-left: 18px !important
+}
+}
+.kl-button a {
+display: block !important
+}
+@media only screen and (max-width: 480px) {
+td.kl-img-base-auto-width {
+width: 100% !important
+}
+}
+@media only screen and (max-width: 480px) {
+.kl-table-subblock.use-legacy-mobile-padding {
+padding-left: 9px !important;
+padding-right: 9px !important
+}
+}
+@media screen and (max-width: 480px) {
+.kl-sl-stk {
+display: block !important;
+width: 100% !important;
+padding: 0 0 9px !important;
+text-align: center !important
+}
+.kl-sl-stk.lbls {
+padding: 0 !important
+}
+.kl-sl-stk.spcblk {
+display: none !important
+}
+}
+img {
+border: 0;
+height: auto;
+line-height: 100%;
+outline: none;
+text-decoration: none;
+max-width: 100%
+}
+.root-container {
+background-repeat: repeat !important;
+background-size: auto !important;
+background-position: left top !important
+}
+.root-container-spacing {
+padding-top: 50px !important;
+padding-bottom: 20px !important;
+font-size: 0 !important
+}
+.content-padding {
+padding-left: 0 !important;
+padding-right: 0 !important
+}
+.content-padding.first {
+padding-top: 0 !important
+}
+.content-padding.last {
+padding-bottom: 0 !important
+}
+@media only screen and (max-width: 480px) {
+td.mobile-only {
+display: table-cell !important
+}
+div.mobile-only {
+display: block !important
+}
+table.mobile-only {
+display: table !important
+}
+.desktop-only {
+display: none !important
+}
+}
+@media only screen and (max-width: 480px) {
+.table-mobile-only {
+display: table-cell !important;
+max-height: none !important
+}
+.table-mobile-only.block {
+display: block !important
+}
+.table-mobile-only.inline-block {
+display: inline-block !important
+}
+.table-desktop-only {
+max-height: 0 !important;
+display: none !important;
+mso-hide: all !important;
+overflow: hidden !important
+}
+}
+p {
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 1em
+}
+@media only screen and (max-width: 480px) {
+.kl-text > div, .kl-table-subblock div, .kl-split-subblock > div {
+font-size: 15px !important;
+line-height: 1.3 !important
+}
+}
+h1 {
+color: #222;
+font-family: "DM Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 40px;
+font-style: Normal;
+font-weight: 400;
+line-height: 1.1;
+letter-spacing: 0;
+margin: 0;
+margin-bottom: 20px;
+text-align: left
+}
+@media only screen and (max-width: 480px) {
+h1 {
+font-size: 40px !important;
+line-height: 1.1 !important
+}
+}
+h2 {
+color: #222;
+font-family: "Helvetica Neue", Arial;
+font-size: 32px;
+font-style: normal;
+font-weight: bold;
+line-height: 1.1;
+letter-spacing: 0;
+margin: 0;
+margin-bottom: 16px;
+text-align: left
+}
+@media only screen and (max-width: 480px) {
+h2 {
+font-size: 32px !important;
+line-height: 1.1 !important
+}
+}
+h3 {
+color: #222;
+font-family: "Helvetica Neue", Arial;
+font-size: 24px;
+font-style: normal;
+font-weight: bold;
+line-height: 1.1;
+letter-spacing: 0;
+margin: 0;
+margin-bottom: 12px;
+text-align: left
+}
+@media only screen and (max-width: 480px) {
+h3 {
+font-size: 24px !important;
+line-height: 1.1 !important
+}
+}
+h4 {
+color: #222;
+font-family: "Helvetica Neue", Arial;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.1;
+letter-spacing: 0;
+margin: 0;
+margin-bottom: 9px;
+text-align: left
+}
+@media only screen and (max-width: 480px) {
+h4 {
+font-size: 18px !important;
+line-height: 1.1 !important
+}
+}
+@media only screen and (max-width: 480px) {
+.root-container {
+width: 100% !important
+}
+.root-container-spacing {
+padding: 10px !important
+}
+.content-padding {
+padding-left: 0 !important;
+padding-right: 0 !important
+}
+.content-padding.first {
+padding-top: 0 !important
+}
+.content-padding.last {
+padding-bottom: 0 !important
+}
+.component-wrapper {
+padding-left: 0 !important;
+padding-right: 0 !important
+}
+}</style></head>
+<body style="word-spacing:normal;background-color:#FFFFFF;">
+<div class="root-container" id="bodyTable" style="background-color:#FFFFFF;">
+<div class="root-container-spacing">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding first">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:middle;width:600px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:middle;width:100%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper hlb-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="hlb-block-settings-content" style="vertical-align:top;padding-top:9px;padding-right:0px;padding-bottom:9px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="top" class="kl-header-link-bar" style="font-size:0px;padding:0px 0px 0px 0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;border:0;" width="100%">
+<tbody>
+<tr>
+<td align="center" class="hlb-logo" style="display:table-cell;width:100%;padding-bottom:0px;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<!--[if true]><td style="width:600px;" bgcolor="transparent"><![endif]-->
+<!--[if !true]><!--><td style="width:600px;"><!--<![endif]-->
+<a href="https://bloomin.co.uk/" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline" target="_blank">
+<img src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/0e1cfa3a-b06e-4936-8284-b11044aa5075.jpeg" style="display:block;outline:none;text-decoration:none;height:auto;width:100%;background-color:transparent;" width="600"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper kl-text-table-layout" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:9px;padding-right:18px;padding-bottom:0px;padding-left:18px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><div><span style="font-family: 'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold;"> </span></div>
+<h3 style="text-align: center;"><span style="font-family: 'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold;">20% off your first purchase ends tomorrow night</span></h3></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper kl-text-table-layout" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:9px;padding-right:18px;padding-bottom:0px;padding-left:18px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p style="padding-bottom:0; text-align:center">The launch promotion is ending soon. Act quick and <strong>apply code <a href="https://shop.bloomin.co.uk/collections/blends" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">TIMEFORTAKEOFF</a> at checkout to save 20% on your first purchase</strong> of our mushroom blends.</p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:middle;width:600px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:middle;width:100%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:18px;padding-bottom:0px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-button" style="font-size:0px;padding:0px;word-break:break-word;" vertical-align="middle">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;line-height:100%;">
+<tr>
+<td align="center" bgcolor="#000000" role="presentation" style="border:none;border-radius:50px;cursor:auto;font-style:Normal;mso-padding-alt:21px 33px 21px 33px;background:#000000;" valign="middle">
+<a href="https://shop.bloomin.co.uk/pages/quiz" style='color:#FFF; font-style:Normal; font-weight:400; text-decoration:none; display:inline-block; background:#000; font-family:"DM Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size:16px; line-height:100%; letter-spacing:0; margin:0; text-transform:none; padding:21px 33px 21px 33px; mso-padding-alt:0; border-radius:50px' target="_blank">
+Shop now
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:600px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:100%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper kl-text-table-layout" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:9px;padding-right:18px;padding-bottom:0px;padding-left:18px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><div><span style="font-family: 'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: bold;"> </span></div>
+<h3 style="text-align: center;">Based on your quiz results, you've been matched with...</h3></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+{% if person|lookup:'resultName' == 'boost' %}
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-image" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0px 0px 0px 0px;width:300px;" valign="top">
+<a href="https://shop.bloomin.co.uk/products/boost" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">
+<img src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/f2273319-709f-4f4a-b708-f3f73e70b666.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" width="300"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p><a href="https://shop.bloomin.co.uk/products/boost" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">bloomin boost</a></p>
+<p><span>For stress-less energy and healing, the Cordyceps mushroom (known for its fatigue fighting and cardiovascular benefits) is joined in perfect synergy with miracle stimulator plant Yerba Mate and powerhouse mind/body/soul healer Holy Basil. </span></p>
+<p style="padding-bottom:0"><a href="https://shop.bloomin.co.uk/products/boost" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline"><s>£30</s> £24</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+{% endif %} {% if person|lookup:'resultName' == 'focus' %}
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-image" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0px 0px 0px 0px;width:300px;" valign="top">
+<a href="https://shop.bloomin.co.uk/products/focus" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">
+<img src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/7f520ff6-90d4-4f80-915a-e60a52f0119f.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" width="300"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p><a href="https://shop.bloomin.co.uk/products/focus" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">bloomin focus</a></p>
+<p>A refocusing blend of the Lion’s Mane mushroom (best known for its power-surge cognitive properties and calming effects on mind and body), the clarifying Bacopa Monnieri and superstar adaptogenic Ashwagandha. Carefully designed for neurological benefits that will help you feel stress-free and sharp as a whistle.</p>
+<p style="padding-bottom:0"><a href="https://shop.bloomin.co.uk/products/focus" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline"><s>£30</s> £24</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+{% endif %} {% if person|lookup:'resultName' == 'rescue' %}
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-image" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0px 0px 0px 0px;width:300px;" valign="top">
+<a href="https://shop.bloomin.co.uk/products/rescue" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">
+<img src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/d6d885eb-d8af-4166-8c75-25ea30a95005.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" width="300"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p><a href="https://shop.bloomin.co.uk/products/rescue" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">bloomin rescue</a></p>
+<p><span style="font-weight: 400;">We’ve concocted a holy trinity of wellness warriors ready to defend your body, restore well-being and keep you fighting fit. A recovery blend of the antioxidant-packed Chaga mushroom, energy kickstarter Yerba Mate, and the tropical Cat’s Claw vine.</span></p>
+<p style="padding-bottom:0"><a href="https://shop.bloomin.co.uk/products/rescue" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline"><s>£30</s> £24</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+{% endif %} {% if person|lookup:'resultName' == 'breathe' %}
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-image" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0px 0px 0px 0px;width:300px;" valign="top">
+<a href="https://shop.bloomin.co.uk/products/breathe" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">
+<img src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/c394cd6d-a921-4c8b-96ee-ec3bd840f147.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" width="300"/>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if true]><td style="vertical-align:top;width:300px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:50%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p><a href="https://shop.bloomin.co.uk/products/breathe" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline">bloomin breathe</a></p>
+<p>Formulated to achieve and maintain mindfulness on the daily, we’ve combined a potent blend of revitalisers that give you the building blocks to find peace even on the chaotic days. A resilient balancing act of adaptogens: the Reishi,<span style="font-weight: 400;"> known for its sleep-supporting benefits, </span>calm contributor Ashwagandha and neuroprotective Rhodiola Rosea. </p>
+<p style="padding-bottom:0"><a href="https://shop.bloomin.co.uk/products/breathe" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline"><s>£30</s> £24</a></p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+{% endif %}
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td>
+<!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="kl-section-outlook" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#ffffff" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;border-radius:0px 0px 0px 0px;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;border-radius:0px 0px 0px 0px;">
+<tbody>
+<tr>
+<td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;text-align:center;">
+<!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><![endif]-->
+<div class="content-padding last">
+<!--[if true]><table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;direction:ltr"><tr><![endif]-->
+<div class="kl-row colstack" style="display:table;table-layout:fixed;width:100%;">
+<!--[if true]><td style="vertical-align:top;width:600px;"><![endif]-->
+<div class="kl-column" style="display:table-cell;vertical-align:top;width:100%;">
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td style="font-size:0px;word-break:break-word;">
+<div style="height:20px;line-height:20px;"> </div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-button" style="font-size:0px;padding:0px;word-break:break-word;" vertical-align="middle">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate;line-height:100%;">
+<tr>
+<td align="center" bgcolor="#000000" role="presentation" style="border:none;border-radius:50px;cursor:auto;font-style:Normal;mso-padding-alt:21px 33px 21px 33px;background:#000000;" valign="middle">
+<a href="https://shop.bloomin.co.uk/" style='color:#FFF; font-style:Normal; font-weight:400; text-decoration:none; display:inline-block; background:#000; font-family:"DM Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; font-size:16px; line-height:100%; letter-spacing:0; margin:0; text-transform:none; padding:21px 33px 21px 33px; mso-padding-alt:0; border-radius:50px' target="_blank">
+Start a bloomin new you
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-table" style="font-size:0px;padding:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:fixed;width:100%;border:none;" width="100%">
+<thead>
+</thead>
+<tbody>
+<tr>
+<td class="kl-table-subblock" style="width:auto;overflow:hidden;vertical-align:top;padding-top:4px;padding-right:0px;padding-bottom:4px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0;width:420px;" valign="top">
+<img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/39985ee8-9908-4509-9851-3e18559a312a.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" title="" width="420"/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class="kl-table-subblock" style="width:auto;overflow:hidden;vertical-align:top;padding-top:4px;padding-right:0px;padding-bottom:4px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0;width:600px;" valign="top">
+<img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/4084632c-dfd1-452f-8dd4-b8822b92ecf3.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" title="" width="600"/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class="kl-table-subblock" style="width:auto;overflow:hidden;vertical-align:top;padding-top:4px;padding-right:0px;padding-bottom:4px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0;width:600px;" valign="top">
+<img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/ead03bff-e1bb-46d6-a58e-cd5feefab1b3.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" title="" width="600"/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td class="kl-table-subblock" style="width:auto;overflow:hidden;vertical-align:top;padding-top:4px;padding-right:0px;padding-bottom:4px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" class="" style="font-size:0px;word-break:break-word;">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;border-spacing:0px;">
+<tbody>
+<tr>
+<td class="kl-img-base-auto-width" style="border:0;padding:0;width:600px;" valign="top">
+<img alt="" src="https://d3k81ch9hvuctc.cloudfront.net/company/We55WH/images/8b58c2d9-751e-4125-ad44-70be92b7afbc.png" style="display:block;outline:none;text-decoration:none;height:auto;font-size:13px;width:100%;" title="" width="600"/>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper kl-text-table-layout" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="left" class="kl-text" style="font-size:0px;padding:0px;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:16px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:left;color:#222222;"><p style="line-height: 90%;"> </p>
+<div>
+<p style="padding-bottom:0"><span style="font-size: 12px;"><em>Terms and conditions: 20% off is available on all bloomin blends. Simply enter code TIMEFORTAKEOFF during checkout. The promotion expires at midnight GMT 26th January 2023. Discount is available on the first purchase only. We reserve the right to change or end the promotion at any time</em></span></p>
+</div>
+<p style="padding-bottom:0"> </p></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:9px;padding-right:9px;padding-bottom:9px;padding-left:9px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td>
+<div style="width:100%;text-align:center">
+<!--[if true]><table style="all:unset;opacity:0;" border="0" cellpadding="0" cellspacing="0" ><tr><![endif]-->
+<!--[if !true]><!--><div class="" style="display:inline-block;padding-right:10px;"><!--<![endif]-->
+<!--[if true]><td style="padding-right:10px;"><![endif]-->
+<div style="text-align: center;">
+<a href="http://instagram.com/bloominuk" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline" target="_blank">
+<img alt="Instagram" src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/black/instagram_96.png" style="width:32px;" width="32"/>
+</a>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if !true]><!--></div><!--<![endif]-->
+<!--[if !true]><!--><div class="spcblk" style="display:inline-block;"><!--<![endif]-->
+<!--[if true]><td style=""><![endif]-->
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="10"></td>
+</tr></tbody>
+</table>
+<!--[if true]></td><![endif]-->
+<!--[if !true]><!--></div><!--<![endif]-->
+<!--[if !true]><!--><div class="" style="display:inline-block;padding-right:10px;"><!--<![endif]-->
+<!--[if true]><td style="padding-right:10px;"><![endif]-->
+<div style="text-align: center;">
+<a href="http://contactus@bloomin.co.uk" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline" target="_blank">
+<img alt="Email" src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/black/email_96.png" style="width:32px;" width="32"/>
+</a>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if !true]><!--></div><!--<![endif]-->
+<!--[if !true]><!--><div class="spcblk" style="display:inline-block;"><!--<![endif]-->
+<!--[if true]><td style=""><![endif]-->
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="10"></td>
+</tr></tbody>
+</table>
+<!--[if true]></td><![endif]-->
+<!--[if !true]><!--></div><!--<![endif]-->
+<!--[if !true]><!--><div class="" style="display:inline-block;"><!--<![endif]-->
+<!--[if true]><td style=""><![endif]-->
+<div style="text-align: center;">
+<a href="https://www.facebook.com/bloominuk/" style="color:#F03A75; font-style:normal; font-weight:normal; text-decoration:underline" target="_blank">
+<img alt="Facebook" src="https://d3k81ch9hvuctc.cloudfront.net/assets/email/buttons/black/facebook_96.png" style="width:32px;" width="32"/>
+</a>
+</div>
+<!--[if true]></td><![endif]-->
+<!--[if !true]><!--></div><!--<![endif]-->
+<!--[if true]></tr></table><![endif]-->
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mj-column-per-100 mj-outlook-group-fix component-wrapper kl-text-table-layout" style="font-size:0px;text-align:left;direction:ltr;vertical-align:top;width:100%;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;" width="100%">
+<tbody>
+<tr>
+<td class="" style="vertical-align:top;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
+<tbody>
+<tr>
+<td align="center" class="kl-text" style="background:#f7f7f7;font-size:0px;padding:0px;padding-top:9px;padding-right:18px;padding-bottom:9px;padding-left:18px;word-break:break-word;">
+<div style="font-family:'DM Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:11px;font-style:Normal;font-weight:400;letter-spacing:0px;line-height:1.3;text-align:center;color:#222222;">No longer want to receive these emails? {% unsubscribe %}.<br/>{{ organization.name }} {{ organization.full_address }}</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!--[if true]></td><![endif]-->
+</div>
+<!--[if true]></tr></table><![endif]-->
+</div>
+<!--[if mso | IE]></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--[if mso | IE]></td></tr></table><![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
