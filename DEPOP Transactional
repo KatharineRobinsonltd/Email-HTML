@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
-w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- EMAIL FORMAT -->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="color-scheme: light dark; supported-color-schemes: light dark;">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:"urn:schemas-microsoft-com:vml" xmlns:"urn:schemas-microsoft-com:office:office" style="color-scheme: light dark; supported-color-schemes: light dark;">
 <head>
 	<!--[if gte mso 9]>
 	<xml>
@@ -23,14 +22,11 @@ w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<title>Depop - buy, sell, discover unique fashion</title>
 	<!--[if gte mso 9]>
 	<style type="text/css" media="all">
-		sup { font-size: 100% !important; }
+	sup { font-size: 100% !important; }
 	</style>
 	<![endif]-->
 <style>
-<body> {
-padding: 0 !important; margin: 0 auto !important; display: block !important=
-; min-width: 100% !important; width: 100% !important; background: #ffffff; =
--webkit-text-size-adjust: none;
+<body> { padding: 0 !important; margin: 0 auto !important; display: block !important; min-width: 100% !important; width: 100% !important; background: #ffffff; -webkit-text-size-adjust: none;
 }
 img {
 margin: 0 !important; -ms-interpolation-mode: bicubic;
