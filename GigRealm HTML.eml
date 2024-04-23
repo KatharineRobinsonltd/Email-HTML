@@ -12,7 +12,7 @@
         <![endif]-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=-width=2C initial=-scale=1">
+        <meta name="viewport" content="width=-width  initial=-scale=1">
         <title>Book artists you'll love for *|VENUENAME|*</title>
 
     <style type="text/css">
@@ -23,18 +23,18 @@ padding:0;
 table{
 border-collapse:collapse;
 }
-h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+h1 h2 h3 h4 h5 h6{
 display:block;
 margin:0;
 padding:0;
 }
-img=2Ca img{
+img a img{
 border:0;
 height:auto;
 outline:none;
 text-decoration:none;
 }
-body=2C#bodyTable=2C#bodyCell{
+body #bodyTable #bodyCell{
 height:100%;
 margin:0;
 padding:0;
@@ -59,20 +59,19 @@ width:100%;
 .ExternalClass{
 width:100%;
 }
-p=2Ca=2Cli=2Ctd=2Cblockquote{
+p a li td blockquote{
 mso-line-height-rule:exactly;
 }
-a[href^=tel]=2Ca[href^=sms]{
+a[href^=tel] a[href^=sms]{
 color:inherit;
 cursor:default;
 text-decoration:none;
 }
-p=2Ca=2Cli=2Ctd=2Cbody=2Ctable=2Cblockquote{
+p a li td body table blockquote{
 -ms-text-size-adjust:100%;
 -webkit-text-size-adjust:100%;
 }
-.ExternalClass=2C.ExternalClass p=2C.ExternalClass td=2C.ExternalCla=
-ss div=2C.ExternalClass span=2C.ExternalClass font{
+.ExternalClass .ExternalClass p .ExternalClass td .ExternalClass div .ExternalClass span .ExternalClass font{
 line-height:100%;
 }
 a[x-apple-data-detectors]{
@@ -92,7 +91,7 @@ max-width:600px !important;
 a.mcnButton{
 display:block;
 }
-.mcnImage=2C.mcnRetinaImage{
+.mcnImage .mcnRetinaImage{
 vertical-align:bottom;
 }
 .mcnTextContent{
@@ -104,7 +103,7 @@ height:auto !important;
 .mcnDividerBlock{
 table-layout:fixed !important;
 }
-body=2C#bodyTable{
+body #bodyTable{
 background-color:#FAFAFA;
 }
 #bodyCell{
@@ -164,7 +163,7 @@ border-bottom:0;
 padding-top:9px;
 padding-bottom:9px;
 }
-#templatePreheader .mcnTextContent=2C#templatePreheader .mcnTextCont=
+#templatePreheader .mcnTextContent #templatePreheader .mcnTextCont=
 ent p{
 color:#656565;
 font-family:Helvetica;
@@ -172,7 +171,7 @@ font-size:12px;
 line-height:150%;
 text-align:left;
 }
-#templatePreheader .mcnTextContent a=2C#templatePreheader .mcnTextCo=
+#templatePreheader .mcnTextContent a #templatePreheader .mcnTextCo=
 ntent p a{
 color:#656565;
 font-weight:normal;
@@ -189,14 +188,14 @@ border-bottom:0;
 padding-top:9px;
 padding-bottom:0;
 }
-#templateHeader .mcnTextContent=2C#templateHeader .mcnTextContent p{
+#templateHeader .mcnTextContent #templateHeader .mcnTextContent p{
 color:#202020;
 font-family:Helvetica;
 font-size:16px;
 line-height:150%;
 text-align:left;
 }
-#templateHeader .mcnTextContent a=2C#templateHeader .mcnTextContent=
+#templateHeader .mcnTextContent a #templateHeader .mcnTextContent=
  p a{
 color:#007C89;
 font-weight:normal;
@@ -213,14 +212,14 @@ border-bottom:2px solid #EAEAEA;
 padding-top:0;
 padding-bottom:9px;
 }
-#templateBody .mcnTextContent=2C#templateBody .mcnTextContent p{
+#templateBody .mcnTextContent #templateBody .mcnTextContent p{
 color:#202020;
 font-family:Helvetica;
 font-size:16px;
 line-height:150%;
 text-align:left;
 }
-#templateBody .mcnTextContent a=2C#templateBody .mcnTextContent p a{
+#templateBody .mcnTextContent a #templateBody .mcnTextContent p a{
 color:#007C89;
 font-weight:normal;
 text-decoration:underline;
@@ -236,15 +235,14 @@ border-bottom:0;
 padding-top:9px;
 padding-bottom:9px;
 }
-#templateFooter .mcnTextContent=2C#templateFooter .mcnTextContent p{
+#templateFooter .mcnTextContent #templateFooter .mcnTextContent p{
 color:#656565;
 font-family:Helvetica;
 font-size:12px;
 line-height:150%;
 text-align:center;
 }
-#templateFooter .mcnTextContent a=2C#templateFooter .mcnTextContent=
- p a{
+#templateFooter .mcnTextContent a #templateFooter .mcnTextContent p a{
 color:#656565;
 font-weight:normal;
 text-decoration:underline;
@@ -255,7 +253,7 @@ width:600px !important;
 }
 
 }@media only screen and (max-width: 480px){
-body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+body table td p a li blockquote{
 -webkit-text-size-adjust:none !important;
 }
 
@@ -276,13 +274,7 @@ width:100% !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnCartContainer=2C.mcnCaptionTopContent=2C.mcnRecContentContainer=
-=2C.mcnCaptionBottomContent=2C.mcnTextContentContainer=2C.mcnBoxedTextCont=
-entContainer=2C.mcnImageGroupContentContainer=2C.mcnCaptionLeftTextContent=
-Container=2C.mcnCaptionRightTextContentContainer=2C.mcnCaptionLeftImageCon=
-tentContainer=2C.mcnCaptionRightImageContentContainer=2C.mcnImageCardLeftT=
-extContentContainer=2C.mcnImageCardRightTextContentContainer=2C.mcnImageCa=
-rdLeftImageContentContainer=2C.mcnImageCardRightImageContentContainer{
+.mcnCartContainer .mcnCaptionTopContent .mcnRecContentContainer .mcnCaptionBottomContent .mcnTextContentContainer .mcnBoxedTextContentContainer .mcnImageGroupContentContainer .mcnCaptionLeftTextContent Container .mcnCaptionRightTextContentContainer .mcnCaptionLeftImageContentContainer .mcnCaptionRightImageContentContainer .mcnImageCardLeftTextContentContainer .mcnImageCardRightTextContentContainer .mcnImageCardLeftImageContentContainer .mcnImageCardRightImageContentContainer {
 max-width:100% !important;
 width:100% !important;
 }
@@ -298,15 +290,12 @@ padding:9px !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnCaptionLeftContentOuter .mcnTextContent=2C.mcnCaptionRightConten=
-tOuter .mcnTextContent{
+.mcnCaptionLeftContentOuter .mcnTextContent .mcnCaptionRightContentOuter .mcnTextContent{
 padding-top:9px !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnImageCardTopImageContent=2C.mcnCaptionBottomContent:last-child .=
-mcnCaptionBottomImageContent=2C.mcnCaptionBlockInner .mcnCaptionTopContent=
-:last-child .mcnTextContent{
+.mcnImageCardTopImageContent .mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent .mcnCaptionBlockInner .mcnCaptionTopContent :last-child .mcnTextContent{
 padding-top:18px !important;
 }
 
@@ -328,13 +317,13 @@ padding-bottom:9px !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnTextContent=2C.mcnBoxedTextContentColumn{
+.mcnTextContent .mcnBoxedTextContentColumn{
 padding-right:18px !important;
 padding-left:18px !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnImageCardLeftImageContent=2C.mcnImageCardRightImageContent{
+.mcnImageCardLeftImageContent .mcnImageCardRightImageContent{
 padding-right:18px !important;
 padding-bottom:0 !important;
 padding-left:18px !important;
@@ -371,8 +360,7 @@ line-height:150% !important;
 }
 
 }@media only screen and (max-width: 480px){
-.mcnBoxedTextContentContainer .mcnTextContent=2C.mcnBoxedTextContent=
-Container .mcnTextContent p{
+.mcnBoxedTextContentContainer .mcnTextContent .mcnBoxedTextContentContainer .mcnTextContent p{
 font-size:14px !important;
 line-height:150% !important;
 }
@@ -383,26 +371,25 @@ display:block !important;
 }
 
 }@media only screen and (max-width: 480px){
-#templatePreheader .mcnTextContent=2C#templatePreheader .mcnTextCont=
-ent p{
+#templatePreheader .mcnTextContent #templatePreheader .mcnTextContent p{
 font-size:14px !important;
 line-height:150% !important;
 }
 
 }@media only screen and (max-width: 480px){
-#templateHeader .mcnTextContent=2C#templateHeader .mcnTextContent p{
+#templateHeader .mcnTextContent #templateHeader .mcnTextContent p{
 font-size:16px !important;
 line-height:150% !important;
 }
 
 }@media only screen and (max-width: 480px){
-#templateBody .mcnTextContent=2C#templateBody .mcnTextContent p{
+#templateBody .mcnTextContent #templateBody .mcnTextContent p{
 font-size:16px !important;
 line-height:150% !important;
 }
 
 }@media only screen and (max-width: 480px){
-#templateFooter .mcnTextContent=2C#templateFooter .mcnTextContent p{
+#templateFooter .mcnTextContent #templateFooter .mcnTextContent p{
 font-size:14px !important;
 line-height:150% !important;
 }
@@ -410,7 +397,7 @@ line-height:150% !important;
 }
 </style>
 <!--[if !mso]><!-->
-<link href="https://fonts.googleapis.com/css?family=Lato:400=2C400i=2C700=2C700i" rel="stylesheet"><!--<![endif]--></head>
+<link href="https://fonts.googleapis.com/css?family=Lato:400 400i 700 700i" rel="stylesheet"><!--<![endif]--></head>
     <body style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;">
         <!---->
         <!--[if !gte mso 9]><!---->
@@ -428,7 +415,7 @@ line-height:150% !important;
                         <![endif]-->
                         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border: 0;max-width: 600px !important;">
                             <tr>
-                                <td valign="top" id="templatePreheader" style="background:#fafafa none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fafafa;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <td valign="top" id="templatePreheader" style="background:#fafafa none no-repeat center/cover;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #fafafa; background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
     <tbody class="mcnTextBlockOuter">
         <tr>
             <td valign="top" class="mcnTextBlockInner" style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -553,7 +540,7 @@ display:inline !important;
                     <tbody><tr>
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
-                            <div style="text-align: center;"><font face="lato=2C helvetica neue=2C helvetica=2C arial=2C sans-serif"><span style="font-size:18px">There's something for everyone at GigRealm=2C with new and popular artists joining our community everyday. From solo artists to bands and DJs=2C we have something for everyone.</span></font></div>
+                            <div style="text-align: center;"><font face="lato  helvetica neue  helvetica  arial  sans-serif"><span style="font-size:18px">There's something for everyone at GigRealm  with new and popular artists joining our community everyday. From solo artists to bands and DJs  we have something for everyone.</span></font></div>
 
                         </td>
                     </tr>
@@ -657,7 +644,7 @@ display:inline !important;
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
                             <div style="text-align: center;">Amazing solo artists covering a variety of genres. Perfect for any sized venue.<br>
-So even if you don=E2=80=99t have much room=2C there=E2=80=99s always space for one of our talented solo artists.</div>
+So even if you don’t have much room  there’s always space for one of our talented solo artists.</div>
 
                         </td>
                     </tr>
@@ -788,7 +775,7 @@ So even if you don=E2=80=99t have much room=2C there=E2=80=99s always space for 
                     <tbody><tr>
                         <td valign="top" class="mcnTextContent" style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;">
 
-                            <div style="text-align: center;">A good DJ knows what kind of music your punters need. With a wide range of music at their fingertips=2C take the stress out of entertainment and hire DJs suitable for any occasion.</div>
+                            <div style="text-align: center;">A good DJ knows what kind of music your punters need. With a wide range of music at their fingertips  take the stress out of entertainment and hire DJs suitable for any occasion.</div>
                         </td>
                     </tr>
                 </tbody></table>
@@ -1034,7 +1021,7 @@ The GigRealm Team.</span><br>
  You are receiving this email because you are a key member of the team and these emails are being tested before send. Any feedback would be appreciated!<br>
 <br>
 <strong>Our mailing address is:</strong><br>
-<div class="vcard"><span class="org fn">GigRealm</span><div class="adr"><div class="street-address">Lowin House</div><div class="extended-address">Tregolls Road</div><span class="locality">Truro</span>=2C <span class="region">Cornwall</span>  <span class="postal-code">TR1 2NA</span> <div class="country-name">United Kingdom</div></div><br><a href="https://gigrealm.us20.list-manage.com/vcard?u=a1dc7652490b2555d15ea01&id=bdfde8ff99" class="hcard-download">Add us to your address book</a></div>
+<div class="vcard"><span class="org fn">GigRealm</span><div class="adr"><div class="street-address">Lowin House</div><div class="extended-address">Tregolls Road</div><span class="locality">Truro</span>  <span class="region">Cornwall</span>  <span class="postal-code">TR1 2NA</span> <div class="country-name">United Kingdom</div></div><br><a href="https://gigrealm.us20.list-manage.com/vcard?u=a1dc7652490b2555d15ea01&id=bdfde8ff99" class="hcard-download">Add us to your address book</a></div>
 <br>
 <br>
 Want to change how you receive these emails?<br>
