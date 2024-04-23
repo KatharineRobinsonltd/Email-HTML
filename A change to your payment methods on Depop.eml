@@ -1,228 +1,7 @@
-Delivered-To: katharinerobinsonltd@gmail.com
-Received: by 2002:ab0:4699:0:b0:794:88e2:d54c with SMTP id r25csp4624150uaa;
-        Thu, 14 Sep 2023 12:15:01 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFG9ADyCYiWFFxkNaH/OXZlcDecjC46AiAa/j2Ck7q1D6VBpcV8kUgqpBkJ4/RegC/00AQK
-X-Received: by 2002:a0c:b692:0:b0:64f:3b07:c504 with SMTP id u18-20020a0cb692000000b0064f3b07c504mr6455785qvd.59.1694718900707;
-        Thu, 14 Sep 2023 12:15:00 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1694718900; cv=none;
-        d=google.com; s=arc-20160816;
-        b=BCapmYd34Zwxht3IS7VOP8TmmzUlsXsSD1AkLqkr7YvlvhOXMc73jbGIMMomRP2yG3
-         GGJ+iOdzS56MczHhwj4849uyzPfpv53HKOx/f8/kg92xLHnOdHnLMyCaj6zPIY37TiBG
-         A/q5hkR92Q34op3gMfw+gpvgmRNKXxhR1tLS0oVWb1lh3YCtG8FZghg+wHXtHAhIArWU
-         6rLWB5JRwfxvTk3PUha0TpZ+h5KCf04hhtVHt0Gc+WcALBdU0ArHF7u78WQmn82iXZfF
-         uI8N8SJmIGS63EAkFBVNmldHa26cUZSBNx2e3JY9pnohc3wJZZ5mpw8cGPDAQLCSseXQ
-         JTjg==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=to:reply-to:subject:message-id:mime-version:from:date
-         :dkim-signature:dkim-signature;
-        bh=8sdRuq4YXD1vszdwdH3yY6e2oaqNLcGfwtkDOebPeU0=;
-        fh=shg5Q7Z+zNYxqel9g7vLtwdJzonAiHvaA+wu0hZVgfU=;
-        b=GqXVD/9AQ7vT9riFPBYmvUTudLCWBxaeNlBf+JoTl6Oa1E/Apa9owNB6ui10xRUk3Z
-         vLeCUn4q0t8Di6VeN5N/8p/ai9Et/Cp/obOcDlCORw1ihN5rba0FTAWVgb/fsRjCSEl+
-         RjYvBgdVBZ8dCViO2rvrdQM+X7CzKiL8eYxOagl8xEkgpnM+SaOxfddq57W2i5rYBRA0
-         JfBamVpfM43WeisqZneiYOKTo9o2jn74sX+u314i3uckhBe6RsW1rfF0kiWMrqB1osJb
-         1+dUJVnPmfv6HldICqek/AFpq7BRLUQvYwA4+kRBiyMjVgpdQDUVWvFjidNib6+qKDbn
-         M5kg==
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@alerts.depop.com header.s=s1 header.b=PWlvRdA+;
-       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=AUCe+Xs8;
-       spf=pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com designates 167.89.65.201 as permitted sender) smtp.mailfrom="bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com";
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=alerts.depop.com
-Return-Path: <bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com>
-Received: from o102.mail.alerts.depop.com (o102.mail.alerts.depop.com. [167.89.65.201])
-        by mx.google.com with ESMTPS id k4-20020a0cb244000000b0063f95c38ed4si1297442qve.205.2023.09.14.12.15.00
-        for <katharinerobinsonltd@gmail.com>
-        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
-        Thu, 14 Sep 2023 12:15:00 -0700 (PDT)
-Received-SPF: pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com designates 167.89.65.201 as permitted sender) client-ip=167.89.65.201;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@alerts.depop.com header.s=s1 header.b=PWlvRdA+;
-       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=AUCe+Xs8;
-       spf=pass (google.com: domain of bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com designates 167.89.65.201 as permitted sender) smtp.mailfrom="bounces+2847417-c3e2-katharinerobinsonltd=gmail.com@mail.alerts.depop.com";
-       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=alerts.depop.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=alerts.depop.com;
-	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:cc:
-	content-type:from:subject:to;
-	s=s1; bh=8sdRuq4YXD1vszdwdH3yY6e2oaqNLcGfwtkDOebPeU0=;
-	b=PWlvRdA+gMcQt9SIrAzHlfiTeayW7gW6MSfec1N3RM2krse/VqEDAtaPnouZsF1f7T8R
-	dR8CvMcyLCW7ASVMjKGGToxQQawWY3jPYAidoewqwN3taGJIxaYP0EF6Zudabv2IT3V1Z+
-	7/decCnCP4QKYVN2ww9SQ/WPLTgJv1UW3D9nc6xcTgYnjpVOYOQoOn55QvVdHMfvBS1FGk
-	bxPeCUHPE7fIBOksIHX+Om7gpJqaWQqf7ICSp/7IGVLEURei22Gk6VNjfQvNY3haH4W23V
-	/Z4mxJ7jIIj0uYl5EnseDIeeUCmafKtk9mEn2/FW4GdaqkwkGhtX4eeerSaUASXQ==
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info;
-	h=content-type:from:mime-version:subject:reply-to:x-feedback-id:to:cc:
-	content-type:from:subject:to;
-	s=smtpapi; bh=8sdRuq4YXD1vszdwdH3yY6e2oaqNLcGfwtkDOebPeU0=;
-	b=AUCe+Xs82g1MQMSViSeXW3CWA/m5QW1eugdaalgTcbG6olAdfM3LUV73AFKTE8qg3Yxh
-	AnG8gk+NkUC2T/YwG0RZPnlFldItZfXIlH+j7uabWeuRFE/Gmz+6/eR8xnMv1CMGu6afhf
-	Z3O3dpxI+fmv4/tcycRs5tkf7NHtP4dWI=
-Received: by filterdrecv-575768455c-67lgj with SMTP id filterdrecv-575768455c-67lgj-1-65035BB4-8D
-        2023-09-14 19:15:00.378894128 +0000 UTC m=+7058128.126847246
-Received: from Mjg0NzQxNw (unknown)
-	by geopod-ismtpd-27 (SG) with HTTP
-	id 8nFGIuiNRdONLYKbzywxKQ
-	Thu, 14 Sep 2023 19:15:00.353 +0000 (UTC)
-Content-Type: multipart/alternative; boundary=ed3156a63f2c5df5ebb32a0eb0ceed2e97b26fc608b050538dea6a7a10d0
-Date: Thu, 14 Sep 2023 19:15:00 +0000 (UTC)
-From: Depop <noreply@alerts.depop.com>
-Mime-Version: 1.0
-Message-ID: <8nFGIuiNRdONLYKbzywxKQ@geopod-ismtpd-27>
-Subject: A change to your payment methods on Depop
-Reply-To: noreply@alerts.depop.com
-X-Feedback-ID: 2847417:SG
-X-SG-EID: 
- =?us-ascii?Q?RdiCwKUBEHs9YpR=2FuCubuJweQXd+GpmxWR6pUotQUshUmilAWKS+lJHoujtFGq?=
- =?us-ascii?Q?6jF+3uvWicHyTTdVle4FnB8SR9bK8O+wvvW3BOf?=
- =?us-ascii?Q?Y64ou8n9mzO7KmROtY=2FFW0JRThnTnjXoz1Bea4a?=
- =?us-ascii?Q?hAF83L0byjhuXBzaN9fOev4mESVheJWkFApNBHU?=
- =?us-ascii?Q?OJ3=2FJyf3r73QygqF7YnQpM3V7n0mwmhma29JiLg?=
- =?us-ascii?Q?KiaVT1zYCVx+8nw=2FDI6U8FtqZBqBFkurxUznsx?=
-X-SG-ID: 
- =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb8raWjw0ZPf1VmjsCkspi=2FKvUYPFb2vwyNNeBc9bJi?=
- =?us-ascii?Q?Ch+ShFrcJ4HlcX182NhPWRG4gqqdqjrM9LIgxxZ?=
- =?us-ascii?Q?517LGZxVtEtAPr29o1Gk9vNzwW2AVrqZCgMxq7r?=
- =?us-ascii?Q?=2F6JqCE7zUxGKMNszPco1A=2F=2FjnunezfO6ZwWP0U0?=
- =?us-ascii?Q?OyKpVTr2XLleX4+hRPFL9ex6mFnM=2FsoTMjBxxUi?=
- =?us-ascii?Q?w9D16WqFy8sYhbkr0eOD8JTrxzkXMwPdOzpLdLf?=
- =?us-ascii?Q?D1rOKOcwfKUU8qSkz80MlArN5MiwrI4=2Fl=2FV8NeA?=
- =?us-ascii?Q?QV+iJqLSJx+AeZj0MnwdCBOXlL1vy=2FNVbHlq+sT?=
- =?us-ascii?Q?f70t1b2pvmyH47c+N4YPU3adc4VYIXejMGRLkBs?=
- =?us-ascii?Q?4acHpEJJWH=2FCtZ+Kg4h9oGT07jcFJuIoeYZeAPi?=
- =?us-ascii?Q?C0APHrGNqE=2F5rFDw5vGHKfqH3kZADkMbcISCCDA?=
- =?us-ascii?Q?EnPs4aEjc1agHD=2ForD=2FSix73I+z2PhPgZQJSaco?=
- =?us-ascii?Q?RUowtj2bLRKRYpAo3HfgEWeOT6my=2F1+FBb6f2cn?=
- =?us-ascii?Q?+c65vyGt2hQtpD5kArery4ns5fjkmJrjorRPzaL?=
- =?us-ascii?Q?agQWVlR?=
-To: katharinerobinsonltd@gmail.com
-X-Entity-ID: +NJyOEpzJOxSxQutoJShNQ==
-
---ed3156a63f2c5df5ebb32a0eb0ceed2e97b26fc608b050538dea6a7a10d0
-Content-Transfer-Encoding: quoted-printable
-Content-Type: text/plain; charset=utf-8
-Mime-Version: 1.0
-
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
-=8C =E2=80=8C
-=E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
-=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C            Depop=20
-( https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y9XqrrG0xTdBJwT=
-J1hGhyEIDG-h5fk05vUq51YJabneP/3zl/mNZrLrwbT5quraAy-2khZA/t0/kC3eij_dBgdw6vP=
--6hOq2uYV1UsV3tEuM9-d0bzuJX4 )
-
-
-
-
-
-
-
-
-
-we're-switching-to-depop-payments
-=20
-( https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_o=
-R--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3Uk5IhP0W8HOnmSt1olfow/3z=
-l/mNZrLrwbT5quraAy-2khZA/t1/PBdshgLaePSZr7F040nOIMD8bGhK6VJ3xZisrxarkx0 )
-
-
-
- Hey
-@katharinerobinson,
-
-
-As part of our continuous efforts to provide a streamlined and
-efficient buying and selling experience for our community, we=E2=80=99ll
-be transitioning fully to Depop Payments, in the UK and US, on
-October 23, 2023. As part of this change, we=E2=80=99ll be removing
-PayPal as a payment method.
-
-What is Depop Payments?
-
-Depop Payments, powered by Stripe, is the primary way to get
-paid on Depop. When your shop has Depop Payments connected,
-buyers can pay with Apple Pay, Google Pay, credit and debit
-cards, and Klarna.
-
-If you haven=E2=80=99t set up Depop Payments yet as a seller, you=E2=80=99l=
-l
-need to do so to continue listing and selling on Depop.
-
-To check that you have Depop Payments set up, head to the
-Payments tab in your selling hub. If you=E2=80=99re already set up to
-sell with Depop Payments, you're good to go.
-
-We=E2=80=99re updating our Terms of Service=20
-( https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_o=
-R--Mpl6Xo6tP-Raqvjo0e45Y0IOW6b2KH4PRc_K3yCUnn9ffWT20IXoK8xyTv8bld9Shd_bq5jk=
-dNYzpFQEKAL_wz08eboUvi3v6SrTUHSXNkjt6ugQ/3zl/mNZrLrwbT5quraAy-2khZA/t2/JRxp=
-MBW0Rgs9Bq1Ssq9l90olqEZj84hF_Uau-3QKcpk )
- to reflect this change. These new terms will apply from October
-23, 2023.
-
-Thanks,
-Team Depop=20
-
-
-
-
-
-
- More info
-=20
-( https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_o=
-R--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3Uk5IhP0W8HOnmSt1olfow/3z=
-l/mNZrLrwbT5quraAy-2khZA/t3/bYYOx3cEP0KR7zZ7onsmxFCCuMG1Kjz991S4W_GhQQU )
-
-Depop offsets 100% of
-its
-carbon emissions =E2=80=93 including
-every single delivery.      20
-Farringdon Road London, EC4A 4BL
-We=E2=80=99d be sad to see you go, but you can unsubscribe here=20
-( https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y5kHDEJL-7N-jRx=
-ZS7GUCaZMkGwBLhHSqcEOS504S8ZnTX6lyjw-Bvhmi7s1Ue-C9SPVkzvaFBmPglYGt3LSI9JhWx=
-Sw0YCRpC8v9TplNwpTnW5bHlfiW4Ls2ZeqhcWDnkBWW4Gi2a4AgSLkZszGno4/3zl/mNZrLrwbT=
-5quraAy-2khZA/t4/dunEFJJEhTzI06b84mdL-4QoihFCqEw49HukztM6OYQ )
-=20=
-
---ed3156a63f2c5df5ebb32a0eb0ceed2e97b26fc608b050538dea6a7a10d0
-Content-Transfer-Encoding: quoted-printable
-Content-Type: text/html; charset=utf-8
-Mime-Version: 1.0
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
 w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- EMAIL FORMAT -->
-<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns=3D"http://www.w3.org/199=
-9/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-m=
-icrosoft-com:office:office" style=3D"color-scheme: light dark; supported-co=
-lor-schemes: light dark;">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="color-scheme: light dark; supported-color-schemes: light dark;">
 <head>
 	<!--[if gte mso 9]>
 	<xml>
@@ -232,27 +11,23 @@ lor-schemes: light dark;">
 		</o:OfficeDocumentSettings>
 	</xml>
 	<![endif]-->
-	<meta http-equiv=3D"Content-type" content=3D"text/html; charset=3Dutf-8" /=
->
-	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
-, maximum-scale=3D1" />
-	<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
-	<meta name=3D"format-detection" content=3D"date=3Dno" />
-	<meta name=3D"format-detection" content=3D"address=3Dno" />
-	<meta name=3D"format-detection" content=3D"telephone=3Dno" />
-	<meta name=3D"x-apple-disable-message-reformatting" />
-	<meta name=3D"color-scheme" content=3D"light dark" />
-	<meta name=3D"supported-color-schemes" content=3D"light dark" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="date=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="x-apple-disable-message-reformatting" />
+	<meta name="color-scheme" content="light dark" />
+	<meta name="supported-color-schemes" content="light dark" />
 	<title>Depop - buy, sell, discover unique fashion</title>
 	<!--[if gte mso 9]>
-	<style type=3D"text/css" media=3D"all">
+	<style type="text/css" media="all">
 		sup { font-size: 100% !important; }
 	</style>
 	<![endif]-->
-=09
-
-=09
-<style>body {
+<style>
+<body> {
 padding: 0 !important; margin: 0 auto !important; display: block !important=
 ; min-width: 100% !important; width: 100% !important; background: #ffffff; =
 -webkit-text-size-adjust: none;
@@ -561,8 +336,7 @@ margin: 0 !important; -ms-interpolation-mode: bicubic;
     width: auto !important;
   }
   .fluid-img img {
-    width: 100% !important; max-width: 100% !important; height: auto !impor=
-tant;
+    width: 100% !important; max-width: 100% !important; height: auto !important;
   }
   .mw-img-40 img {
     width: 40px !important; height: auto !important;
@@ -571,8 +345,7 @@ tant;
     width: 120px !important;
   }
   .mw-120 img {
-    width: 100% !important; max-width: 120px !important; height: auto !impo=
-rtant;
+    width: 100% !important; max-width: 120px !important; height: auto !important;
   }
   .mw-150 img {
     width: 100% !important; max-width: 150px !important; height: auto !impo=
@@ -591,19 +364,16 @@ rtant;
     width: 260px !important; height: auto !important;
   }
   .column {
-    float: left !important; width: 100% !important; display: block !importa=
-nt;
+    float: left !important; width: 100% !important; display: block !important;
   }
   .column-top {
-    float: left !important; width: 100% !important; display: block !importa=
-nt;
+    float: left !important; width: 100% !important; display: block !important;
   }
   .w-130 {
     width: 130px !important;
   }
   .m-hide {
-    display: none !important; width: 0 !important; height: 0 !important; fo=
-nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
+    display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
   }
   .m-block {
     display: block !important;
@@ -633,8 +403,7 @@ nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
     width: 100% !important;
   }
   .m-column {
-    display: inline-block !important; float: none !important; padding-left:=
- 5px !important;
+    display: inline-block !important; float: none !important; padding-left: 5px !important;
   }
   .btn-22 {
     font-size: 14px !important; line-height: 18px !important;
@@ -804,8 +573,7 @@ nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
     width: auto !important;
   }
   .fluid-img img {
-    width: 100% !important; max-width: 100% !important; height: auto !impor=
-tant;
+    width: 100% !important; max-width: 100% !important; height: auto !important;
   }
   .mw-img-40 img {
     width: 40px !important; height: auto !important;
@@ -814,12 +582,10 @@ tant;
     width: 120px !important;
   }
   .mw-120 img {
-    width: 100% !important; max-width: 120px !important; height: auto !impo=
-rtant;
+    width: 100% !important; max-width: 120px !important; height: auto !important;
   }
   .mw-150 img {
-    width: 100% !important; max-width: 150px !important; height: auto !impo=
-rtant;
+    width: 100% !important; max-width: 150px !important; height: auto !important;
   }
   .mw-240 {
     width: 240px !important; height: auto !important;
@@ -834,19 +600,16 @@ rtant;
     width: 260px !important; height: auto !important;
   }
   .column {
-    float: left !important; width: 100% !important; display: block !importa=
-nt;
+    float: left !important; width: 100% !important; display: block !important;
   }
   .column-top {
-    float: left !important; width: 100% !important; display: block !importa=
-nt;
+    float: left !important; width: 100% !important; display: block !important;
   }
   .w-130 {
     width: 130px !important;
   }
   .m-hide {
-    display: none !important; width: 0 !important; height: 0 !important; fo=
-nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
+    display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
   }
   .m-block {
     display: block !important;
@@ -876,8 +639,7 @@ nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
     width: 100% !important;
   }
   .m-column {
-    display: inline-block !important; float: none !important; padding-left:=
- 5px !important;
+    display: inline-block !important; float: none !important; padding-left: 5px !important;
   }
   .btn-22 {
     font-size: 14px !important; line-height: 18px !important;
@@ -913,320 +675,148 @@ nt-size: 0 !important; line-height: 0 !important; min-height: 0 !important;
   }
 }
 </style></head>
-<body class=3D"body dm-bg-white" style=3D"display: block !important; min-wi=
-dth: 100% !important; width: 100% !important; -webkit-text-size-adjust: non=
-e; margin: 0 auto; padding: 0;" bgcolor=3D"#fffffe">
+<body class="body dm-bg-white" style="display: block !important; min-width: 100% !important; width: 100% !important; -webkit-text-size-adjust: none; margin: 0 auto; padding: 0;" bgcolor="#fffffe">
 	<center>
-		<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
-yle=3D"width: 100%; margin: 0; padding: 0;" bgcolor=3D"#fffffe" class=3D"gw=
-fw dm-bg-white">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; padding: 0;" bgcolor="#fffffe" class="gwfw dm-bg-white">
 			<tr>
-				<td style=3D"width: 100%; margin: 0; padding: 0;" align=3D"center" vali=
-gn=3D"top">
-					<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
->
-						<!-- Preview Text -->
-						<tr class=3D"m-hide" style=3D"mso-hide: all;">
-							<td style=3D"font-size: 0pt; line-height: 0pt;">
-								<span class=3D"mcnPreviewText" style=3D"display: none; font-size: 0=
-px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: 0; overflow=
-: hidden; visibility: hidden; mso-hide: all;">&nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C	&nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C	&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=
-=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C =
-&nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =
-=E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=
-=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nbsp; =E2=80=8C &nb=
-sp; =E2=80=8C</span>
-							</td>
-						</tr>
-						<!-- END Preview Text -->
-					</table>
-					<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
-class=3D"m-shell">
+				<td style="width: 100%; margin: 0; padding: 0;" align="center" valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">	
+<!-- Preview Text -->
+<tr class="m-hide" style="mso-hide: all;">
+<td style="font-size: 0pt; line-height: 0pt;">
+	<span class="mcnPreviewText" style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; visibility: hidden; mso-hide: all;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	</td>
+	</tr>		
+<!-- END Preview Text -->
+</table>
+<table width="600" border="0" cellspacing="0" cellpadding="0" class="m-shell">
 						<tr>
-							<td class=3D"td" style=3D"width: 600px; min-width: 600px; font-size:=
- 0pt; line-height: 0pt; font-weight: normal; margin: 0; padding: 0;">
-
-
+	<td class="td" style="width: 600px; min-width: 600px; font-size:0pt; line-height: 0pt; font-weight: normal; margin: 0; padding: 0;">
 <!-- Content block eta_default - Logo -->
-<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
-s=3D"dm-bg-white" bgcolor=3D"#ffffff">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="dm-bg-white" bgcolor="#ffffff">
 	<tr>
-			<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;" alig=
-n=3D"center">
-				<a href=3D"https://u2847417.ct.sendgrid.net/uni/ss/c/65Pxi4LefurRPSAbBm=
-x2y9XqrrG0xTdBJwTJ1hGhyEIDG-h5fk05vUq51YJabneP/3zl/mNZrLrwbT5quraAy-2khZA/h=
-5/3xtfkv0E43csZ6WZvKCKlQq0WXcOwkC_k0YoaOymQUE" universal=3D"true" target=3D=
-"_blank" style=3D"color: #000001; text-decoration: none;">
-				<img src=3D"https://braze-images.com/appboy/communication/assets/image_=
-assets/images/64c77ee55ae9db2ff38224e8/original.png?1690795749" width=3D"60=
-0" height=3D"auto" border=3D"0" alt=3D"Depop" style=3D"-ms-interpolation-mo=
-de: bicubic; margin: 0;" /></a>
+<td class="fluid-img" style="font-size: 0pt; line-height: 0pt;" align="center">
+				<a href="https://u2847417.ct.sendgrid.net/uni/ss/c/65Pxi4LefurRPSAbBmx2y9XqrrG0xTdBJwTJ1hGhyEIDG-h5fk05vUq51YJabneP/3zl/mNZrLrwbT5quraAy-2khZA/h=5/3xtfkv0E43csZ6WZvKCKlQq0WXcOwkC_k0YoaOymQUE" universal="true" target="_blank" style="color: #000001; text-decoration: none;">
+				<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/64c77ee55ae9db2ff38224e8/original.png?1690795749" width="600" height="auto" border="0" alt="Depop" style="-ms-interpolation-mode: bicubic; margin: 0;" /></a>
 			</td>
 		</tr>
 </table>
 <!-- END Content block eta_default - Logo -->
 
-
-
-
-
-
 <!-- Content block alpha_4 - Image 3 (600px - 500px) -->
-<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td class=3D"fluid-img" style=3D"font-size: 0pt; line-height: 0pt;" align=
-=3D"left">
-						=09
-				=09
-				=09
-				=09
-						<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6t=
-y86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3Uk5IhP0W8=
-HOnmSt1olfow/3zl/mNZrLrwbT5quraAy-2khZA/h6/eKrq98rqfwUGN7tmHtVEZPjKlyKlvOcm=
-n5VYfgs-O2k"=20
-
-=3D"" target=3D"_blank" style=3D"color: #000001; text-decoration: none;"><i=
-mg src=3D"
-https://braze-images.com/appboy/communication/assets/image_assets/images/64=
-f993e4840547004b1efac9/original.png?1694077924
-" width=3D"600" height=3D"
-110
-" border=3D"0" alt=3D"
-we're-switching-to-depop-payments
-" style=3D"-ms-interpolation-mode: bicubic; margin: 0;" /></a>
-					=09
-		</td>
-	</tr>
+	<td class="fluid-img" style="font-size: 0pt; line-height: 0pt;" align="left">
+	<a href="https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3Uk5IhP0W8HOnmSt1olfow/3zl/mNZrLrwbT5quraAy-2khZA/h6/eKrq98rqfwUGN7tmHtVEZPjKlyKlvOcmn5VYfgs-O2k" target="_blank" style="color: #000001; text-decoration: none;">
+<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/64f993e4840547004b1efac9/original.png?1694077924" width="600" height="110" border="0" alt="we're-switching-to-depop-payments" style="-ms-interpolation-mode: bicubic; margin: 0;" /></a>
+</td>
+</tr>
 </table>
 <!-- END Content block alpha_4 - Image 3 (600px - 500px) -->
-
-
-				<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td class=3D"img" style=3D"font-size: 0pt; line-height: 0pt;" align=3D"le=
-ft">
-			<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+		<td class="img" style="font-size: 0pt; line-height: 0pt;" align="left">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<!-- Spacer - 35px -->
-				<tr>
-					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
-eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
-				</tr>
+			<tr>
+				<td class="img pb-45" valign="top" style="font-size: 0pt; line-height: 0pt; padding-bottom: 35px;" align="left">&nbsp;</td>
+			</tr>
 				<!-- END Spacer - 35px -->
-
 				<!-- Body -->
 				<tr>
-					<td class=3D"title-22 a-center px-20" style=3D"font-size: 17px; line-h=
-eight: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal=
-; min-width: auto !important; color: #000001; padding-left: 50px; padding-r=
-ight: 50px;" align=3D"center">
-					=09
+	<td class="title-22 a-center px-20" style="font-size: 17px; line-height: 28px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; min-width: auto !important; color: #000001; padding-left: 50px; padding-right: 50px;" align="center">
 
 Hey @katharinerobinson,
 
 <br /><br />
-As part of our continuous efforts to provide a streamlined and efficient bu=
-ying and selling experience for our community, we=E2=80=99ll be transitioni=
-ng fully to Depop Payments, in the UK and US, on October 23, 2023. As part =
-of this change, <b>we=E2=80=99ll be removing PayPal as a payment method.</b=
->
+As part of our continuous efforts to provide a streamlined and efficient buying and selling experience for our community, we=E2=80=99ll be transitioning fully to Depop Payments, in the UK and US, on October 23, 2023. As part of this change, <b>we'll be removing PayPal as a payment method.</b>
 <br /><br />
 <b>What is Depop Payments?</b>
 <br /><br />
-Depop Payments, powered by Stripe, is the primary way to get paid on Depop.=
- When your shop has Depop Payments connected, buyers can pay with Apple Pay=
-, Google Pay, credit and debit cards, and Klarna.
+Depop Payments, powered by Stripe, is the primary way to get paid on Depop. When your shop has Depop Payments connected, buyers can pay with Apple Pay, Google Pay, credit and debit cards, and Klarna.
 <br /><br />
-If you haven=E2=80=99t set up Depop Payments yet as a seller, you=E2=80=99l=
-l need to do so to continue listing and selling on Depop.
+If you haven't set up Depop Payments yet as a seller, you'll need to do so to continue listing and selling on Depop.
 <br /><br />
-To check that you have Depop Payments set up, head to the Payments tab in y=
-our selling hub. If you=E2=80=99re already set up to sell with Depop Paymen=
-ts, you're good to go.=20
+To check that you have Depop Payments set up, head to the Payments tab in your selling hub. If you're already set up to sell with Depop Payments, you're good to go.
 <br /><br />
-We=E2=80=99re updating our <a href=3D"https://u2847417.ct.sendgrid.net/ss/c=
-/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6b2KH4PRc_K=
-3yCUnn9ffWT20IXoK8xyTv8bld9Shd_bq5jkdNYzpFQEKAL_wz08eboUvi3v6SrTUHSXNkjt6ug=
-Q/3zl/mNZrLrwbT5quraAy-2khZA/h7/xXWOy3SML9HYHtTM8RhbzT9eWrxNu9OY_NW2lIncQcs=
-" style=3D"color: #000001; text-decoration: none;"><u>Terms of Service</u><=
-/a> to reflect this change. These new terms will apply from October 23, 202=
-3.
+We're updating our <a href="https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6b2KH4PRc_K3yCUnn9ffWT20IXoK8xyTv8bld9Shd_bq5jkdNYzpFQEKAL_wz08eboUvi3v6SrTUHSXNkjt6ugQ/3zl/mNZrLrwbT5quraAy-2khZA/h7/xXWOy3SML9HYHtTM8RhbzT9eWrxNu9OY_NW2lIncQcs" style="color: #000001; text-decoration: none;"><u>Terms of Service</u></a> to reflect this change. These new terms will apply from October 23, 2023.
 <br /><br />
 Thanks,
 <br />
 Team Depop
-
-					</td>
-				</tr>
-				<!-- END Body -->
-
-				<!-- Spacer - 35px -->
-				<tr>
-					<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-h=
-eight: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
-				</tr>
-				<!-- END Spacer - 35px -->
-	</table>
-		</td>
-	</tr>
-</table>
-
-
-
-
-<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-									<tr>
-										<td align=3D"center">
-											<!-- Button solid black -->
-											<table class=3D"mw-260" width=3D"330" border=3D"0" cellspacing=
-=3D"0" cellpadding=3D"0">
-												<tr>
-													<td class=3D"btn-25 btnp-13-10 lh-28 mfz-14 mlh-18 dm-bg-black=
- dm-bd-black" bgcolor=3D"#000001" style=3D"border-radius: 50px; mso-padding=
--alt: 13px 10px; letter-spacing: 0.02em; font-size: 25px; color: #fffffe; f=
-ont-weight: bold; font-family: Helvetica, Arial, sans-serif; line-height: 2=
-8px; border: 3px solid #000001;" align=3D"center">
-				=09
-				=09
-					=20
-																	=09
-														<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r=
-09OrTg6ty86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3U=
-k5IhP0W8HOnmSt1olfow/3zl/mNZrLrwbT5quraAy-2khZA/h8/Yykbly4JB46NrmKYEPeFov39=
-qJcWWw0bSxp0SE9aHyw"=20
-
-=3D"" target=3D"_blank" class=3D"link c-white" style=3D"display: block; tex=
-t-decoration: none; color: #fffffe; padding: 13px 10px;">
-															<span class=3D"link c-white" style=3D"text-decoration: none;=
- color: #fffffe;">
-More info
-</span></a>
-														=09
-													</td>
-												</tr>
-											</table>
-											<!-- END Button solid black -->
-										</td>
-									</tr>
-								</table>
+</td>
+</tr>
+<!-- END Body -->
 
 <!-- Spacer - 35px -->
-<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tr>
+<td class="img pb-45" valign="top" style="font-size: 0pt; line-height: 0pt; padding-bottom: 35px;" align="left">&nbsp;</td>
+</tr>
+<!-- END Spacer - 35px -->
+	</table>
+	</td>
+	</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr>
-		<td class=3D"img pb-45" valign=3D"top" style=3D"font-size: 0pt; line-heig=
-ht: 0pt; padding-bottom: 35px;" align=3D"left">&nbsp;</td>
+	<td align="center">
+<!-- Button solid black -->
+<table class="mw-260" width="330" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="btn-25 btnp-13-10 lh-28 mfz-14 mlh-18 dm-bg-black dm-bd-black" bgcolor="#000001" style="border-radius: 50px; mso-padding-alt: 13px 10px; letter-spacing: 0.02em; font-size: 25px; color: #fffffe; font-weight: bold; font-family: Helvetica, Arial, sans-serif; line-height: 28px; border: 3px solid #000001;" align="center">
+		<a href="https://u2847417.ct.sendgrid.net/ss/c/7URIxRHFQG-r09OrTg6ty86kgUJWturLE_oR--Mpl6Xo6tP-Raqvjo0e45Y0IOW6WS3VH2Pgas1905zQBqU3R3Uk5IhP0W8HOnmSt1olfow/3zl/mNZrLrwbT5quraAy-2khZA/h8/Yykbly4JB46NrmKYEPeFov39qJcWWw0bSxp0SE9aHyw" target="_blank" class="link c-white" style="display: block; text-decoration: none; color: #fffffe; padding: 13px 10px;">
+		<span class="link c-white" style="text-decoration: none; color: #fffffe;"> More info </span></a>
+</td>
+</tr>
+</table>
+<!-- END Button solid black -->
+</td>
+</tr>
+</table>
+<!-- Spacer - 35px -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td class="img pb-45" valign="top" style="font-size: 0pt; line-height: 0pt; padding-bottom: 35px;" align="left">&nbsp;</td>
 	</tr>
 </table>
 <!-- END Spacer - 35px -->
-
 <!-- EMAIL FOOTER -->
-<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" clas=
-s=3D"dm-bg-white" bgcolor=3D"#fffffe">
-									<tr>
-										<td class=3D"pt-60 mpt-40" style=3D"padding-top: 60px;">
-											<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
-=3D"0">
-												<tr>
-													<td class=3D"fluid-img img-center pb-70 mpb-50" style=3D"font-=
-size: 0pt; line-height: 0pt; padding-bottom: 50px;" align=3D"center">
-														<img src=3D"https://braze-images.com/appboy/communication/ass=
-ets/image_assets/images/646e22f0a7b3224dbd3cae0e/original.png?1684939504" w=
-idth=3D"600" height=3D"22" border=3D"0" alt=3D"" style=3D"-ms-interpolation=
--mode: bicubic; margin: 0;" />
-													</td>
-												</tr>
-												<tr>
-													<td class=3D"pb-70 mpb-50" align=3D"center" style=3D"padding-b=
-ottom: 50px;">
-														<!-- Socials -->
-														<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-															<tr>
-																<td class=3D"img mw-img-40" style=3D"font-size: 0pt; line-h=
-eight: 0pt;" align=3D"left">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/65Pxi4Lef=
-urRPSAbBmx2ywgnQm4r4jMH5qAY1K8bSPCPsi-PE4gL_AWN_xSaDHnqGy8W6QCgF_wPFEH6saKw=
-wQ/3zl/mNZrLrwbT5quraAy-2khZA/h9/NUxuPyqlEEeJvLQy9NJu4x_JtAX9ZKHKhgWG9fmamA=
-k" target=3D"_blank" style=3D"color: #000001; text-decoration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/64400011731d9f72917b43d1/original.png?168191592=
-1" width=3D"65" height=3D"65" border=3D"0" alt=3D"" style=3D"-ms-interpolat=
-ion-mode: bicubic; margin: 0;" />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="dm-bg-white" bgcolor="#fffffe">
+	<tr>
+	<td class="pt-60 mpt-40" style="padding-top: 60px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	<td class="fluid-img img-center pb-70 mpb-50" style="font-size: 0pt; line-height: 0pt; padding-bottom: 50px;" align="center">
+		<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/646e22f0a7b3224dbd3cae0e/original.png?1684939504" width="600" height="22" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
+	</td>
+		</tr>
+			<tr>
+		<td class="pb-70 mpb-50" align="center" style="padding-bottom: 50px;">
+			<!-- Socials -->
+	<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			<td class="img mw-img-40" style="font-size: 0pt; line-height: 0pt;" align="left">
+			<a href="https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2ywgnQm4r4jMH5qAY1K8bSPCPsi-PE4gL_AWN_xSaDHnqGy8W6QCgF_wPFEH6saKwwQ/3zl/mNZrLrwbT5quraAy-2khZA/h9/NUxuPyqlEEeJvLQy9NJu4x_JtAX9ZKHKhgWG9fmamAk" target="_blank" style="color: #000001; text-decoration: none;">
+			<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/64400011731d9f72917b41/original.png?1681915921" width="65" height="65" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
+			</a>
+			</td>
+<td class="w-15" width="25" style="font-size: 0pt; line-height: 0pt;">&nbsp;</td>
+	<td class="img mw-img-40" style="font-size: 0pt; line-height: 0pt;" align="left">
+<a href="https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y09dANqMubEK9Uh6KWBVOYlmyx0cnJDseHWxbmw3wOosycEJfb0_IjWA_2uwBiDw/3zl/mNZrLrwbT5quraAy-2khZA/h10/CXPiP0fKDGRnCiW2vQlfBggcipHWIImGfJaZ32HKHLk" target="_blank" style="color: #000001; text-decoration: none;">
+		<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/644000118606629c02935a/original.png?1681915921" width="65" height="65" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
 																	</a>
 																</td>
-																<td class=3D"w-15" width=3D"25" style=3D"font-size: 0pt; li=
-ne-height: 0pt;">&nbsp;</td>
-																<td class=3D"img mw-img-40" style=3D"font-size: 0pt; line-h=
-eight: 0pt;" align=3D"left">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/65Pxi4Lef=
-urRPSAbBmx2y09dANqMubEK9Uh3d6KWBVOYlmyx0cnJDseHWxbmw3wOosycEJfb0_IjWA_2uwBi=
-Dw/3zl/mNZrLrwbT5quraAy-2khZA/h10/CXPiP0fKDGRnCiW2vQlfBggcipHWIImGfJaZ32HKH=
-Lk" target=3D"_blank" style=3D"color: #000001; text-decoration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/6440001186063d629c02935a/original.png?168191592=
-1" width=3D"65" height=3D"65" border=3D"0" alt=3D"" style=3D"-ms-interpolat=
-ion-mode: bicubic; margin: 0;" />
+																<td class="w-15" width="25" style="font-size: 0pt; line-height: 0pt;">&nbsp;</td>
+																<td class="img mw-img-40" style="font-size: 0pt; line-height: 0pt;" align="left">
+																	<a href="https://u2847417.ct.sendgrid.net/ss/c/lVxI9S5IQs3ebOZLevK3cGJixYepnAhQcd_zVZ8Z1Z5CgQiEx0Hlg-H4jU_J938Vjj6DnIBQEDNfqh9C9g71Cg/3zl/mNZrLrwbT5quraAy-2khZA/h11/WsF_Rlm1W28jP4STZoMb0p870Zmr0n6ZJOMyJRAtDy0" target="_blank" style="color: #000001; text-decoration: none;">
+																		<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/64400011c2e1e346defe13ff/original.png?1681915921" width="65" height="65" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
 																	</a>
 																</td>
-																<td class=3D"w-15" width=3D"25" style=3D"font-size: 0pt; li=
-ne-height: 0pt;">&nbsp;</td>
-																<td class=3D"img mw-img-40" style=3D"font-size: 0pt; line-h=
-eight: 0pt;" align=3D"left">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/lVxI9S5IQ=
-s3ebOZLevK3cGJixYepnAhQcd_zVZ8Z1Z5CgQiEx0Hlg-H4jU_J938Vjj6DnIBQEDNfqh9C9g71=
-Cg/3zl/mNZrLrwbT5quraAy-2khZA/h11/WsF_Rlm1W28jP4STZoMb0p870Zmr0n6ZJOMyJRAtD=
-y0" target=3D"_blank" style=3D"color: #000001; text-decoration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/64400011c2e1e346defe13ff/original.png?168191592=
-1" width=3D"65" height=3D"65" border=3D"0" alt=3D"" style=3D"-ms-interpolat=
-ion-mode: bicubic; margin: 0;" />
-																	</a>
-																</td>
-																<td class=3D"w-15" width=3D"25" style=3D"font-size: 0pt; li=
-ne-height: 0pt;">&nbsp;</td>
-																<td class=3D"img mw-img-40" style=3D"font-size: 0pt; line-h=
-eight: 0pt;" align=3D"left">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/OvirfkAFL=
-b-lp6kFtged02hM_FOFYwuUf83QGxnmfiF62cFC1WaxVKMhHy7qKPVu8zdqKOgpc0YcxnnHp21N=
-1Q/3zl/mNZrLrwbT5quraAy-2khZA/h12/fHr60Qo792e1ImaOaxKplc_eaM7d4IS6F_kVEeizq=
-X4" target=3D"_blank" style=3D"color: #000001; text-decoration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/6454a891f661307c18ffe8af/original.png?168326977=
-7" width=3D"65" height=3D"65" border=3D"0" alt=3D"" style=3D"-ms-interpolat=
-ion-mode: bicubic; margin: 0;" />
+																<td class="w-15" width="25" style="font-size: 0pt; line-height: 0pt;">&nbsp;</td>
+																<td class="img mw-img-40" style="font-size: 0pt; line-height: 0pt;" align="left">
+				<a href="https://u2847417.ct.sendgrid.net/ss/c/OvirfkAFLb-lp6kFtged02hM_FOFYwuUf83QGxnmfiF62cFC1WaxVKMhHy7qKPVu8zdqKOgpc0YcxnnHp21N1Q/3zl/mNZrLrwbT5quraAy-2khZA/h12/fHr60Qo792e1ImaOaxKplc_eaM7d4IS6F_kVEeizqX4" target="_blank" style="color: #000001; text-decoration: none;">
+											<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/6454a891f661307c18ffe8af/original.png?1683269777" width="65" height="65" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
 																	</a>
 																</td>
 															</tr>
@@ -1235,36 +825,18 @@ ion-mode: bicubic; margin: 0;" />
 													</td>
 												</tr>
 												<tr>
-													<td class=3D"pb-70 mpb-50" align=3D"center" style=3D"padding-b=
-ottom: 50px;">
+	<td class="pb-70 mpb-50" align="center" style="padding-bottom: 50px;">
 														<!-- App buttons -->
-														<table class=3D"mw-260" border=3D"0" cellspacing=3D"0" cellpa=
-dding=3D"0">
-															<tr>
-																<td class=3D"fluid-img img-center pr-18 mpr-9" style=3D"fon=
-t-size: 0pt; line-height: 0pt; padding-right: 18px;" align=3D"center">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/lAVI_h_7X=
--VHj290jbLu7q1vfyEQQfe2OpU5tln88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDivA=
-INVLROWvxqnK3qkujlogxAasFULV6pfe8ufDFI-j1SEbPtRgOZ1HbPLlm2EyJzeNxA/3zl/mNZr=
-LrwbT5quraAy-2khZA/h13/kjaAlzLsMWRhNqhr8dQp-CkowDK6vpyLKV7_6VKAlyg" target=
-=3D"_blank" style=3D"color: #000001; text-decoration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/644000115d6d2b053f53ff25/original.png?168191592=
-1" width=3D"209" height=3D"70" border=3D"0" alt=3D"" style=3D"-ms-interpola=
-tion-mode: bicubic; margin: 0;" />
-																	</a>
-																</td>
-																<td class=3D"fluid-img pl-18 mpl-9" style=3D"font-size: 0pt=
-; line-height: 0pt; padding-left: 18px;" align=3D"left">
-																	<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/1HJmLSnrD=
-X1t4WJsXNWFYQS2q8UMmTHCeFDZvk1C0feTWqDG-QtN8dHX7hW4EWmnmmmBdGjwxf2c6xBiWLYo=
-86jRG0YLHN6TRbIC3KcLBUM/3zl/mNZrLrwbT5quraAy-2khZA/h14/5Ik5kIzbCkxU4PKMNWGT=
-PdQj2OoSBUtW27swFg7AkRQ" target=3D"_blank" style=3D"color: #000001; text-de=
-coration: none;">
-																		<img src=3D"https://braze-images.com/appboy/communication=
-/assets/image_assets/images/64400011679bdd77b1921510/original.png?168191592=
-1" width=3D"209" height=3D"70" border=3D"0" alt=3D"" style=3D"-ms-interpola=
-tion-mode: bicubic; margin: 0;" />
+	<table class="mw-260" border="0" cellspacing="0" cellpadding="0">	
+		<tr>	
+			<td class="fluid-img img-center pr-18 mpr-9" style="font-size: 0pt; line-height: 0pt; padding-right: 18px;" align="center">
+				<a href="https://u2847417.ct.sendgrid.net/ss/c/lAVI_h_7X-VHj290jbLu7q1vfyEQQfe2OpU5tln88cdF1tLwBElGE-A6L1OjZDMKzlK1DxwvCu8uWTqrDivAINVLROWvxqnK3qkujlogxAasFULV6pfe8ufDFI-j1SEbPtRgOZ1HbPLlm2EyJzeNxA/3zl/mNZrLrwbT5quraAy-2khZA/h13/kjaAlzLsMWRhNqhr8dQp-CkowDK6vpyLKV7_6VKAlyg" target="_blank" style="color: #000001; text-decoration: none;">
+		<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/644000115d6d2b053f53ff25/original.png?1681915921" width="209" height="70" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
+				</a>
+			</td>
+		<td class="fluid-img pl-18 mpl-9" style="font-size: 0pt; line-height: 0pt; padding-left: 18px;" align="left">
+			<a href="https://u2847417.ct.sendgrid.net/ss/c/1HJmLSnrDX1t4WJsXNWFYQS2q8UMmTHCeFDZvk1C0feTWqDG-QtN8dHX7hW4EWmnmmmBdGjwxf2c6xBiWLYo86jRG0YLHN6TRbIC3KcLBUM/3zl/mNZrLrwbT5quraAy-2khZA/h14/5Ik5kIzbCkxU4PKMNWGTPdQj2OoSBUtW27swFg7AkRQ" target="_blank" style="color: #000001; text-decoration: none;">
+<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/64400011679bdd77b1921510/original.png?1681915921" width="209" height="70" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
 																	</a>
 																</td>
 															</tr>
@@ -1273,60 +845,29 @@ tion-mode: bicubic; margin: 0;" />
 													</td>
 												</tr>
 												<tr>
-													<td class=3D"fluid-img img-center pb-70 mpb-50" style=3D"font-=
-size: 0pt; line-height: 0pt; padding-bottom: 50px;" align=3D"center">
-														<a href=3D"https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurR=
-PSAbBmx2y9XqrrG0xTdBJwTJ1hGhyELTgEuayq55nZ62f4zOJmaU/3zl/mNZrLrwbT5quraAy-2=
-khZA/h15/a169GNRuuYmcCugokkOByS2dD0G2V8GiKMrO-2v55KA" target=3D"_blank" sty=
-le=3D"color: #000001; text-decoration: none;">
-															<img src=3D"https://braze-images.com/appboy/communication/as=
-sets/image_assets/images/643ffe9a3849ee141bcf48da/original.png?1681915546" =
-width=3D"600" height=3D"74" border=3D"0" alt=3D"" style=3D"-ms-interpolatio=
-n-mode: bicubic; margin: 0;" />
+					<td class="fluid-img img-center pb-70 mpb-50" style="font-size: 0pt; line-height: 0pt; padding-bottom: 50px;" align="center">
+					<a href="https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y9XqrrG0xTdBJwTJ1hGhyELTgEuayq55nZ62f4zOJmaU/3zl/mNZrLrwbT5quraAy-2khZA/h15/a169GNRuuYmcCugokkOByS2dD0G2V8GiKMrO-2v55KA" target="_blank" style="color: #000001; text-decoration: none;">
+			<img src="https://braze-images.com/appboy/communication/assets/image_assets/images/643ffe9a3849ee141bcf48da/original.png?1681915546" width="600" height="74" border="0" alt="" style="-ms-interpolation-mode: bicubic; margin: 0;" />
 														</a>
 													</td>
 												</tr>
 												<tr>
-													<td class=3D"text-18 lh-23 mfz-14 mlh-19 a-center pb-70 px-40 =
-mpb-50 mpx-20" style=3D"font-weight: bold; font-size: 18px; color: #000001;=
- font-family: Helvetica, Arial, sans-serif; line-height: 23px; padding-bott=
-om: 50px; padding-left: 40px; padding-right: 40px;" align=3D"center">
+							<td class="text-18 lh-23 mfz-14 mlh-19 a-center pb-70 px-40 mpb-50 mpx-20" style="font-weight: bold; font-size: 18px; color: #000001; font-family: Helvetica, Arial, sans-serif; line-height: 23px; padding-bottom: 50px; padding-left: 40px; padding-right: 40px;" align="center">
 														Depop offsets 100% of its<br />
-														carbon emissions =E2=80=93 including<br />
+														carbon emissions including<br />
 														every single delivery.
 													</td>
 												</tr>
 												<tr>
-													<td class=3D"text-15 lh-24 mfz-13 mlh-18 a-center pb-60 px-40 =
-mpb-50 mpx-10" style=3D"font-weight: 300; letter-spacing: 0.02em; font-size=
-: 15px; color: #000001; font-family: Helvetica, Arial, sans-serif; line-hei=
-ght: 24px; padding-bottom: 60px; padding-left: 40px; padding-right: 40px;" =
-align=3D"center">
-												=09
-												=09
-												=09
-														20 Farringdon Road London, EC4A 4BL<br />
-														We=E2=80=99d be sad to see you go, but you can&nbsp;<a href=
-=3D"https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y5kHDEJL-7N-j=
-RxZS7GUCaZMkGwBLhHSqcEOS504S8ZnTX6lyjw-Bvhmi7s1Ue-C9SPVkzvaFBmPglYGt3LSI9Jh=
-WxSw0YCRpC8v9TplNwpTnW5bHlfiW4Ls2ZeqhcWDnkBWW4Gi2a4AgSLkZszGno4/3zl/mNZrLrw=
-bT5quraAy-2khZA/h16/vFvc8KNgj2ocxqw5IX_GUin_J97GVvqBvaH9tKsVggY" target=3D"=
-_blank" class=3D"link-u" style=3D"color: #000001; text-decoration: underlin=
-e;"><span class=3D"link-u" style=3D"color: #000001; text-decoration: underl=
-ine;">unsubscribe&nbsp;here</span></a>
-													=09
-														=09
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table></td></tr></table></td></tr></table></center><img src=3D"ht=
-tps://u2847417.ct.sendgrid.net/ss/o/qIYzJXGPjg60qVTEHfvZwQ/3zl/mNZrLrwbT5qu=
-raAy-2khZA/ho.gif" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"=
-height:1px !important;width:1px !important;border-width:0 !important;margin=
--top:0 !important;margin-bottom:0 !important;margin-right:0 !important;marg=
-in-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;p=
-adding-right:0 !important;padding-left:0 !important;"/></body></html>
+													<td class="text-15 lh-24 mfz-13 mlh-18 a-center pb-60 px-40 mpb-50 mpx-10" style="font-weight: 300; letter-spacing: 0.02em; font-size: 15px; color: #000001; font-family: Helvetica, Arial, sans-serif; line-height: 24px; padding-bottom: 60px; padding-left: 40px; padding-right: 40px;" align="center"> 20 Farringdon Road London, EC4A 4BL<br />
+We'd be sad to see you go, but you can <a href="https://u2847417.ct.sendgrid.net/ss/c/65Pxi4LefurRPSAbBmx2y5kHDEJL-7N-jRxZS7GUCaZMkGwBLhHSqcEOS504S8ZnTX6lyjw-Bvhmi7s1Ue-C9SPVkzvaFBmPglYGt3LSI9JhWxSw0YCRpC8v9TplNwpTnW5bHlfiW4Ls2ZeqhcWDnkBWW4Gi2a4AgSLkZszGno4/3zl/mNZrLrwbT5quraAy-2khZA/h16/vFvc8KNgj2ocxqw5IX_GUin_J97GVvqBvaH9tKsVggY" target="_blank" class="link-u" style="color: #000001; text-decoration: underline;"><span class="link-u" style="color: #000001; text-decoration: underline;">unsubscribe&nbsp;here</span></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table></td></tr></table></td></tr></table></center>
+<img src="https://u2847417.ct.sendgrid.net/ss/o/qIYzJXGPjg60qVTEHfvZwQ/3zl/mNZrLrwbT5quraAy-2khZA/ho.gif" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
 
---ed3156a63f2c5df5ebb32a0eb0ceed2e97b26fc608b050538dea6a7a10d0--
