@@ -32,15 +32,13 @@ xmlns:o="urn:schemas-microsoft-com:office:office" style="line-height: inherit;">
         color-scheme: light dark;
         supported-color-schemes: light dark;
       }
-      @media (prefers-color-scheme: dark ) {   
-          /* Shows Dark Mode-Only Content, Like Images */   
-          .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }      
-          /* Hides Light Mode-Only Content, Like Images */   
-          .light-img { display:none; display:none !important; }
-           [data-ogsc] .dark-img {
-      display: block !important;
-    }
-
+    @media (prefers-color-scheme: dark) {
+  .darkmode { background-color: #111111 !important; }
+  .darkmode h1, .darkmode p, .darkmode span, .darkmode a { color: #ffffff !important; }
+  .dark-logo { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+  .light-logo { display:none; display:none !important; }
+}
+   
     [data-ogsc] .light-img {
       display: none !important;
     }
@@ -53,16 +51,6 @@ xmlns:o="urn:schemas-microsoft-com:office:office" style="line-height: inherit;">
       />
     </div>
 <span style="color:transparent;visibility:hidden;display:none;opacity:0;height:0;width:0;font-size:0;">WIN! £50 to spend with Just Eat</span>
-
-<!-- start HEADER_LOGO --> 
-   <a href="https://www.myunidays.com/">
-       <img class="light-img" src="http://links.m.myunidays.com/e/eo?_t=ab2538e7bcb54e1bb8aa1282d6c13d5b&amp;_m=a887611c81aa44cdb1a1f861a8b3011f&amp;_e=4R72QljSfWN_Y8442FJ-nslbFLbaZaiudu0_-WYXwiM7eNMcNDx8wD7eP6gP1S_L8KZIgNF2Mm39SEyNryt7XfLMdu2oobu6xsQSWDWL_p_oSwJznWyRD2VRoGyD4ZxBDgNX6ykqEBQEus2pAMpj_6ZTAzfPPDvaCJP-JSMCmn82IA0lhZSMUulj_38m_Lpa" width="600" height="300" alt="UNiDAYS" style="width: 100%; max-width: 600px; height: auto;" border="0" />
-  <!--[if !mso]><! -->
-  <img class="dark-img" src="http://links.m.myunidays.com/e/eo?_t=ab2538e7bcb54e1bb8aa1282d6c13d5b&amp;_m=a887611c81aa44cdb1a1f861a8b3011f&amp;_e=4R72QljSfWN_Y8442FJ-nslbFLbaZaiudu0_-WYXwiM7eNMcNDx8wD7eP6gP1S_L8KZIgNF2Mm39SEyNryt7XfLMdu2oobu6xsQSWDWL_p_oSwJznWyRD2VRoGyD4ZxBDgNX6ykqEBQEus2pAMpj_6ZTAzfPPDvaCJP-JSMCmn82IA0lhZSMUulj_38m_Lpa" width="600" height="300" alt="UNiDAYS" style="width: 100%; max-width: 600px; height: auto; display: none;" border="0" />
-  <!--<![endif]--></a>
-  
- <!-- end HEADER_LOGO --> 
- 
     <!--[if IE]>
       <div class="ie-browser">
       <![endif]-->
@@ -161,26 +149,15 @@ xmlns:o="urn:schemas-microsoft-com:office:office" style="line-height: inherit;">
                                                       </tr>
                                                     </table>
                                                   <![endif]-->
-                                                  <div class="img-container center fixedwidth" align="center" style="line-height: inherit; padding-right: 0px; padding-left: 0px;">
-                                                    <!--[if mso]>
-                                                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                                                        <tr style="line-height:0px">
-                                                          <td style="padding-right: 0px;padding-left: 0px;" align="center">
-                                                          <![endif]-->
-                                                          <div style="font-size: 1px; line-height: 20px;">&nbsp;</div>
-                                                          <a href="www.myunidays.com" target="_blank" style="line-height: inherit; outline: none;"
-                                                          tabindex="-1">
-                                                            <img class="center fixedwidth" align="center" border="0" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/8939458a19a94262b094c3b2cbc78483/UNiDAYS_Logo_1.png"
-                                                            alt="Image" title="Image" style="line-height: inherit; text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: 0; width: 100%; max-width: 120px; display: block;"
-                                                            width="120">
-                                                          </a>
-                                                          <div style="font-size: 1px; line-height: 20px;">&nbsp;</div>
-                                                          <!--[if mso]>
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    <![endif]-->
-                                                  </div>
+                                                  <!-- start HERO_LOGO -->
+    <div role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" class="darkmode" bgcolor="#ffffff" valign="top" style="padding: 15px 15px;">
+		<a href="http://unidays.com/?utm_campaign=dinneronus&utm_source=email&utm_medium=marketing" target="_blank">
+			<img class="light-logo" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/8939458a19a94262b094c3b2cbc78483/UNiDAYS_Logo_1.png" width="200" height="35" alt="unidays" align="center" style="color: #33373E; font-family:'proxima_nova', Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size:18px; line-height:1px; text-decoration: none; margin: 0 auto; padding: 10;" border="0" /><br>
+      <!--[if !mso]><! --><div class="dark-logo" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+      			<img src="https://qumind.co.uk/wp-content/uploads/2021/09/Layer-3.png" width="200" height="100" alt="unidays" style="color: #f2f2f2; font-family:'proxima_nova', Helvetica, Arial, sans-serif; text-align:center; font-weight:bold; font-size:36px; line-height:40px; text-decoration: none; margin: 0 auto; padding: 0;" border="0" />
+      </div><!--<![endif]-->
+		</a></div>
+    <!-- end HERO_LOGO -->
                                                   <!--[if (!mso)&(!IE)]><!-->
                                                   </div>
                                                 <!--<![endif]-->
